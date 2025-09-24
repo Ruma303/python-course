@@ -1,0 +1,146 @@
+[
+    {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "a = [1, 2, 3]\nb = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "b = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "d = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "e = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i\nj.append(4)",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "i = [1, 2, 3]\nj = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "j",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "j = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]\n# copia con slicing",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "a = [1, [2, 3], 4]\n# copia con slicing\nb = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "b = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "c = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "d = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "a = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "b = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b[1][0]",
+        "kind": 5,
+        "importPath": "Extra.assegnamento-var",
+        "description": "Extra.assegnamento-var",
+        "peekOfCode": "b[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    }
+]
