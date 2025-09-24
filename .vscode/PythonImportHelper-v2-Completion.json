@@ -59,6 +59,42 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Exercises.numbers",
+        "description": "Exercises.numbers",
+        "peekOfCode": "x = int(input(\"Inserisci il primo numero per x: \"))\ny = int(input(\"Inserisci il primo numero per y: \"))\nz = int(input(\"Inserisci il primo numero per z: \"))\nx *= 100\ny *= 10\nfinal = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):",
+        "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Exercises.numbers",
+        "description": "Exercises.numbers",
+        "peekOfCode": "y = int(input(\"Inserisci il primo numero per y: \"))\nz = int(input(\"Inserisci il primo numero per z: \"))\nx *= 100\ny *= 10\nfinal = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):\n  print(\"x è un intero\")",
+        "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Exercises.numbers",
+        "description": "Exercises.numbers",
+        "peekOfCode": "z = int(input(\"Inserisci il primo numero per z: \"))\nx *= 100\ny *= 10\nfinal = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):\n  print(\"x è un intero\")\nelse:",
+        "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "final",
+        "kind": 5,
+        "importPath": "Exercises.numbers",
+        "description": "Exercises.numbers",
+        "peekOfCode": "final = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):\n  print(\"x è un intero\")\nelse:\n  print(\"x non è un intero\")\nprint(\"Il tipo di y è: \", type(y))\nprint(abs(z) + pow(z, 3))",
+        "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
         "label": "a",
         "kind": 5,
         "importPath": "Extra.assegnamento-var",
@@ -191,6 +227,96 @@
         "description": "Extra.assegnamento-var",
         "peekOfCode": "b[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
         "detail": "Extra.assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "x = 10  # Intero\ny = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "y = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "x = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "y = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "x = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "y = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1\n# print(int(\"abc\"))  # ValueError",
+        "detail": "Extra.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Extra.conversions",
+        "description": "Extra.conversions",
+        "peekOfCode": "x = input(\"Inserisci un numero: \")\nprint(int(x) + 10)\n## Conversioni in float\nprint(float(5))  # Output: 5.0\nprint(float(\"3.14\"))  # Output: 3.14 solo se la stringa contiene solo numeri\nprint(float(False))  # Output: 0.0\nprint(float(True))  # Output: 1.0\n# print(float(\"abc\"))  # ValueError\n## Conversioni in booleani\nprint(bool(1))  # Output: True",
+        "detail": "Extra.conversions",
         "documentation": {}
     },
     {
