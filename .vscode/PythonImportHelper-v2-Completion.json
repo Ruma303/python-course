@@ -41,6 +41,24 @@
         "documentation": {}
     },
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "a",
         "kind": 5,
         "importPath": "Extra.assegnamento-var",
@@ -468,7 +486,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "f1 = Fraction(1, 3)\nf2 = Fraction(2, 3)\nprint(f1 + f2)             # Output: 1\nprint(f1 * 2)              # Output: 2/3\nprint(float(f1))           # Output: 0.3333333333333333\n\"\"\"\n#% Conversioni tra tipi numerici\n# Conversione tra tipi di base\na = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)",
+        "peekOfCode": "f1 = Fraction(1, 3)\nf2 = Fraction(2, 3)\nprint(f1 + f2)             # Output: 1\nprint(f1 * 2)              # Output: 2/3\nprint(float(f1))           # Output: 0.3333333333333333\n\"\"\"\n# % Conversioni tra tipi numerici\n# Conversione tra tipi di base\na = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -477,7 +495,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "f2 = Fraction(2, 3)\nprint(f1 + f2)             # Output: 1\nprint(f1 * 2)              # Output: 2/3\nprint(float(f1))           # Output: 0.3333333333333333\n\"\"\"\n#% Conversioni tra tipi numerici\n# Conversione tra tipi di base\na = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)",
+        "peekOfCode": "f2 = Fraction(2, 3)\nprint(f1 + f2)             # Output: 1\nprint(f1 * 2)              # Output: 2/3\nprint(float(f1))           # Output: 0.3333333333333333\n\"\"\"\n# % Conversioni tra tipi numerici\n# Conversione tra tipi di base\na = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -486,7 +504,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "a = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n#, Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")",
+        "peekOfCode": "a = float(7)  # 7.0\nb = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n# , Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -495,7 +513,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "b = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n#, Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"",
+        "peekOfCode": "b = int(8.9)  # 8 (troncamento)\nc = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n# , Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -504,7 +522,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "c = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n#, Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n#, Conversione e promozione automatica dei tipi",
+        "peekOfCode": "c = complex(5)  # (5+0j)\nd = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n# , Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n# , Conversione e promozione automatica dei tipi",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -513,7 +531,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "d = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n#, Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n#, Conversione e promozione automatica dei tipi\na = 10",
+        "peekOfCode": "d = int(\"123\")  # 123\ne = float(\"2.71\")  # 2.71\n# , Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n# , Conversione e promozione automatica dei tipi\na = 10",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -522,7 +540,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "e = float(\"2.71\")  # 2.71\n#, Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n#, Conversione e promozione automatica dei tipi\na = 10\nb = 2.5",
+        "peekOfCode": "e = float(\"2.71\")  # 2.71\n# , Conversione con tipi avanzati\n\"\"\"from decimal import Decimal\nfrom fractions import Fraction\nf = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n# , Conversione e promozione automatica dei tipi\na = 10\nb = 2.5",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -531,7 +549,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "f = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n#, Conversione e promozione automatica dei tipi\na = 10\nb = 2.5\nprint(a + b)        # 12.5, risultato è float\nprint(type(a))      # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n#% Metodi per tipi numerici",
+        "peekOfCode": "f = Decimal(\"2.5\")\ng = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n# , Conversione e promozione automatica dei tipi\na = 10\nb = 2.5\nprint(a + b)  # 12.5, risultato è float\nprint(type(a))  # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n# % Metodi per tipi numerici",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -540,7 +558,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "g = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n#, Conversione e promozione automatica dei tipi\na = 10\nb = 2.5\nprint(a + b)        # 12.5, risultato è float\nprint(type(a))      # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n#% Metodi per tipi numerici",
+        "peekOfCode": "g = Fraction(\"2.5\")\nprint(f, g)\"\"\"\n# , Conversione e promozione automatica dei tipi\na = 10\nb = 2.5\nprint(a + b)  # 12.5, risultato è float\nprint(type(a))  # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n# % Metodi per tipi numerici\nnumeri = [1, 2, 3, 4]",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -549,7 +567,7 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "a = 10\nb = 2.5\nprint(a + b)        # 12.5, risultato è float\nprint(type(a))      # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n#% Metodi per tipi numerici",
+        "peekOfCode": "a = 10\nb = 2.5\nprint(a + b)  # 12.5, risultato è float\nprint(type(a))  # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n# % Metodi per tipi numerici\nnumeri = [1, 2, 3, 4]\nprint(abs(-5))          # 5 (valore assoluto)\nprint(round(3.1415, 3)) # 3.14 (arrotondato a 3 decimali)\nprint(pow(2, 3))        # 8 (2 elevato alla terza potenza)",
         "detail": "Primitives.numbers",
         "documentation": {}
     },
@@ -558,7 +576,34 @@
         "kind": 5,
         "importPath": "Primitives.numbers",
         "description": "Primitives.numbers",
-        "peekOfCode": "b = 2.5\nprint(a + b)        # 12.5, risultato è float\nprint(type(a))      # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n#% Metodi per tipi numerici",
+        "peekOfCode": "b = 2.5\nprint(a + b)  # 12.5, risultato è float\nprint(type(a))  # <class 'int'>\nprint(type(a + b))  # <class 'float'>\n# % Metodi per tipi numerici\nnumeri = [1, 2, 3, 4]\nprint(abs(-5))          # 5 (valore assoluto)\nprint(round(3.1415, 3)) # 3.14 (arrotondato a 3 decimali)\nprint(pow(2, 3))        # 8 (2 elevato alla terza potenza)\nprint(divmod(10, 3))    # (3, 1) (quoziente e resto)",
+        "detail": "Primitives.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Primitives.numbers",
+        "description": "Primitives.numbers",
+        "peekOfCode": "numeri = [1, 2, 3, 4]\nprint(abs(-5))          # 5 (valore assoluto)\nprint(round(3.1415, 3)) # 3.14 (arrotondato a 3 decimali)\nprint(pow(2, 3))        # 8 (2 elevato alla terza potenza)\nprint(divmod(10, 3))    # (3, 1) (quoziente e resto)\nprint(max(numeri))      # 72 (numero massimo)\nprint(max(numeri))      # 3 (numero minimo)\nprint(sum(numeri, 10))  # Restituisce 20 (10 + 1 + 2 + 3 + 4)\nprint(bin(10))          # '0b1010' (binario)\nprint(oct(4000))        # '0o7640' (binario)",
+        "detail": "Primitives.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Primitives.numbers",
+        "description": "Primitives.numbers",
+        "peekOfCode": "z = 3 + 4j\nprint(z.real)          # 3.0 (parte reale)\nprint(z.imag)          # 4.0 (parte immaginaria)\nprint(z.conjugate())   # (3-4j) (coniugato)\n#, Modulo math per operazioni aritmetiche avanzate\nimport math\nprint(math.pi)                # 3.141592653589793 (Pi greco)\nprint(math.e)                 # 2.718281828459045 (Eulero)\nprint(math.sqrt(16))          # 4.0 (radice quadrata)\nprint(math.ceil(3.1))         # 4 (arrotondamento per eccesso)",
+        "detail": "Primitives.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Primitives.numbers",
+        "description": "Primitives.numbers",
+        "peekOfCode": "lista = [1, 2, 3, 4, 5]\nrandom.shuffle(lista)\nprint(lista)  # Ora la lista è riordinata casualmente",
         "detail": "Primitives.numbers",
         "documentation": {}
     }
