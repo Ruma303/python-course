@@ -268,6 +268,4 @@ print(testo)
 # Età: 30
 
 
-
-
-#, t-string
+#% Metodi
