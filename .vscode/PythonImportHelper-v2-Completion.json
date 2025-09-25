@@ -59,6 +59,87 @@
         "documentation": {}
     },
     {
+        "label": "lista_vuota",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "lista_vuota = []\n# Lista di numeri\nnumeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "numeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "parole",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "parole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "mista",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "mista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "annidata",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "annidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "nuova_lista",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "nuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
         "label": "x",
         "kind": 5,
         "importPath": "Exercises.numbers",
