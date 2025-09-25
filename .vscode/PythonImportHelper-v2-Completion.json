@@ -27,6 +27,24 @@
         "documentation": {}
     },
     {
+        "label": "libreria",
+        "kind": 5,
+        "importPath": "Exercises.library",
+        "description": "Exercises.library",
+        "peekOfCode": "libreria = {\n    \"Il Signore degli Anelli\": {\"autore\": \"J.R.R. Tolkien\", \"copie\": 3},\n    \"1984\": {\"autore\": \"George Orwell\", \"copie\": 5},\n    \"Il Grande Gatsby\": {\"autore\": \"F. Scott Fitzgerald\", \"copie\": 2},\n}\nchiedi = True\nwhile chiedi == True:\n  titolo = input(\"Inserisci il titolo di un libro da cercare: \").strip().lower()\n  trovato = None\n  for libro in libreria:",
+        "detail": "Exercises.library",
+        "documentation": {}
+    },
+    {
+        "label": "chiedi",
+        "kind": 5,
+        "importPath": "Exercises.library",
+        "description": "Exercises.library",
+        "peekOfCode": "chiedi = True\nwhile chiedi == True:\n  titolo = input(\"Inserisci il titolo di un libro da cercare: \").strip().lower()\n  trovato = None\n  for libro in libreria:\n      if libro.lower() == titolo:\n          trovato = libro\n          break\n  if trovato:\n      print(f\"Trovate {libreria[trovato]['copie']} copie di {trovato} dell'autore {libreria[trovato]['autore']}\")",
+        "detail": "Exercises.library",
+        "documentation": {}
+    },
+    {
         "label": "size",
         "kind": 5,
         "importPath": "Exercises.pizza",
@@ -69,6 +87,33 @@
         "description": "Lessons.operators",
         "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Valutazione intervalli\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(True and False)\nprint(True or False)",
         "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s, t]:\n        print(f\"Trovato {p}, {s} e {t}\")   # Output: Trovato 1, 2 e 3\n## Esempio con wildcard\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:\n        print(\"Altri valori trovati\")\n## Esempio con resto \"splat\"\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, *splat, t]:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, *splat, t]:\n        print(f\"Trovato {p} e {t}. Il resto è: {splat}\")   # Output: Trovato 1 e 6. Il resto è: [2, 3, 4, 5]",
+        "detail": "Lessons.pattern-matching",
         "documentation": {}
     }
 ]
