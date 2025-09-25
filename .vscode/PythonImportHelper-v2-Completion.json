@@ -4,7 +4,7 @@
         "kind": 5,
         "importPath": "Exercises.bmi",
         "description": "Exercises.bmi",
-        "peekOfCode": "weight = 85\nheight = 1.85\nbmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")\n#, 2. Pizza Order",
+        "peekOfCode": "weight = 85\nheight = 1.85\nbmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")",
         "detail": "Exercises.bmi",
         "documentation": {}
     },
@@ -13,7 +13,7 @@
         "kind": 5,
         "importPath": "Exercises.bmi",
         "description": "Exercises.bmi",
-        "peekOfCode": "height = 1.85\nbmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")\n#, 2. Pizza Order\nprint(\"Welcome to Python Pizza Deliveries!\")",
+        "peekOfCode": "height = 1.85\nbmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")",
         "detail": "Exercises.bmi",
         "documentation": {}
     },
@@ -22,44 +22,44 @@
         "kind": 5,
         "importPath": "Exercises.bmi",
         "description": "Exercises.bmi",
-        "peekOfCode": "bmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")\n#, 2. Pizza Order\nprint(\"Welcome to Python Pizza Deliveries!\")\nsize = input(\"What size pizza do you want? S, M, or L \")",
+        "peekOfCode": "bmi = weight / (height ** 2)\nif bmi < 18.5:\n    print(\"underweight\")\nelif bmi >= 18.5 and bmi < 25:\n    print(\"normal weight\")\nelif bmi >= 25:\n    print(\"overweight\")",
         "detail": "Exercises.bmi",
         "documentation": {}
     },
     {
         "label": "size",
         "kind": 5,
-        "importPath": "Exercises.bmi",
-        "description": "Exercises.bmi",
+        "importPath": "Exercises.pizza",
+        "description": "Exercises.pizza",
         "peekOfCode": "size = input(\"What size pizza do you want? S, M, or L \")\npepperoni = input(\"Do you want pepperoni? Y or N \")\nextra_cheese = input(\"Do you want extra cheese? Y or N \")\nbill = 0\nif size == \"S\":\n    bill += 15\nelif size == \"M\":\n    bill += 20\nelif size == \"L\":\n    bill += 25",
-        "detail": "Exercises.bmi",
+        "detail": "Exercises.pizza",
         "documentation": {}
     },
     {
         "label": "pepperoni",
         "kind": 5,
-        "importPath": "Exercises.bmi",
-        "description": "Exercises.bmi",
+        "importPath": "Exercises.pizza",
+        "description": "Exercises.pizza",
         "peekOfCode": "pepperoni = input(\"Do you want pepperoni? Y or N \")\nextra_cheese = input(\"Do you want extra cheese? Y or N \")\nbill = 0\nif size == \"S\":\n    bill += 15\nelif size == \"M\":\n    bill += 20\nelif size == \"L\":\n    bill += 25\nif pepperoni == \"Y\":",
-        "detail": "Exercises.bmi",
+        "detail": "Exercises.pizza",
         "documentation": {}
     },
     {
         "label": "extra_cheese",
         "kind": 5,
-        "importPath": "Exercises.bmi",
-        "description": "Exercises.bmi",
+        "importPath": "Exercises.pizza",
+        "description": "Exercises.pizza",
         "peekOfCode": "extra_cheese = input(\"Do you want extra cheese? Y or N \")\nbill = 0\nif size == \"S\":\n    bill += 15\nelif size == \"M\":\n    bill += 20\nelif size == \"L\":\n    bill += 25\nif pepperoni == \"Y\":\n    if size == \"S\":",
-        "detail": "Exercises.bmi",
+        "detail": "Exercises.pizza",
         "documentation": {}
     },
     {
         "label": "bill",
         "kind": 5,
-        "importPath": "Exercises.bmi",
-        "description": "Exercises.bmi",
+        "importPath": "Exercises.pizza",
+        "description": "Exercises.pizza",
         "peekOfCode": "bill = 0\nif size == \"S\":\n    bill += 15\nelif size == \"M\":\n    bill += 20\nelif size == \"L\":\n    bill += 25\nif pepperoni == \"Y\":\n    if size == \"S\":\n        bill += 2",
-        "detail": "Exercises.bmi",
+        "detail": "Exercises.pizza",
         "documentation": {}
     },
     {
