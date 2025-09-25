@@ -36,3 +36,13 @@ for numero in range(len(numeri)):
 numeri = [10, 20, 30]
 for indice, numero in enumerate(numeri):
     print(indice, ":", numero)
+
+
+## List Comprehensions
+#  Lista di quadrati
+quadrati = [x**2 for x in range(5)]
+print(quadrati)  # [0, 1, 4, 9, 16]
+
+# Lista di numeri pari
+pari = [x for x in range(10) if x % 2 == 0]
+print(pari)  # [0, 2, 4, 6, 8]

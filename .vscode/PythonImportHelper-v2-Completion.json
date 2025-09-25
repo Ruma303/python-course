@@ -126,7 +126,7 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## List Comprehensions\n#  Lista di quadrati\nquadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]",
         "detail": "Compounds.list",
         "documentation": {}
     },
@@ -135,7 +135,25 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## List Comprehensions\n#  Lista di quadrati\nquadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "quadrati",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "pari",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
         "detail": "Compounds.list",
         "documentation": {}
     },
