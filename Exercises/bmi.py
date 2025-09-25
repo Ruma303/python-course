@@ -1,7 +1,5 @@
 
-#% Exercises
-
-#, 1. BMI Calculator
+#, BMI Calculator
 weight = 85
 height = 1.85
 

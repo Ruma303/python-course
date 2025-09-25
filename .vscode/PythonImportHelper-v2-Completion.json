@@ -45,6 +45,15 @@
         "documentation": {}
     },
     {
+        "label": "shopping_list",
+        "kind": 5,
+        "importPath": "Exercises.lista_spesa",
+        "description": "Exercises.lista_spesa",
+        "peekOfCode": "shopping_list = []\nwhile True:\n  item = input(\"Inserisci un elemento nella lista della spesa: \").strip()\n  if item.lower() == \"fine\":\n    print(\"Tutta la lista della spesa:\\n\", shopping_list)\n    break\n  shopping_list.append(item)",
+        "detail": "Exercises.lista_spesa",
+        "documentation": {}
+    },
+    {
         "label": "size",
         "kind": 5,
         "importPath": "Exercises.pizza",
@@ -78,6 +87,33 @@
         "description": "Exercises.pizza",
         "peekOfCode": "bill = 0\nif size == \"S\":\n    bill += 15\nelif size == \"M\":\n    bill += 20\nelif size == \"L\":\n    bill += 25\nif pepperoni == \"Y\":\n    if size == \"S\":\n        bill += 2",
         "detail": "Exercises.pizza",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "Lessons.loops",
+        "description": "Lessons.loops",
+        "peekOfCode": "counter = 0\nwhile counter < 10:\n\tprint(f\"Conto: {counter + 1}\")\n\tcounter += 1\n\"\"\" password = \"\"\nwhile password != \"python123\":\n    password = input(\"Inserisci la password: \")\nprint(\"Accesso consentito!\") \"\"\"\n## Iterazioni\nparola = \"Python\"",
+        "detail": "Lessons.loops",
+        "documentation": {}
+    },
+    {
+        "label": "parola",
+        "kind": 5,
+        "importPath": "Lessons.loops",
+        "description": "Lessons.loops",
+        "peekOfCode": "parola = \"Python\"\nfor lettera in parola:\n    print(lettera)\nelse:\n\tprint(\"Else attivato\")\n## Enumerate\nstudents = (\"Luca\", \"Piero\", \"Giorgio\")\nfor index, name in enumerate(students):\n  print(f\"{index + 1}. {name}\")",
+        "detail": "Lessons.loops",
+        "documentation": {}
+    },
+    {
+        "label": "students",
+        "kind": 5,
+        "importPath": "Lessons.loops",
+        "description": "Lessons.loops",
+        "peekOfCode": "students = (\"Luca\", \"Piero\", \"Giorgio\")\nfor index, name in enumerate(students):\n  print(f\"{index + 1}. {name}\")",
+        "detail": "Lessons.loops",
         "documentation": {}
     },
     {

@@ -26,7 +26,7 @@ while chiedi == True:
   else:
       print("Libro non trovato")
   scelta = input("\nVuoi cercare un altro libro? Rispondi si o no: ").strip().lower()
-  if scelta == "si":
+  if scelta == "si" or scelta == "sì":
       pass
   elif scelta == "no":
       chiedi = False
