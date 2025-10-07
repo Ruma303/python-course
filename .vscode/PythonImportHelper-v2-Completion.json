@@ -1,14 +1,5 @@
 [
     {
-        "label": "copy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "copy",
-        "description": "copy",
-        "detail": "copy",
-        "documentation": {}
-    },
-    {
         "label": "Decimal",
         "importPath": "decimal",
         "description": "decimal",
@@ -56,6 +47,366 @@
         "importPath": "random",
         "description": "random",
         "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "copy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "copy",
+        "description": "copy",
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "tupla = (1, 2, 3)\nlista = list(tupla)       # [1, 2, 3]\nlista.append(4) # Modifichiamo la tupla\ntupla2 = tuple(lista)     # (1, 2, 3, 4)\n## Lista/tupla ↔ Set\nlista = [1, 2, 2, 3]\ninsieme = set(lista)      # {1, 2, 3}\ninsieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = list(tupla)       # [1, 2, 3]\nlista.append(4) # Modifichiamo la tupla\ntupla2 = tuple(lista)     # (1, 2, 3, 4)\n## Lista/tupla ↔ Set\nlista = [1, 2, 2, 3]\ninsieme = set(lista)      # {1, 2, 3}\ninsieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "tupla2",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "tupla2 = tuple(lista)     # (1, 2, 3, 4)\n## Lista/tupla ↔ Set\nlista = [1, 2, 2, 3]\ninsieme = set(lista)      # {1, 2, 3}\ninsieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = [1, 2, 2, 3]\ninsieme = set(lista)      # {1, 2, 3}\ninsieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "insieme",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "insieme = set(lista)      # {1, 2, 3}\ninsieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "insieme",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "insieme = {4, 5, 6}\nlista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = list(insieme)     # [4, 5, 6]\ntupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "tupla = tuple(insieme)    # (4, 5, 6)\n## Lista di tuple ↔ Dizionario\nlista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = [(\"a\", 1), (\"b\", 2)]\ndizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "dizionario = dict(lista)    # {'a': 1, 'b': 2}\ndizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "dizionario = {\"a\": 1, \"b\": 2}\nlista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = list(dizionario.items())   # [('a', 1), ('b', 2)]\n## Dizionario ↔ Liste di chiavi/valori\ndizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "dizionario = {\"a\": 1, \"b\": 2}\nchiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "chiavi",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "chiavi = list(dizionario)          # ['a', 'b']\nvalori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "valori = list(dizionario.values()) # [1, 2]\n## Stringa ↔ Lista/tupla di caratteri\ns = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "s = \"ciao\"\nlista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = list(s)     # ['c', 'i', 'a', 'o']\ntupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "tupla = tuple(s)    # ('c', 'i', 'a', 'o')\nlista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = ['c', 'i', 'a', 'o']\nstringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "stringa",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "stringa = ''.join(lista)   # 'ciao'\n## Lista di liste ↔ Lista di tuple\nlista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista_liste",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista_liste = [[1, 2], [3, 4]]\nlista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista_tuple",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista_tuple = [tuple(x) for x in lista_liste]   # [(1, 2), (3, 4)]\n## Range ↔ Lista/Tupla/Set\nr = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "r = range(5)\nlista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista = list(r)   # [0, 1, 2, 3, 4]\ntupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "tupla = tuple(r)  # (0, 1, 2, 3, 4)\ninsieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "insieme",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "insieme = set(r)  # {0, 1, 2, 3, 4}\n## Enumerate/Zip ↔ Lista/tupla\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "voci",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "voci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "e = enumerate(voci)\nlista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista_enum",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista_enum = list(e)     # [(0, 'a'), (1, 'b')]\nx = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "x = [1, 2]\ny = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "y = ['a', 'b']\nzippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']\nvalori = [10, 20]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "zippati",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "zippati = list(zip(x, y))    # [(1, 'a'), (2, 'b')]\n## Dizionario da liste\nvoci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']\nvalori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "voci",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "voci = [\"a\", \"b\"]\ne = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']\nvalori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "e = enumerate(voci)\nlista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']\nvalori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista_enum",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista_enum = dict(e)     # [(0, 'a'), (1, 'b')]\nprint(lista_enum)\n## Diario da zip\nchiavi = ['x', 'y']\nvalori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "chiavi",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "chiavi = ['x', 'y']\nvalori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "valori = [10, 20]\ndizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "dizionario = dict(zip(chiavi, valori))   # {'x': 10, 'y': 20}\n## Unpacking da per ricostruire strutture\nlista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
+        "detail": "Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "lista_di_tuple",
+        "kind": 5,
+        "importPath": "Compounds.conversions",
+        "description": "Compounds.conversions",
+        "peekOfCode": "lista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
+        "detail": "Compounds.conversions",
         "documentation": {}
     },
     {
@@ -439,235 +790,100 @@
     {
         "label": "a",
         "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "a = [1, 2, 3]\nb = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "b = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "d",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "d = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "e",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "e = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i\nj.append(4)",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "i",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "i = [1, 2, 3]\nj = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "j",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "j = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]\n# copia con slicing",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "a = [1, [2, 3], 4]\n# copia con slicing\nb = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "b = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "c",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "c = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "d",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "d = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "a = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "b",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "b = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "b[1][0]",
-        "kind": 5,
-        "importPath": "Extra.assegnamento-var",
-        "description": "Extra.assegnamento-var",
-        "peekOfCode": "b[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
-        "detail": "Extra.assegnamento-var",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "x = 10  # Intero\ny = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "y = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "result = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "x = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "y = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "result = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "x = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "y = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "result",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "result = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1\n# print(int(\"abc\"))  # ValueError",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "Extra.conversions",
-        "description": "Extra.conversions",
-        "peekOfCode": "x = input(\"Inserisci un numero: \")\nprint(int(x) + 10)\n## Conversioni in float\nprint(float(5))  # Output: 5.0\nprint(float(\"3.14\"))  # Output: 3.14 solo se la stringa contiene solo numeri\nprint(float(False))  # Output: 0.0\nprint(float(True))  # Output: 1.0\n# print(float(\"abc\"))  # ValueError\n## Conversioni in booleani\nprint(bool(1))  # Output: True",
-        "detail": "Extra.conversions",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
         "importPath": "Primitives.booleans",
         "description": "Primitives.booleans",
         "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Valutazione intervalli\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(True and False)\nprint(True or False)",
         "detail": "Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "x = 10  # Intero\ny = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "y = 3.5  # Float\nresult = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: 13.5\nprint(type(result))  # Output: <class 'float'>\n## Da integer a complex\nx = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "x = 5  # Intero\ny = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "y = 3 + 4j  # Complesso\nresult = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: (8+4j)\nprint(type(result))  # Output: <class 'complex'>\n## Da boolean a integer\nx = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "x = True  # Booleano\ny = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "y = 5  # Intero\nresult = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "result = x + y\nprint(result)  # Output: 6\nprint(type(result))  # Output: <class 'int'>\n#% Conversioni esplicite\n# Uso di funzioni di cast\n## Conversione in integer\nprint(int(3.9))  # Output: 3\nprint(int(\"10\"))  # Output: 10 solo se la stringa contiene solo numeri\nprint(int(True))  # Output: 1\n# print(int(\"abc\"))  # ValueError",
+        "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Primitives.conversions",
+        "description": "Primitives.conversions",
+        "peekOfCode": "x = input(\"Inserisci un numero: \")\nprint(int(x) + 10)\n## Conversioni in float\nprint(float(5))  # Output: 5.0\nprint(float(\"3.14\"))  # Output: 3.14 solo se la stringa contiene solo numeri\nprint(float(False))  # Output: 0.0\nprint(float(True))  # Output: 1.0\n# print(float(\"abc\"))  # ValueError\n## Conversioni in booleani\nprint(bool(1))  # Output: True",
+        "detail": "Primitives.conversions",
         "documentation": {}
     },
     {
@@ -1224,7 +1440,7 @@
         "kind": 5,
         "importPath": "Primitives.strings",
         "description": "Primitives.strings",
-        "peekOfCode": "stringa = \"Ciao! \"\nprint(stringa * 3)  # 'Ciao! Ciao! Ciao!'\n## Verifica appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'",
+        "peekOfCode": "stringa = \"Ciao! \"\nprint(stringa * 3)  # 'Ciao! Ciao! Ciao!'\n## Verifica appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Confronto tra stringhe\nprint(ord('A'))  # 65\nprint(ord('a'))  # 97",
         "detail": "Primitives.strings",
         "documentation": {}
     },
@@ -1233,7 +1449,25 @@
         "kind": 5,
         "importPath": "Primitives.strings",
         "description": "Primitives.strings",
-        "peekOfCode": "stringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'\nprint(stringa[3])  # 'o'\nprint(stringa[4])  # ' '",
+        "peekOfCode": "stringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Confronto tra stringhe\nprint(ord('A'))  # 65\nprint(ord('a'))  # 97\nstringa1 = \"Ciao \"\nstringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False",
+        "detail": "Primitives.strings",
+        "documentation": {}
+    },
+    {
+        "label": "stringa1",
+        "kind": 5,
+        "importPath": "Primitives.strings",
+        "description": "Primitives.strings",
+        "peekOfCode": "stringa1 = \"Ciao \"\nstringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False\nprint(stringa1 > stringa2)   # False\nprint(stringa1 <= stringa2 and stringa1 != stringa2)  # True\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'",
+        "detail": "Primitives.strings",
+        "documentation": {}
+    },
+    {
+        "label": "stringa2",
+        "kind": 5,
+        "importPath": "Primitives.strings",
+        "description": "Primitives.strings",
+        "peekOfCode": "stringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False\nprint(stringa1 > stringa2)   # False\nprint(stringa1 <= stringa2 and stringa1 != stringa2)  # True\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'\nprint(stringa[3])  # 'o'",
         "detail": "Primitives.strings",
         "documentation": {}
     },
@@ -1496,6 +1730,141 @@
         "description": "Primitives.strings",
         "peekOfCode": "testo = f\"\"\"\n  Nome: {nome}\n  Età: {età}\n\"\"\"\nprint(testo)\n# Output:\n# Nome: Anna\n# Età: 30\n#% Metodi",
         "detail": "Primitives.strings",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "a = [1, 2, 3]\nb = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "b = a\nprint(id(a), id(b))  # stessi id -> stesso oggetto\n# Creare una copia dell'oggetto\nprint(\"\\nCopia per valore\")\nx = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\n# Assegnamento tipi immutabili\nprint(\"\\nAssegnamento tipi immutabili\")\nd = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "d = 5\ne = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "e = d\ne += 1\nprint(d)  # 5\nprint(e)  # 6\nprint(id(d), id(e))  # id diversi\n# Assegnamento tipi mutabili\nprint(\"\\nAssegnamento tipi mutabili\")\ni = [1, 2, 3]\nj = i\nj.append(4)",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "i = [1, 2, 3]\nj = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "j",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "j = i\nj.append(4)\nprint(i)  # [1, 2, 3, 4]\nprint(j)  # [1, 2, 3, 4]\nprint(id(i), id(j))\n# Copia superficiale\nprint(\"\\nCopie superficiale\")\nimport copy\na = [1, [2, 3], 4]\n# copia con slicing",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "a = [1, [2, 3], 4]\n# copia con slicing\nb = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "b = a[:]\n# copia con costruttore\nc = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "c = list(a)\n# copia con copy()\nd = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "d = copy.copy(a)\nprint(\"Oggetti contenitori esterni: \", id(a), id(b), id(c), id(d))  # id diversi\nprint(\"Array interno condiviso: \",id(a[1]), id(b[1]))          # stessi id per la lista interna\n# Copia profonda\nprint(\"\\nCopie profonda\")\na = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "a = [1, [2, 3], 4]\nb = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "b = copy.deepcopy(a)\nprint(id(a), id(b))         # contenitori diversi\nprint(id(a[1]), id(b[1]))   # anche gli oggetti interni sono diversi\nb[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "assegnamento-var",
+        "documentation": {}
+    },
+    {
+        "label": "b[1][0]",
+        "kind": 5,
+        "importPath": "assegnamento-var",
+        "description": "assegnamento-var",
+        "peekOfCode": "b[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
+        "detail": "assegnamento-var",
         "documentation": {}
     }
 ]

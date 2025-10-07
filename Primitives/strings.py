@@ -96,6 +96,19 @@ print(stringa * 3)  # 'Ciao! Ciao! Ciao!'
 stringa = "Ciao Python"
 print("Python" in stringa)  # True
 print("Java" in stringa)  # False
+print("Java" not in stringa)  # True
+
+
+## Confronto tra stringhe
+print(ord('A'))  # 65
+print(ord('a'))  # 97
+
+stringa1 = "Ciao "
+stringa2 = "Mondo"
+
+print(stringa1 == stringa2)  # False
+print(stringa1 > stringa2)   # False
+print(stringa1 <= stringa2 and stringa1 != stringa2)  # True
 
 
 #, String indexing
