@@ -1,5 +1,14 @@
 [
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "Decimal",
         "importPath": "decimal",
         "description": "decimal",
@@ -29,15 +38,6 @@
         "description": "fractions",
         "isExtraImport": true,
         "detail": "fractions",
-        "documentation": {}
-    },
-    {
-        "label": "math",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
         "documentation": {}
     },
     {
@@ -884,6 +884,15 @@
         "description": "Primitives.conversions",
         "peekOfCode": "x = input(\"Inserisci un numero: \")\nprint(int(x) + 10)\n## Conversioni in float\nprint(float(5))  # Output: 5.0\nprint(float(\"3.14\"))  # Output: 3.14 solo se la stringa contiene solo numeri\nprint(float(False))  # Output: 0.0\nprint(float(True))  # Output: 1.0\n# print(float(\"abc\"))  # ValueError\n## Conversioni in booleani\nprint(bool(1))  # Output: True",
         "detail": "Primitives.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "angolo_rad",
+        "kind": 5,
+        "importPath": "Primitives.math_module",
+        "description": "Primitives.math_module",
+        "peekOfCode": "angolo_rad = math.radians(30)\nprint(math.sin(angolo_rad))    # 0.5\nprint(math.cos(angolo_rad))    # 0.86\nprint(math.tan(angolo_rad))    # 0.57\nprint(math.degrees(math.acos(0.5))) # 59.99\nprint(math.radians(math.cos(0.5)))  # 0.015\n## Funzioni speciali\nprint(math.factorial(5))   # 120\nprint(math.gcd(12, 15))    # 3\nprint(math.lcm(12, 15))    # 60",
+        "detail": "Primitives.math_module",
         "documentation": {}
     },
     {
