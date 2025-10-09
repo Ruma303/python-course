@@ -90,11 +90,56 @@
         "documentation": {}
     },
     {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.conditions",
+        "description": "Lessons.conditions",
+        "peekOfCode": "x = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:\n    print(\"x è maggiore di 10 ma minore di 20\")\nelse:\n    print(\"x è maggiore o uguale a 20\")\n## Condizioni multiple con operatori logici",
+        "detail": "Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.conditions",
+        "description": "Lessons.conditions",
+        "peekOfCode": "x = 8\nif x > 5 and x < 10:\n    print(\"x è compreso tra 5 e 10\")\nx = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "detail": "Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.conditions",
+        "description": "Lessons.conditions",
+        "peekOfCode": "x = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "detail": "Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.conditions",
+        "description": "Lessons.conditions",
+        "peekOfCode": "x = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "detail": "Lessons.conditions",
+        "documentation": {}
+    },
+    {
         "label": "counter",
         "kind": 5,
         "importPath": "Lessons.loops",
         "description": "Lessons.loops",
-        "peekOfCode": "counter = 0\nwhile counter < 10:\n\tprint(f\"Conto: {counter + 1}\")\n\tcounter += 1\n\"\"\" password = \"\"\nwhile password != \"python123\":\n    password = input(\"Inserisci la password: \")\nprint(\"Accesso consentito!\") \"\"\"\n## Iterazioni\nparola = \"Python\"",
+        "peekOfCode": "counter = 0\nwhile counter < 10:\n    print(f\"Conto: {counter + 1}\")\n    counter += 1\n\"\"\"\npassword = \"\"\nwhile password != \"python123\":\n    password = input(\"Inserisci la password: \")\nprint(\"Accesso consentito!\")\n\"\"\"",
+        "detail": "Lessons.loops",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "Lessons.loops",
+        "description": "Lessons.loops",
+        "peekOfCode": "password = \"\"\nwhile password != \"python123\":\n    password = input(\"Inserisci la password: \")\nprint(\"Accesso consentito!\")\n\"\"\"\n## Range\nfor i in range(5):  # Da 0 a 4\n    print(i)\nfor i in range(2, 10, 2):  # Da 2 a 8 con step 2\n    print(i)",
         "detail": "Lessons.loops",
         "documentation": {}
     },
@@ -103,7 +148,16 @@
         "kind": 5,
         "importPath": "Lessons.loops",
         "description": "Lessons.loops",
-        "peekOfCode": "parola = \"Python\"\nfor lettera in parola:\n    print(lettera)\nelse:\n\tprint(\"Else attivato\")\n## Enumerate\nstudents = (\"Luca\", \"Piero\", \"Giorgio\")\nfor index, name in enumerate(students):\n  print(f\"{index + 1}. {name}\")",
+        "peekOfCode": "parola = \"Python\"\nfor lettera in parola:\n    print(lettera)\nelse:\n    print(\"Else attivato\")\n## Iterazioni su dizionari\ndizionario = {'a': 1, 'b': 2, 'c': 3}\n# Iterare sulle chiavi\nfor chiave in dizionario:\n    print(chiave)",
+        "detail": "Lessons.loops",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario",
+        "kind": 5,
+        "importPath": "Lessons.loops",
+        "description": "Lessons.loops",
+        "peekOfCode": "dizionario = {'a': 1, 'b': 2, 'c': 3}\n# Iterare sulle chiavi\nfor chiave in dizionario:\n    print(chiave)\n# Iterare sui valori\nfor valore in dizionario.values():\n    print(valore)\n# Iterare su chiavi e valori\nfor chiave, valore in dizionario.items():\n    print(f\"{chiave}: {valore}\")",
         "detail": "Lessons.loops",
         "documentation": {}
     },
@@ -112,7 +166,7 @@
         "kind": 5,
         "importPath": "Lessons.loops",
         "description": "Lessons.loops",
-        "peekOfCode": "students = (\"Luca\", \"Piero\", \"Giorgio\")\nfor index, name in enumerate(students):\n  print(f\"{index + 1}. {name}\")",
+        "peekOfCode": "students = (\"Luca\", \"Piero\", \"Giorgio\")\nfor index, name in enumerate(students):\n    print(f\"{index + 1}. {name}\")\n## break\nfor i in range(10):\n    if i == 5:\n        break\n    print(i)\n## continue\nfor i in range(10):",
         "detail": "Lessons.loops",
         "documentation": {}
     },
@@ -122,6 +176,42 @@
         "importPath": "Lessons.operators",
         "description": "Lessons.operators",
         "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Valutazione intervalli\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(True and False)\nprint(True or False)",
+        "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.operators",
+        "description": "Lessons.operators",
+        "peekOfCode": "x = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)\n## Operatore di appartenenza\nvoglia = \"cioccolato\"\nif \"ciocco\" in voglia:\n    print(\"Ho voglia di qualcosa di dolce!\")\n## Confronto di valori\nx = 8\nif 5 < x < 10:",
+        "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "messaggio",
+        "kind": 5,
+        "importPath": "Lessons.operators",
+        "description": "Lessons.operators",
+        "peekOfCode": "messaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)\n## Operatore di appartenenza\nvoglia = \"cioccolato\"\nif \"ciocco\" in voglia:\n    print(\"Ho voglia di qualcosa di dolce!\")\n## Confronto di valori\nx = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")",
+        "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "voglia",
+        "kind": 5,
+        "importPath": "Lessons.operators",
+        "description": "Lessons.operators",
+        "peekOfCode": "voglia = \"cioccolato\"\nif \"ciocco\" in voglia:\n    print(\"Ho voglia di qualcosa di dolce!\")\n## Confronto di valori\nx = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")",
+        "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Lessons.operators",
+        "description": "Lessons.operators",
+        "peekOfCode": "x = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")",
         "detail": "Lessons.operators",
         "documentation": {}
     },
