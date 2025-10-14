@@ -295,5 +295,59 @@
         "peekOfCode": "subject_value = {\"tipo\": \"errore\", \"messaggio\": \"file mancante\"}\nmatch subject_value:\n    case {\"tipo\": \"errore\", \"messaggio\": msg}:\n        print(f\"Errore: {msg}\")",
         "detail": "Lessons.pattern-matching",
         "documentation": {}
+    },
+    {
+        "label": "somma",
+        "kind": 2,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "def somma(a, b):\n    return a + b\nif (x := somma(5, 3)) > 6:\n    print(\"x maggiore di 6:\", x)\n## Utilizzo nei cicli\nmylist = [1, 2, 3, 4, 5]\nwhile (x := len(mylist)) != 0:\n    print(f\"Numero elementi: {x}, estratto: {mylist.pop()}\")\n## Uso con valore di default\ndef saluta(nome = (n := \"Susanna\")):",
+        "detail": "Lessons.walrus",
+        "documentation": {}
+    },
+    {
+        "label": "saluta",
+        "kind": 2,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "def saluta(nome = (n := \"Susanna\")):\n    print(\"Ciao\", nome)\n    print(\"Saluto di default: \", n.upper())\nsaluta() # Ciao Susanna + default\nsaluta(\"Alice\") # Ciao Alice + default\n## Esempio filtraggio list comprehension\nvalori = [\"1\", \"due\", \"3\", \"quattro\"]\nnumeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
+        "detail": "Lessons.walrus",
+        "documentation": {}
+    },
+    {
+        "label": "val",
+        "kind": 5,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "val = input(\"Inserisci un valore: \")\nwhile val != \"q\":\n    print(val)\n    val = input(\"Inserisci un valore: \")\n## Da Python 3.8\nwhile (val := input(\"Inserisci un valore: \")) != \"q\":\n    print(val)\n\"\"\"\n## Esempio di utilizzo\ndef somma(a, b):",
+        "detail": "Lessons.walrus",
+        "documentation": {}
+    },
+    {
+        "label": "mylist",
+        "kind": 5,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "mylist = [1, 2, 3, 4, 5]\nwhile (x := len(mylist)) != 0:\n    print(f\"Numero elementi: {x}, estratto: {mylist.pop()}\")\n## Uso con valore di default\ndef saluta(nome = (n := \"Susanna\")):\n    print(\"Ciao\", nome)\n    print(\"Saluto di default: \", n.upper())\nsaluta() # Ciao Susanna + default\nsaluta(\"Alice\") # Ciao Alice + default\n## Esempio filtraggio list comprehension",
+        "detail": "Lessons.walrus",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "valori = [\"1\", \"due\", \"3\", \"quattro\"]\nnumeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
+        "detail": "Lessons.walrus",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Lessons.walrus",
+        "description": "Lessons.walrus",
+        "peekOfCode": "numeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
+        "detail": "Lessons.walrus",
+        "documentation": {}
     }
 ]
