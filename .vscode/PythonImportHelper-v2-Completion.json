@@ -220,7 +220,7 @@
         "kind": 5,
         "importPath": "Lessons.pattern-matching",
         "description": "Lessons.pattern-matching",
-        "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s, t]:\n        print(f\"Trovato {p}, {s} e {t}\")   # Output: Trovato 1, 2 e 3\n## Esempio con wildcard\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:",
+        "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s, t]:\n        print(f\"Trovato {p}, {s} e {t}\")   # Output: Trovato 1, 2 e 3\n## Esempio con wildcard\nprint(\"\\nEsempi con wildcard\")\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3",
         "detail": "Lessons.pattern-matching",
         "documentation": {}
     },
@@ -229,7 +229,7 @@
         "kind": 5,
         "importPath": "Lessons.pattern-matching",
         "description": "Lessons.pattern-matching",
-        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:\n        print(\"Altri valori trovati\")\n## Esempio con resto \"splat\"\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, *splat, t]:",
+        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:\n        print(\"Altri valori trovati\")\n## Capture pattern\nprint(\"\\nCapture pattern\")\nsubject_value = [1, 2, 3]\nmatch subject_value:",
         "detail": "Lessons.pattern-matching",
         "documentation": {}
     },
@@ -238,7 +238,61 @@
         "kind": 5,
         "importPath": "Lessons.pattern-matching",
         "description": "Lessons.pattern-matching",
-        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, *splat, t]:\n        print(f\"Trovato {p} e {t}. Il resto è: {splat}\")   # Output: Trovato 1 e 6. Il resto è: [2, 3, 4, 5]",
+        "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s]:\n        print(f\"Trovati {p} e {s}\")\n    case [p, s, t]:\n        print(f\"Trovati {p}, {s} e {t}\")\n    case _:\n        print(\"Nessun valore trovato\")\n## Esempio con resto \"splat\"\nprint(\"\\nResto splat\")",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [i, *splat, f]:\n        print(f\"Primo elemento: {i}, ultimo: {f}. Altri elementi del pattern: {splat}\")\n        # Primo elemento: 1, ultimo: 6. Altri elementi del pattern: [2, 3, 4, 5]\n## Literal patterns\nprint(\"\\nLiteral pattern\")\nsubject_value = [1, 2, 3]\nmatch subject_value:\n    case [1, 2, 3]:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [1, 2, 3]:\n        print(\"Trovata lista 1,2,3\")\n    case [1, *rest]:\n        print(f\"Il resto è {rest}\")\n## Or patterns\nprint(\"\\nOr pattern\")\nsubject_value = [\"autunno\", \"stagione autunnale\"]\nmatch subject_value:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [\"autunno\", \"stagione autunnale\"]\nmatch subject_value:\n    case [\"autunno\", msg] | [\"inverno\", msg]:\n        print(f\"Nella {msg} fa più freddo\")\n    case [\"primavera\", msg] | [\"estate\", msg]:\n        print(f\"Nella {msg} fa più caldo\")\n## As patterns\nprint(\"\\nAs pattern\")\nsubject_value = \"estate\"\nmatch subject_value:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = \"estate\"\nmatch subject_value:\n    case \"primavera\" | \"estate\" as stagione:\n        print(f\"in {stagione} fa più caldo\")\n    case \"autunno\" | \"inverno\" as stagione:\n        print(f\"in {stagione} fa più freddo\")\n## Conditional Patterns (Guards)\nprint(\"\\nConditional pattern\")\nsubject_value = [\"pari\", \"50\"]\nmatch subject_value:",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = [\"pari\", \"50\"]\nmatch subject_value:\n    case [\"pari\", valore] if int(valore) % 2 == 0:\n        print(f\"{valore} è un numero pari\")\n    case [\"dispari\", valore] if int(valore) % 2 != 0:\n        print(f\"{valore} è un numero dispari\")\n    case _:\n        print(\"C'è un errore nei dati\")\n## Esempio su dizionari\nprint(\"\\nEsempio di utilizzo su dizionari\")",
+        "detail": "Lessons.pattern-matching",
+        "documentation": {}
+    },
+    {
+        "label": "subject_value",
+        "kind": 5,
+        "importPath": "Lessons.pattern-matching",
+        "description": "Lessons.pattern-matching",
+        "peekOfCode": "subject_value = {\"tipo\": \"errore\", \"messaggio\": \"file mancante\"}\nmatch subject_value:\n    case {\"tipo\": \"errore\", \"messaggio\": msg}:\n        print(f\"Errore: {msg}\")",
         "detail": "Lessons.pattern-matching",
         "documentation": {}
     }
