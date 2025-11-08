@@ -1,5 +1,14 @@
 [
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "math",
         "kind": 6,
         "isExtraImport": true,
@@ -38,15 +47,6 @@
         "description": "fractions",
         "isExtraImport": true,
         "detail": "fractions",
-        "documentation": {}
-    },
-    {
-        "label": "random",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "random",
-        "description": "random",
-        "detail": "random",
         "documentation": {}
     },
     {
@@ -477,7 +477,7 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## List Comprehensions\n#  Lista di quadrati\nquadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range",
         "detail": "Compounds.list",
         "documentation": {}
     },
@@ -486,7 +486,16 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## List Comprehensions\n#  Lista di quadrati\nquadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")",
+        "detail": "Compounds.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "Compounds.list",
+        "description": "Compounds.list",
+        "peekOfCode": "numeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")\n# IndexError: list index out of range\nprint(f\"Accesso corretto all'ultimo elemento {numeri[len(numeri) - 1] = }\")\n# Accesso corretto all'ultimo elemento numeri[len(numeri) - 1] = 30\nprint(f\"L'indice vale {len(numeri) - 1 = }\")",
         "detail": "Compounds.list",
         "documentation": {}
     },
@@ -785,6 +794,33 @@
         "description": "Exercises.numbers",
         "peekOfCode": "final = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):\n  print(\"x è un intero\")\nelse:\n  print(\"x non è un intero\")\nprint(\"Il tipo di y è: \", type(y))\nprint(abs(z) + pow(z, 3))",
         "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "friends",
+        "kind": 5,
+        "importPath": "Exercises.who_pays",
+        "description": "Exercises.who_pays",
+        "peekOfCode": "friends = [\"Marco\", \"Luca\", \"Elia\", \"Maria\", \"Sara\"]\nindice = random.randint(0, (len(friends) - 1))\npersona_scelta = friends[indice]\nprint(f\"{persona_scelta} pagherà il conto per tutti!\")\n\"\"\"\nVersione semplice\n\"\"\"\nprint(f\"{random.choice(friends)} pagherà il conto per tutti!\")",
+        "detail": "Exercises.who_pays",
+        "documentation": {}
+    },
+    {
+        "label": "indice",
+        "kind": 5,
+        "importPath": "Exercises.who_pays",
+        "description": "Exercises.who_pays",
+        "peekOfCode": "indice = random.randint(0, (len(friends) - 1))\npersona_scelta = friends[indice]\nprint(f\"{persona_scelta} pagherà il conto per tutti!\")\n\"\"\"\nVersione semplice\n\"\"\"\nprint(f\"{random.choice(friends)} pagherà il conto per tutti!\")",
+        "detail": "Exercises.who_pays",
+        "documentation": {}
+    },
+    {
+        "label": "persona_scelta",
+        "kind": 5,
+        "importPath": "Exercises.who_pays",
+        "description": "Exercises.who_pays",
+        "peekOfCode": "persona_scelta = friends[indice]\nprint(f\"{persona_scelta} pagherà il conto per tutti!\")\n\"\"\"\nVersione semplice\n\"\"\"\nprint(f\"{random.choice(friends)} pagherà il conto per tutti!\")",
+        "detail": "Exercises.who_pays",
         "documentation": {}
     },
     {

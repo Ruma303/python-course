@@ -1,3 +1,5 @@
+
+#% Creazioni liste
 # Lista vuota
 lista_vuota = []
 
@@ -36,6 +38,24 @@ for numero in range(len(numeri)):
 numeri = [10, 20, 30]
 for indice, numero in enumerate(numeri):
     print(indice, ":", numero)
+
+
+## IndexError
+numeri = [10, 20, 30]
+# print(numeri[3])
+# IndexError: list index out of range
+
+print(numeri[2]) # Ok
+print(f"Numero elementi {len(numeri) = }")
+
+# print(f"Accesso errato all'ultimo elemento {numeri[len(numeri)]}")
+# IndexError: list index out of range
+
+print(f"Accesso corretto all'ultimo elemento {numeri[len(numeri) - 1] = }")
+# Accesso corretto all'ultimo elemento numeri[len(numeri) - 1] = 30
+
+print(f"L'indice vale {len(numeri) - 1 = }")
+# L'indice vale len(numeri) - 1 = 2
 
 
 ## List Comprehensions
