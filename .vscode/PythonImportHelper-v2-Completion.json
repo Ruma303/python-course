@@ -743,24 +743,6 @@
         "documentation": {}
     },
     {
-        "label": "students",
-        "kind": 5,
-        "importPath": "Exercises.compounds",
-        "description": "Exercises.compounds",
-        "peekOfCode": "students = []\nstudent_number = int(input(\"Quanti studenti vuoi inserire?\\n\"))\nfor _ in range(student_number):\n  student = {}\n  student_name = input(\"Digita il nome completo dello studente:\\n\").strip()\n  student_score = int(input(\"Inserire il voto dello studente:\\n\"))\n  student[\"name\"] = student_name\n  student[\"score\"] = student_score\n  students.append(student)\n  print(f\"Studente {student['name']} con voto {student['score']} aggiunto.\\n\")",
-        "detail": "Exercises.compounds",
-        "documentation": {}
-    },
-    {
-        "label": "student_number",
-        "kind": 5,
-        "importPath": "Exercises.compounds",
-        "description": "Exercises.compounds",
-        "peekOfCode": "student_number = int(input(\"Quanti studenti vuoi inserire?\\n\"))\nfor _ in range(student_number):\n  student = {}\n  student_name = input(\"Digita il nome completo dello studente:\\n\").strip()\n  student_score = int(input(\"Inserire il voto dello studente:\\n\"))\n  student[\"name\"] = student_name\n  student[\"score\"] = student_score\n  students.append(student)\n  print(f\"Studente {student['name']} con voto {student['score']} aggiunto.\\n\")\nprint(\"\\nStampa di tutti gli studenti\\n\")",
-        "detail": "Exercises.compounds",
-        "documentation": {}
-    },
-    {
         "label": "x",
         "kind": 5,
         "importPath": "Exercises.numbers",
@@ -794,6 +776,24 @@
         "description": "Exercises.numbers",
         "peekOfCode": "final = (x + y) / z\nprint(final)\nprint(\"Il tipo di x è: \", type(x))\n# oppure print(x.is_integer())\nif isinstance(x, int):\n  print(\"x è un intero\")\nelse:\n  print(\"x non è un intero\")\nprint(\"Il tipo di y è: \", type(y))\nprint(abs(z) + pow(z, 3))",
         "detail": "Exercises.numbers",
+        "documentation": {}
+    },
+    {
+        "label": "students",
+        "kind": 5,
+        "importPath": "Exercises.students",
+        "description": "Exercises.students",
+        "peekOfCode": "students = []\nstudent_number = int(input(\"Quanti studenti vuoi inserire?\\n\"))\nfor _ in range(student_number):\n  student = {}\n  student_name = input(\"Digita il nome completo dello studente:\\n\").strip()\n  student_score = int(input(\"Inserire il voto dello studente:\\n\"))\n  student[\"name\"] = student_name\n  student[\"score\"] = student_score\n  students.append(student)\n  print(f\"Studente {student['name']} con voto {student['score']} aggiunto.\\n\")",
+        "detail": "Exercises.students",
+        "documentation": {}
+    },
+    {
+        "label": "student_number",
+        "kind": 5,
+        "importPath": "Exercises.students",
+        "description": "Exercises.students",
+        "peekOfCode": "student_number = int(input(\"Quanti studenti vuoi inserire?\\n\"))\nfor _ in range(student_number):\n  student = {}\n  student_name = input(\"Digita il nome completo dello studente:\\n\").strip()\n  student_score = int(input(\"Inserire il voto dello studente:\\n\"))\n  student[\"name\"] = student_name\n  student[\"score\"] = student_score\n  students.append(student)\n  print(f\"Studente {student['name']} con voto {student['score']} aggiunto.\\n\")\nprint(\"\\nStampa di tutti gli studenti\\n\")",
+        "detail": "Exercises.students",
         "documentation": {}
     },
     {
