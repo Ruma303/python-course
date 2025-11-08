@@ -495,7 +495,7 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
+        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
         "detail": "Compounds.list",
         "documentation": {}
     },
@@ -504,7 +504,7 @@
         "kind": 5,
         "importPath": "Compounds.list",
         "description": "Compounds.list",
-        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]",
+        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
         "detail": "Compounds.list",
         "documentation": {}
     },
