@@ -220,7 +220,7 @@
         "kind": 5,
         "importPath": "Lessons.operators",
         "description": "Lessons.operators",
-        "peekOfCode": "voglia = \"cioccolato\"\nif \"ciocco\" in voglia:\n    print(\"Ho voglia di qualcosa di dolce!\")\n## Confronto di valori\nx = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")",
+        "peekOfCode": "voglia = \"cioccolato\"\nif \"ciocco\" in voglia:\n    print(\"Ho voglia di qualcosa di dolce!\")\n## Confronto di valori\nx = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")\n## Espressioni complesse\na, b, c = 5 ,4, 2\nprint(f\"{not (a < b) or (a > c) = }\")",
         "detail": "Lessons.operators",
         "documentation": {}
     },
@@ -229,7 +229,16 @@
         "kind": 5,
         "importPath": "Lessons.operators",
         "description": "Lessons.operators",
-        "peekOfCode": "x = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")",
+        "peekOfCode": "x = 8\nif 5 < x < 10:\n    print(\"x è compreso tra 5 e 10\")\n## Espressioni complesse\na, b, c = 5 ,4, 2\nprint(f\"{not (a < b) or (a > c) = }\")\nprint(f\"{not ((a < b) or (a > c)) = }\")\nprint(\"Scomposizione espressioni complesse sostituendo i valori:\")\nprint(f\"{not a >= c or (a == b or (b == c or a > c)) = }\")\nprint(f\"{not a >= c or (a == b or (False or True)) = }\")",
+        "detail": "Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "print(f\"{True",
+        "kind": 5,
+        "importPath": "Lessons.operators",
+        "description": "Lessons.operators",
+        "peekOfCode": "print(f\"{True = }\")",
         "detail": "Lessons.operators",
         "documentation": {}
     },

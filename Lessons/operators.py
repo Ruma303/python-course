@@ -42,3 +42,18 @@ if "ciocco" in voglia:
 x = 8
 if 5 < x < 10:
     print("x è compreso tra 5 e 10")
+
+
+## Espressioni complesse
+a, b, c = 5 ,4, 2
+
+print(f"{not (a < b) or (a > c) = }")
+print(f"{not ((a < b) or (a > c)) = }")
+
+print("Scomposizione espressioni complesse sostituendo i valori:")
+print(f"{not a >= c or (a == b or (b == c or a > c)) = }")
+print(f"{not a >= c or (a == b or (False or True)) = }")
+print(f"{not a >= c or (False or True) = }")
+print(f"{not a >= c or True = }")
+print(f"{not True or True = }")
+print(f"{True = }")
