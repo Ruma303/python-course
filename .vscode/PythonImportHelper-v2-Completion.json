@@ -2814,6 +2814,60 @@
         "documentation": {}
     },
     {
+        "label": "number",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "number = 15\nexpr1 = 12 <= number <= 124 and number % 3 == 0 and number % 5 == 0\nexpr2 = 2 <= number <= 50 and number % 2 == 0\nexpr3 = number < 0\nexpr4 = number % 2 == 0 and number % 7 == 0\nif expr1 or expr2 or expr3 or expr4:\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")\n# Esempio con lista",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
+        "label": "expr1",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "expr1 = 12 <= number <= 124 and number % 3 == 0 and number % 5 == 0\nexpr2 = 2 <= number <= 50 and number % 2 == 0\nexpr3 = number < 0\nexpr4 = number % 2 == 0 and number % 7 == 0\nif expr1 or expr2 or expr3 or expr4:\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")\n# Esempio con lista\n# Se fosse stato richiesto che tutte le condizioni siano vere, avremmo usato all().",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
+        "label": "expr2",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "expr2 = 2 <= number <= 50 and number % 2 == 0\nexpr3 = number < 0\nexpr4 = number % 2 == 0 and number % 7 == 0\nif expr1 or expr2 or expr3 or expr4:\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")\n# Esempio con lista\n# Se fosse stato richiesto che tutte le condizioni siano vere, avremmo usato all().\nconditions = list([expr1, expr2, expr3, expr4])",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
+        "label": "expr3",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "expr3 = number < 0\nexpr4 = number % 2 == 0 and number % 7 == 0\nif expr1 or expr2 or expr3 or expr4:\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")\n# Esempio con lista\n# Se fosse stato richiesto che tutte le condizioni siano vere, avremmo usato all().\nconditions = list([expr1, expr2, expr3, expr4])\nif any(conditions):",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
+        "label": "expr4",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "expr4 = number % 2 == 0 and number % 7 == 0\nif expr1 or expr2 or expr3 or expr4:\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")\n# Esempio con lista\n# Se fosse stato richiesto che tutte le condizioni siano vere, avremmo usato all().\nconditions = list([expr1, expr2, expr3, expr4])\nif any(conditions):\n    print(f\"{number} è un magic number\")",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
+        "label": "conditions",
+        "kind": 5,
+        "importPath": "logic.Exercises.magic_number",
+        "description": "logic.Exercises.magic_number",
+        "peekOfCode": "conditions = list([expr1, expr2, expr3, expr4])\nif any(conditions):\n    print(f\"{number} è un magic number\")\nelse:\n    print(f\"{number} non è un magic number\")",
+        "detail": "logic.Exercises.magic_number",
+        "documentation": {}
+    },
+    {
         "label": "size",
         "kind": 5,
         "importPath": "logic.Exercises.pizza",
