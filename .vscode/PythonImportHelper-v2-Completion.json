@@ -1,5 +1,14 @@
 [
     {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
         "label": "weight",
         "kind": 5,
         "importPath": "Exercises.bmi",
@@ -123,6 +132,15 @@
         "description": "Lessons.conditions",
         "peekOfCode": "x = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
         "detail": "Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "Lessons.head_tail",
+        "description": "Lessons.head_tail",
+        "peekOfCode": "number = random.randint(1, 10)\nprint(f\"Number is {number}\")\nif number > 5:\n  print(\"Head\")\nelse:\n  print(\"Tail\")",
+        "detail": "Lessons.head_tail",
         "documentation": {}
     },
     {
