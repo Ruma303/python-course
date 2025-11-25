@@ -203,6 +203,114 @@
         "documentation": {}
     },
     {
+        "label": "s",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "s = \"I \\\n\tlove \\\n\tprogramming\"\nprint(s)\nnumbers = (1, 2, 3,\n4, 5, 6)\nprint(numbers)\ns = \"Ciao\" ; print(s)\nx = 15\nif x < 10:",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "numbers = (1, 2, 3,\n4, 5, 6)\nprint(numbers)\ns = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "s = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "x = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "\ts",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "\ts",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "\ts",
+        "kind": 5,
+        "importPath": "1-start.main",
+        "description": "1-start.main",
+        "peekOfCode": "\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
+        "detail": "1-start.main",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "1-start.variables",
+        "description": "1-start.variables",
+        "peekOfCode": "x = 10 # x è una variabile che contiene l'intero 10\nnome = \"Alice\" # nome è una variabile che contiene la stringa \"Alice\"\n# Pseudo-costanti\nPI = 3.14159\nVELOCITA_LUCE = 299_792_458  # velocità della luce in m/s\n# Acquisizione da input\nnome = input(\"Qual è il tuo nome?\")\nprint(f\"Piacere di conoscerti, {nome}\")",
+        "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
+        "label": "nome",
+        "kind": 5,
+        "importPath": "1-start.variables",
+        "description": "1-start.variables",
+        "peekOfCode": "nome = \"Alice\" # nome è una variabile che contiene la stringa \"Alice\"\n# Pseudo-costanti\nPI = 3.14159\nVELOCITA_LUCE = 299_792_458  # velocità della luce in m/s\n# Acquisizione da input\nnome = input(\"Qual è il tuo nome?\")\nprint(f\"Piacere di conoscerti, {nome}\")",
+        "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
+        "label": "PI",
+        "kind": 5,
+        "importPath": "1-start.variables",
+        "description": "1-start.variables",
+        "peekOfCode": "PI = 3.14159\nVELOCITA_LUCE = 299_792_458  # velocità della luce in m/s\n# Acquisizione da input\nnome = input(\"Qual è il tuo nome?\")\nprint(f\"Piacere di conoscerti, {nome}\")",
+        "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
+        "label": "VELOCITA_LUCE",
+        "kind": 5,
+        "importPath": "1-start.variables",
+        "description": "1-start.variables",
+        "peekOfCode": "VELOCITA_LUCE = 299_792_458  # velocità della luce in m/s\n# Acquisizione da input\nnome = input(\"Qual è il tuo nome?\")\nprint(f\"Piacere di conoscerti, {nome}\")",
+        "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
+        "label": "nome",
+        "kind": 5,
+        "importPath": "1-start.variables",
+        "description": "1-start.variables",
+        "peekOfCode": "nome = input(\"Qual è il tuo nome?\")\nprint(f\"Piacere di conoscerti, {nome}\")",
+        "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
         "label": "tupla",
         "kind": 5,
         "importPath": "data-types.Compounds.conversions",
