@@ -50,6 +50,23 @@
         "documentation": {}
     },
     {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
         "label": "functools",
         "kind": 6,
         "isExtraImport": true,
@@ -1902,6 +1919,15 @@
         "description": "data-types.Primitives.strings",
         "peekOfCode": "testo = f\"\"\"\n  Nome: {nome}\n  Età: {età}\n\"\"\"\nprint(testo)\n# Output:\n# Nome: Anna\n# Età: 30\n#% Metodi",
         "detail": "data-types.Primitives.strings",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "databases.mysql.connector",
+        "description": "databases.mysql.connector",
+        "peekOfCode": "conn = None\ntry:\n    database = \"university\"\n    conn = mysql.connector.connect(\n        host=\"127.0.0.1\", user=\"root\", password=\"root\", database=database, port=3306\n    )\n    if conn.is_connected():\n        print(f\"Connesso al database: {database}\")\nexcept mysql.connector.Error as err:\n    print(f\"Errore durante la connessione a MySQL: {err}\")",
+        "detail": "databases.mysql.connector",
         "documentation": {}
     },
     {
