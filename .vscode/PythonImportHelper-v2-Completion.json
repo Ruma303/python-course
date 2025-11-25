@@ -143,6 +143,24 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
         "label": "pathlib",
         "kind": 6,
         "isExtraImport": true,
@@ -165,15 +183,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
         "documentation": {}
     },
     {
@@ -3945,6 +3954,15 @@
         "description": "oop.Lesson.special_methods",
         "peekOfCode": "obj = MyClass(125)\nprint(obj)\nprint(str(obj))\nprint(repr(obj))",
         "detail": "oop.Lesson.special_methods",
+        "documentation": {}
+    },
+    {
+        "label": "original_path",
+        "kind": 5,
+        "importPath": "streams.Exercises.copy_file",
+        "description": "streams.Exercises.copy_file",
+        "peekOfCode": "original_path = input(\"Inserire un percorso del file da copiare: \").strip()\nif not os.path.exists(original_path):\n  print(\"File non trovato. Controllare che il percorso sia corretto\")\nelse:\n  file_name = os.path.basename(original_path)\n  target_directory = input(\"Inserire un percorso di destinazione: \").strip()\n  if not os.path.exists(target_directory):\n    print(\"La cartella esiste e verrà creata\")\n    os.makedirs(target_directory)\n  final_file_path = os.path.join(target_directory, file_name)",
+        "detail": "streams.Exercises.copy_file",
         "documentation": {}
     },
     {
