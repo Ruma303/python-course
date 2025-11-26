@@ -1220,11 +1220,110 @@
         "documentation": {}
     },
     {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "class MyClass:\n   def __bool__(self):\n\t   return False\nobj = MyClass()\nprint(bool(obj))  # Output: False\n# Valori Truthy\nprint(bool(True))  # Output: True\nprint(bool(1))      # Output: True\nprint(bool(-42))    # Output: True\nprint(bool(3.14))   # Output: True",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "class MyClass:\n   def __bool__(self):\n\t   return True\nobj = MyClass()\nprint(bool(obj))  # Output: True\n# Test booleani\nx = 0\nif x:\n    print(\"x è vero\")\nelse:",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "class MyClass:\n    def __bool__(self):\n        return True\nobj = MyClass()\nprint(bool(obj))  # Output: True\nclass MyClass:\n    def __len__(self):\n        return 0\nobj = MyClass()\nprint(bool(obj))  # Output: False",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "class MyClass:\n    def __len__(self):\n        return 0\nobj = MyClass()\nprint(bool(obj))  # Output: False",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
         "label": "a",
         "kind": 5,
         "importPath": "2-data-types.Primitives.booleans",
         "description": "2-data-types.Primitives.booleans",
         "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Valutazione intervalli\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(True and False)\nprint(True or False)",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "obj = MyClass()\nprint(bool(obj))  # Output: False\n# Valori Truthy\nprint(bool(True))  # Output: True\nprint(bool(1))      # Output: True\nprint(bool(-42))    # Output: True\nprint(bool(3.14))   # Output: True\nprint(bool(\"hello\"))          # Output: True\nprint(bool(\" \"))              # Output: True\nprint(bool([1, 2, 3]))        # Output: True",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "obj = MyClass()\nprint(bool(obj))  # Output: True\n# Test booleani\nx = 0\nif x:\n    print(\"x è vero\")\nelse:\n    print(\"x è falso\")  # Output: x è falso\ny = \"ciao\"\nif y:",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "x = 0\nif x:\n    print(\"x è vero\")\nelse:\n    print(\"x è falso\")  # Output: x è falso\ny = \"ciao\"\nif y:\n    print(\"y è vero\")  # Output: y è vero\nelse:\n    print(\"y è falso\")",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "y = \"ciao\"\nif y:\n    print(\"y è vero\")  # Output: y è vero\nelse:\n    print(\"y è falso\")\ncounter = 3\nwhile counter:\n    print(counter)  # Output: 3, 2, 1\n    counter -= 1\nclass MyClass:",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "counter",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "counter = 3\nwhile counter:\n    print(counter)  # Output: 3, 2, 1\n    counter -= 1\nclass MyClass:\n    def __bool__(self):\n        return True\nobj = MyClass()\nprint(bool(obj))  # Output: True\nclass MyClass:",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "obj = MyClass()\nprint(bool(obj))  # Output: True\nclass MyClass:\n    def __len__(self):\n        return 0\nobj = MyClass()\nprint(bool(obj))  # Output: False",
+        "detail": "2-data-types.Primitives.booleans",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "2-data-types.Primitives.booleans",
+        "description": "2-data-types.Primitives.booleans",
+        "peekOfCode": "obj = MyClass()\nprint(bool(obj))  # Output: False",
         "detail": "2-data-types.Primitives.booleans",
         "documentation": {}
     },
@@ -2261,6 +2360,78 @@
         "description": "2-data-types.Sequences.tuple",
         "peekOfCode": "tupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]\nprint(c)  # Output: 5",
         "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "no_return",
+        "kind": 2,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "def no_return():\n    pass  # Nessun valore restituito\nresult = no_return()\nprint(result)  # Output: None\ndef greet(name=None):\n    if name is None:\n        print(\"Ciao, ospite!\")\n    else:\n        print(f\"Ciao, {name}!\")\ngreet()         # Output: Ciao, ospite!",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "greet",
+        "kind": 2,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "def greet(name=None):\n    if name is None:\n        print(\"Ciao, ospite!\")\n    else:\n        print(f\"Ciao, {name}!\")\ngreet()         # Output: Ciao, ospite!\ngreet(\"Alice\")  # Output: Ciao, Alice!\ndata = {\"name\": \"Alice\", \"age\": None}  # Età non definita\nif data[\"age\"] is None:\n    print(\"L'età non è specificata.\")  # Output: L'età non è specificata.",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "x = None\nprint(x is None)  # Output: True\nprint(x == None)  # Output: True\n# Utilizzi\nx = None  # Variabile inizializzata ma senza valore associato\nif x is None:\n    print(\"x non ha un valore definito.\")  # Output: x non ha un valore definito.\ndef no_return():\n    pass  # Nessun valore restituito\nresult = no_return()",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "x = None  # Variabile inizializzata ma senza valore associato\nif x is None:\n    print(\"x non ha un valore definito.\")  # Output: x non ha un valore definito.\ndef no_return():\n    pass  # Nessun valore restituito\nresult = no_return()\nprint(result)  # Output: None\ndef greet(name=None):\n    if name is None:\n        print(\"Ciao, ospite!\")",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "result = no_return()\nprint(result)  # Output: None\ndef greet(name=None):\n    if name is None:\n        print(\"Ciao, ospite!\")\n    else:\n        print(f\"Ciao, {name}!\")\ngreet()         # Output: Ciao, ospite!\ngreet(\"Alice\")  # Output: Ciao, Alice!\ndata = {\"name\": \"Alice\", \"age\": None}  # Età non definita",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "data = {\"name\": \"Alice\", \"age\": None}  # Età non definita\nif data[\"age\"] is None:\n    print(\"L'età non è specificata.\")  # Output: L'età non è specificata.\n# Differenza dai valori false\nx = None\ny = 0\nprint(bool(x))  # Output: False (perché None è \"falso\")\nprint(bool(y))  # Output: False (perché 0 è \"falso\")\nprint(x == y)   # Output: False (None e 0 non sono equivalenti)",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "x = None\ny = 0\nprint(bool(x))  # Output: False (perché None è \"falso\")\nprint(bool(y))  # Output: False (perché 0 è \"falso\")\nprint(x == y)   # Output: False (None e 0 non sono equivalenti)",
+        "detail": "2-data-types.Specials.none",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "2-data-types.Specials.none",
+        "description": "2-data-types.Specials.none",
+        "peekOfCode": "y = 0\nprint(bool(x))  # Output: False (perché None è \"falso\")\nprint(bool(y))  # Output: False (perché 0 è \"falso\")\nprint(x == y)   # Output: False (None e 0 non sono equivalenti)",
+        "detail": "2-data-types.Specials.none",
         "documentation": {}
     },
     {
