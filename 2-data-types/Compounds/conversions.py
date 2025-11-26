@@ -1,7 +1,6 @@
 
 #% Conversioni tra tipi composti
 
-
 ## Lista ↔ Tupla
 tupla = (1, 2, 3)
 lista = list(tupla)       # [1, 2, 3]

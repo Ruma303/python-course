@@ -806,339 +806,6 @@
         "documentation": {}
     },
     {
-        "label": "lista_vuota",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "lista_vuota = []\n# Lista di numeri\nnumeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "numeri",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "numeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "parole",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "parole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "mista",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "mista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "annidata",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "annidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "nuova_lista",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "nuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "numeri",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "numeri",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "numeri",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "numeri",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "numeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")\n# IndexError: list index out of range\nprint(f\"Accesso corretto all'ultimo elemento {numeri[len(numeri) - 1] = }\")\n# Accesso corretto all'ultimo elemento numeri[len(numeri) - 1] = 30\nprint(f\"L'indice vale {len(numeri) - 1 = }\")",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "quadrati",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "pari",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.list",
-        "description": "2-data-types.Compounds.list",
-        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
-        "detail": "2-data-types.Compounds.list",
-        "documentation": {}
-    },
-    {
-        "label": "tupla_vuota",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla_vuota = ()\nprint(tupla_vuota)  # Output: ()\n## Tupla con un solo elemento\ntupla_singola = (42,)\nprint(tupla_singola)  # Output: (42,)\n## Esempio errato senza virgola\nnon_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla_singola",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla_singola = (42,)\nprint(tupla_singola)  # Output: (42,)\n## Esempio errato senza virgola\nnon_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "non_tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "non_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "my_tuple",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "my_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tuple1",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tuple2",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tuple_comprehension",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)\n## Immutabilità\n\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "\"\"\"tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla[0]",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "lista",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "lista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "lista[0]",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "lista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla1",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla2",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla1",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla2",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla3",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla_nidificata",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
-        "label": "tupla",
-        "kind": 5,
-        "importPath": "2-data-types.Compounds.tuple",
-        "description": "2-data-types.Compounds.tuple",
-        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]\nprint(c)  # Output: 5",
-        "detail": "2-data-types.Compounds.tuple",
-        "documentation": {}
-    },
-    {
         "label": "x",
         "kind": 5,
         "importPath": "2-data-types.Exercises.numbers",
@@ -2075,192 +1742,615 @@
         "documentation": {}
     },
     {
+        "label": "lista_vuota",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista_vuota = []\n# Lista di numeri\nnumeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [1, 2, 3, 4]\n# Lista di stringhe\nparole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "parole",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "parole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "mista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "mista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "annidata",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "annidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "nuova_lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "nuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor numero in range(len(numeri)):\n    print(numero)\nnumeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nfor indice, numero in enumerate(numeri):\n    print(indice, \":\", numero)\n## IndexError\nnumeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\n# print(numeri[3])\n# IndexError: list index out of range\nprint(numeri[2]) # Ok\nprint(f\"Numero elementi {len(numeri) = }\")\n# print(f\"Accesso errato all'ultimo elemento {numeri[len(numeri)]}\")\n# IndexError: list index out of range\nprint(f\"Accesso corretto all'ultimo elemento {numeri[len(numeri) - 1] = }\")\n# Accesso corretto all'ultimo elemento numeri[len(numeri) - 1] = 30\nprint(f\"L'indice vale {len(numeri) - 1 = }\")",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "quadrati",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "pari",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
         "label": "a",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "a = \"Ciao\"\nb = \"Mondo\"\nprint(a + \" \" + b)\nc = str(\"Hello World\")\n# , Sequenze di escape\n## Uso di apici diversi\nprint('Ciao \"Mondo\"')\nprint(\"Ciao 'Mondo'\")\nprint(\"Ciao 'Mondo'\")\nprint('Ciao \"Mondo\"')",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "b",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "b = \"Mondo\"\nprint(a + \" \" + b)\nc = str(\"Hello World\")\n# , Sequenze di escape\n## Uso di apici diversi\nprint('Ciao \"Mondo\"')\nprint(\"Ciao 'Mondo'\")\nprint(\"Ciao 'Mondo'\")\nprint('Ciao \"Mondo\"')\nescaping_phrase = \"\"\"",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "c",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "c = str(\"Hello World\")\n# , Sequenze di escape\n## Uso di apici diversi\nprint('Ciao \"Mondo\"')\nprint(\"Ciao 'Mondo'\")\nprint(\"Ciao 'Mondo'\")\nprint('Ciao \"Mondo\"')\nescaping_phrase = \"\"\"\nStiamo scrivendo una stringa multilinea\ndove gli apici singoli ' e doppi \"",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "escaping_phrase",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "escaping_phrase = \"\"\"\nStiamo scrivendo una stringa multilinea\ndove gli apici singoli ' e doppi \"\nsono automaticamente sfuggiti all'interprete\ncome se li avessimo preceduti con il backslash \\' e \\\"\n\"\"\"\nprint(escaping_phrase)\n## Sequenze di escape comuni\nprint(\"Ciao\\nMondo\")  # \\n: Nuova linea\nprint(\"Ciao\\rMondo\")  # \\r: Ritorno a capo",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao\"\n# Questo solleva un errore\n# stringa[0] = 'P' non è possibile sostituire un carattere di una stringa\n# Creazione di una nuova stringa\nnuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "nuova_stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "nuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18\n## String interpolation\nname = \"John\"\nage = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18\n## String interpolation\nname = \"John\"\nage = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")\n## Concatenazione\nstringa1 = \"Ciao\"\nstringa2 = \"Python\"",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "lunghezza",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "lunghezza = len(stringa)\nprint(lunghezza)  # 18\n## String interpolation\nname = \"John\"\nage = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")\n## Concatenazione\nstringa1 = \"Ciao\"\nstringa2 = \"Python\"\nrisultato = stringa1 + \" \" + stringa2",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "name",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "name = \"John\"\nage = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")\n## Concatenazione\nstringa1 = \"Ciao\"\nstringa2 = \"Python\"\nrisultato = stringa1 + \" \" + stringa2\nprint(risultato)  # 'Ciao Python'\n# print('ciao ' + type('ciao')) TypeError\n## Controllo di appartenenza",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "age",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "age = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")\n## Concatenazione\nstringa1 = \"Ciao\"\nstringa2 = \"Python\"\nrisultato = stringa1 + \" \" + stringa2\nprint(risultato)  # 'Ciao Python'\n# print('ciao ' + type('ciao')) TypeError\n## Controllo di appartenenza\nstringa = \"Ciao Python\"",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa1",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa1 = \"Ciao\"\nstringa2 = \"Python\"\nrisultato = stringa1 + \" \" + stringa2\nprint(risultato)  # 'Ciao Python'\n# print('ciao ' + type('ciao')) TypeError\n## Controllo di appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" not in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Ripetizione",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa2",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa2 = \"Python\"\nrisultato = stringa1 + \" \" + stringa2\nprint(risultato)  # 'Ciao Python'\n# print('ciao ' + type('ciao')) TypeError\n## Controllo di appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" not in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Ripetizione\nstringa = \"Ciao! \"",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "risultato",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "risultato = stringa1 + \" \" + stringa2\nprint(risultato)  # 'Ciao Python'\n# print('ciao ' + type('ciao')) TypeError\n## Controllo di appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" not in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Ripetizione\nstringa = \"Ciao! \"\nprint(stringa * 3)  # 'Ciao! Ciao! Ciao!'",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao Python\"\nprint(\"Python\" not in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Ripetizione\nstringa = \"Ciao! \"\nprint(stringa * 3)  # 'Ciao! Ciao! Ciao!'\n## Verifica appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao! \"\nprint(stringa * 3)  # 'Ciao! Ciao! Ciao!'\n## Verifica appartenenza\nstringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Confronto tra stringhe\nprint(ord('A'))  # 65\nprint(ord('a'))  # 97",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao Python\"\nprint(\"Python\" in stringa)  # True\nprint(\"Java\" in stringa)  # False\nprint(\"Java\" not in stringa)  # True\n## Confronto tra stringhe\nprint(ord('A'))  # 65\nprint(ord('a'))  # 97\nstringa1 = \"Ciao \"\nstringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa1",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa1 = \"Ciao \"\nstringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False\nprint(stringa1 > stringa2)   # False\nprint(stringa1 <= stringa2 and stringa1 != stringa2)  # True\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa2",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa2 = \"Mondo\"\nprint(stringa1 == stringa2)  # False\nprint(stringa1 > stringa2)   # False\nprint(stringa1 <= stringa2 and stringa1 != stringa2)  # True\n#, String indexing\nstringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'\nprint(stringa[3])  # 'o'",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao Python\"\nprint(stringa[0])  # 'C'\nprint(stringa[1])  # 'i'\nprint(stringa[2])  # 'a'\nprint(stringa[3])  # 'o'\nprint(stringa[4])  # ' '\n## Negative indexing\nstringa = \"Ciao Python\"\nprint(stringa[-1])  # ' '\nprint(stringa[-2])  # 'o'",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Ciao Python\"\nprint(stringa[-1])  # ' '\nprint(stringa[-2])  # 'o'\nprint(stringa[-3])  # 'n'\nprint(stringa[-4])  # 'h'\nprint(stringa[-5])  # 't'\n#, Slicing delle stringhe\nstringa = \"Python\"\n#? [start:stop:step]\n# Non indicare numeri comporta la restituzione dell'intera stringa",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
     {
         "label": "stringa",
         "kind": 5,
-        "importPath": "2-data-types.Primitives.strings",
-        "description": "2-data-types.Primitives.strings",
+        "importPath": "2-data-types.Sequences.strings",
+        "description": "2-data-types.Sequences.strings",
         "peekOfCode": "stringa = \"Python\"\n#? [start:stop:step]\n# Non indicare numeri comporta la restituzione dell'intera stringa\nprint(stringa[:])  # 'Python'\n# Sottostringa dal secondo al terzo carattere\nprint(stringa[1:3])  # 'yt'\n# Dall'inizio stringa al quarto carattere\nprint(stringa[:4])  # 'Pyth'\n# Sottostringa dal terzo carattere in poi\nprint(stringa[2:])  # 'thon'",
-        "detail": "2-data-types.Primitives.strings",
+        "detail": "2-data-types.Sequences.strings",
+        "documentation": {}
+    },
+    {
+        "label": "tupla_vuota",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla_vuota = ()\nprint(tupla_vuota)  # Output: ()\n## Tupla con un solo elemento\ntupla_singola = (42,)\nprint(tupla_singola)  # Output: (42,)\n## Esempio errato senza virgola\nnon_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla_singola",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla_singola = (42,)\nprint(tupla_singola)  # Output: (42,)\n## Esempio errato senza virgola\nnon_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "non_tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "non_tupla = (42)\nprint(non_tupla)  # Output: 42 (non è una tupla, è un numero)\n## Tupla con più elementi\ntupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\nprint(tupla)  # Output: (1, 2, 3, 4, 5)\n## Creazione senza parentesi (packing)\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Creazione con la funzione tuple()\nmy_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "my_tuple",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "my_tuple = tuple((10, 20, 30))\nprint(my_tuple)\n# oppure\ntuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tuple1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tuple1 = (10, 20, 30)\ntuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tuple2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tuple2 = tuple(tuple1)\nprint(tuple2)\n## Tuple comprehension\ntuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tuple_comprehension",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tuple_comprehension = tuple(x for x in range(10) if x // 3 == 0)\nprint(tuple_comprehension)\n#, Proprietà delle tuple\n## Indexing e slicing\ntupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)\n## Immutabilità\n\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "\"\"\"tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla[0]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "lista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "lista[0]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "lista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla2 = tuple(ele * 2 for ele in tupla1)\nprint(tupla2)  # Output: (2, 4, 6)\n#* 3. Concatenazione di tuple\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla2 = (4, 5, 6)\ntupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla3",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla3 = tupla1 + tupla2\nprint(tupla3)  # Output: (1, 2, 3, 4, 5, 6)\n## Tuple nidificate\ntupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla_nidificata",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla_nidificata = (1, (2, 3), (4, 5, 6))\nprint(tupla_nidificata[1])  # Output: (2, 3)\nprint(tupla_nidificata[1][0])  # Output: 2\n## Packing\ntupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]\nprint(c)  # Output: 5",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "myInt",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "myInt = 10\nmyString = \"Hello\"\n# tipi\nprint(type(myInt)) # Restituisce <class 'int'>\nprint(type(myInt)) # Restituisce <class 'str'>\n# id\nprint(id(myInt))\nprint(id(myString))\n# valori\nprint(myInt)",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "myString",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "myString = \"Hello\"\n# tipi\nprint(type(myInt)) # Restituisce <class 'int'>\nprint(type(myInt)) # Restituisce <class 'str'>\n# id\nprint(id(myInt))\nprint(id(myString))\n# valori\nprint(myInt)\nprint(myString)",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "a = 20\nprint(a)\na = 10\nprint(a)\n# Copia per riferimento e reference count\na = 10 # ref count = 1\nprint(a)\nb = a # ref count = 2\nprint(b)\nb = 50",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "a = 10\nprint(a)\n# Copia per riferimento e reference count\na = 10 # ref count = 1\nprint(a)\nb = a # ref count = 2\nprint(b)\nb = 50\nprint(a) # 50\nprint(b) # 50",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "a = 10 # ref count = 1\nprint(a)\nb = a # ref count = 2\nprint(b)\nb = 50\nprint(a) # 50\nprint(b) # 50\nprint(id(a)) # es. id: 4347765024\nprint(id(b)) # es. id: 4347765024\nc = []",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "b = a # ref count = 2\nprint(b)\nb = 50\nprint(a) # 50\nprint(b) # 50\nprint(id(a)) # es. id: 4347765024\nprint(id(b)) # es. id: 4347765024\nc = []\nc.append(b) # ref count = 3\nprint(id(c[0])) # es. id: 4347765024",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "b = 50\nprint(a) # 50\nprint(b) # 50\nprint(id(a)) # es. id: 4347765024\nprint(id(b)) # es. id: 4347765024\nc = []\nc.append(b) # ref count = 3\nprint(id(c[0])) # es. id: 4347765024\ndel a # eliminando un riferimento al valore\n# print(a) # Questo riferimento è stato rimosso dal GC",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "c = []\nc.append(b) # ref count = 3\nprint(id(c[0])) # es. id: 4347765024\ndel a # eliminando un riferimento al valore\n# print(a) # Questo riferimento è stato rimosso dal GC\nprint(b) # ma gli altri riferimenti esisteranno ancora\nprint(c[0]) # gli altri riferimenti esisteranno ancora\n# Assegnamento per valore\nx = [1, 2, 3]\ny = x.copy()",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]",
+        "detail": "2-data-types.datatypes",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "2-data-types.datatypes",
+        "description": "2-data-types.datatypes",
+        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]",
+        "detail": "2-data-types.datatypes",
         "documentation": {}
     },
     {
