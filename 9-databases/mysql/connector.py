@@ -1,10 +1,25 @@
 import mysql.connector
 from mysql.connector import Error
 
+def get_connection():
+    """
+    Restituisce una nuova connessione a MySQL.
+    Lancia un'eccezione in caso di errore.
+    """
+    database = "python_db"
+    return mysql.connector.connect(
+        host="127.0.0.1",
+        user="root",
+        password="root",
+        database=database,
+        port=3306
+    )
+
+"""
 conn = None
 
 try:
-    database = "university"
+    database = "python_db"
 
     conn = mysql.connector.connect(
         host="127.0.0.1", user="root", password="root", database=database, port=3306
@@ -20,3 +35,4 @@ finally:
     if conn is not None and conn.is_connected():
         conn.close()
         print("Connessione a MySQL chiusa con successo")
+ """

@@ -212,6 +212,46 @@
         "documentation": {}
     },
     {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
         "label": "s",
         "kind": 5,
         "importPath": "1-start.start",
@@ -4703,12 +4743,48 @@
         "documentation": {}
     },
     {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "9-databases.mysql.connector",
+        "description": "9-databases.mysql.connector",
+        "peekOfCode": "def get_connection():\n    \"\"\"\n    Restituisce una nuova connessione a MySQL.\n    Lancia un'eccezione in caso di errore.\n    \"\"\"\n    database = \"python_db\"\n    return mysql.connector.connect(\n        host=\"127.0.0.1\",\n        user=\"root\",\n        password=\"root\",",
+        "detail": "9-databases.mysql.connector",
+        "documentation": {}
+    },
+    {
         "label": "conn",
         "kind": 5,
         "importPath": "9-databases.mysql.connector",
         "description": "9-databases.mysql.connector",
-        "peekOfCode": "conn = None\ntry:\n    database = \"university\"\n    conn = mysql.connector.connect(\n        host=\"127.0.0.1\", user=\"root\", password=\"root\", database=database, port=3306\n    )\n    if conn.is_connected():\n        print(f\"Connesso al database: {database}\")\nexcept mysql.connector.Error as err:\n    print(f\"Errore durante la connessione a MySQL: {err}\")",
+        "peekOfCode": "conn = None\ntry:\n    database = \"python_db\"\n    conn = mysql.connector.connect(\n        host=\"127.0.0.1\", user=\"root\", password=\"root\", database=database, port=3306\n    )\n    if conn.is_connected():\n        print(f\"Connesso al database: {database}\")\nexcept mysql.connector.Error as err:\n    print(f\"Errore durante la connessione a MySQL: {err}\")",
         "detail": "9-databases.mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "query_create_table",
+        "kind": 5,
+        "importPath": "9-databases.mysql.insert",
+        "description": "9-databases.mysql.insert",
+        "peekOfCode": "query_create_table = \"\"\"\n  CREATE TABLE IF NOT EXISTS persone (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    nome VARCHAR(255) NOT NULL,\n    cognome VARCHAR(255) NOT NULL,\n    data_nascita DATE NULL\n  )\n\"\"\"\nquery_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)",
+        "detail": "9-databases.mysql.insert",
+        "documentation": {}
+    },
+    {
+        "label": "query_insert_people",
+        "kind": 5,
+        "importPath": "9-databases.mysql.insert",
+        "description": "9-databases.mysql.insert",
+        "peekOfCode": "query_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)\n  VALUES (%s, %s, %s)\n\"\"\"\npeople = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:",
+        "detail": "9-databases.mysql.insert",
+        "documentation": {}
+    },
+    {
+        "label": "people",
+        "kind": 5,
+        "importPath": "9-databases.mysql.insert",
+        "description": "9-databases.mysql.insert",
+        "peekOfCode": "people = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:\n    with get_connection() as conn:\n        with conn.cursor() as cursor:\n            cursor.execute(query_create_table)\n            cursor.executemany(query_insert_people, people)",
+        "detail": "9-databases.mysql.insert",
         "documentation": {}
     }
 ]
