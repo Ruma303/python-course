@@ -16,10 +16,10 @@ print("Ciao 'Mondo'")
 print('Ciao "Mondo"')
 
 escaping_phrase = """
-Stiamo scrivendo una stringa multilinea
-dove gli apici singoli ' e doppi "
-sono automaticamente sfuggiti all'interprete
-come se li avessimo preceduti con il backslash \' e \"
+    Stiamo scrivendo una stringa multilinea
+    dove gli apici singoli ' e doppi "
+    sono automaticamente sfuggiti all'interprete
+    come se li avessimo preceduti con il backslash \' e \"
 """
 
 print(escaping_phrase)
@@ -58,6 +58,8 @@ stringa = "Ciao"
 # Creazione di una nuova stringa
 nuova_stringa = "P" + stringa[1:]
 print(nuova_stringa)  # 'Piao'
+
+print(id(stringa), id(nuova_stringa))
 
 
 ## Lunghezza
@@ -164,5 +166,3 @@ print(stringa[-1:-4:])  # ''
 
 # Slicing negativo corretto
 print(stringa[-4:-1:])  # 'tho'
-
-#% Metodi

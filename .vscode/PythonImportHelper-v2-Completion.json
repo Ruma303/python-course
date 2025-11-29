@@ -1903,7 +1903,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "parole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste",
+        "peekOfCode": "parole = [\"Python\", \"è\", \"fantastico\"]\n# Lista mista (numeri, stringhe, booleani)\nmista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n## Modifica elementi\nnumeri = [10, 20, 30]",
         "detail": "2-data-types.Sequences.list",
         "documentation": {}
     },
@@ -1912,7 +1912,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "mista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]",
+        "peekOfCode": "mista = [42, \"ciao\", True, 3.14]\n# Lista annidata (liste dentro una lista)\nannidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n## Modifica elementi\nnumeri = [10, 20, 30]\nnumeri[1] = 25  # Modifica del secondo elemento\nprint(numeri)  # [10, 25, 30]",
         "detail": "2-data-types.Sequences.list",
         "documentation": {}
     },
@@ -1921,7 +1921,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "annidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)",
+        "peekOfCode": "annidata = [[1, 2], [3, 4], [5, 6]]\n# Uso della funzione list()\nnuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n## Modifica elementi\nnumeri = [10, 20, 30]\nnumeri[1] = 25  # Modifica del secondo elemento\nprint(numeri)  # [10, 25, 30]\n## Slicing\nnumeri = [10, 20, 30, 40, 50]",
         "detail": "2-data-types.Sequences.list",
         "documentation": {}
     },
@@ -1930,7 +1930,97 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "nuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n#% Operazioni comuni\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]",
+        "peekOfCode": "nuova_lista = list((1, 3, 19, \"Hello\", True, 12.0))\nprint(nuova_lista)\n## Modifica elementi\nnumeri = [10, 20, 30]\nnumeri[1] = 25  # Modifica del secondo elemento\nprint(numeri)  # [10, 25, 30]\n## Slicing\nnumeri = [10, 20, 30, 40, 50]\n# Sottoinsieme dal primo al terzo elemento\nprint(numeri[0:3])  # [10, 20, 30]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\nnumeri[1] = 25  # Modifica del secondo elemento\nprint(numeri)  # [10, 25, 30]\n## Slicing\nnumeri = [10, 20, 30, 40, 50]\n# Sottoinsieme dal primo al terzo elemento\nprint(numeri[0:3])  # [10, 20, 30]\n# Elementi dal terzo in poi\nprint(numeri[2:])  # [30, 40, 50]\n# Tutti gli elementi con passo 2",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri[1]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri[1] = 25  # Modifica del secondo elemento\nprint(numeri)  # [10, 25, 30]\n## Slicing\nnumeri = [10, 20, 30, 40, 50]\n# Sottoinsieme dal primo al terzo elemento\nprint(numeri[0:3])  # [10, 20, 30]\n# Elementi dal terzo in poi\nprint(numeri[2:])  # [30, 40, 50]\n# Tutti gli elementi con passo 2\nprint(numeri[::2])  # [10, 30, 50]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30, 40, 50]\n# Sottoinsieme dal primo al terzo elemento\nprint(numeri[0:3])  # [10, 20, 30]\n# Elementi dal terzo in poi\nprint(numeri[2:])  # [30, 40, 50]\n# Tutti gli elementi con passo 2\nprint(numeri[::2])  # [10, 30, 50]\n# Lista al contrario\nprint(numeri[::-1])  # [50, 40, 30, 20, 10]\n#% Operazioni comuni",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista1 = [1, 2, 3]\nlista2 = [4, 5, 6]\nunione = lista1 + lista2\nprint(unione)  # [1, 2, 3, 4, 5, 6]\n## Ripetizione\nripetuta = [1, 2] * 3\nprint(ripetuta)  # [1, 2, 1, 2, 1, 2]\n## Controllo appartenenza\nnumeri = [1, 2, 3]\nprint(2 in numeri)  # True",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista2 = [4, 5, 6]\nunione = lista1 + lista2\nprint(unione)  # [1, 2, 3, 4, 5, 6]\n## Ripetizione\nripetuta = [1, 2] * 3\nprint(ripetuta)  # [1, 2, 1, 2, 1, 2]\n## Controllo appartenenza\nnumeri = [1, 2, 3]\nprint(2 in numeri)  # True\nprint(5 in numeri)  # False",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "unione",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "unione = lista1 + lista2\nprint(unione)  # [1, 2, 3, 4, 5, 6]\n## Ripetizione\nripetuta = [1, 2] * 3\nprint(ripetuta)  # [1, 2, 1, 2, 1, 2]\n## Controllo appartenenza\nnumeri = [1, 2, 3]\nprint(2 in numeri)  # True\nprint(5 in numeri)  # False\n## Lunghezza",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "ripetuta",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "ripetuta = [1, 2] * 3\nprint(ripetuta)  # [1, 2, 1, 2, 1, 2]\n## Controllo appartenenza\nnumeri = [1, 2, 3]\nprint(2 in numeri)  # True\nprint(5 in numeri)  # False\n## Lunghezza\nnumeri = [1, 2, 3]\nprint(len(numeri))  # 3\n## Eliminazione",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [1, 2, 3]\nprint(2 in numeri)  # True\nprint(5 in numeri)  # False\n## Lunghezza\nnumeri = [1, 2, 3]\nprint(len(numeri))  # 3\n## Eliminazione\nnumeri = [10, 20, 30]\ndel numeri[2]\nprint(numeri)",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [1, 2, 3]\nprint(len(numeri))  # 3\n## Eliminazione\nnumeri = [10, 20, 30]\ndel numeri[2]\nprint(numeri)\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "numeri",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "numeri = [10, 20, 30]\ndel numeri[2]\nprint(numeri)\n#, Iterare sulle liste\n## Sugli elementi\nnumeri = [10, 20, 30]\nfor numero in numeri:\n    print(numero)\n## Sulle posizioni\nnumeri = [10, 20, 30]",
         "detail": "2-data-types.Sequences.list",
         "documentation": {}
     },
@@ -1975,7 +2065,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
+        "peekOfCode": "quadrati = [x**2 for x in range(5)]\nprint(quadrati)  # [0, 1, 4, 9, 16]\n# Lista di numeri pari\npari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#, Copie\n## Per riferimento - da lista a lista\noriginale = [1, 2, 3]\ncopia_riferimento = originale\noriginale[1] = \"Hello\"",
         "detail": "2-data-types.Sequences.list",
         "documentation": {}
     },
@@ -1984,8 +2074,449 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list",
         "description": "2-data-types.Sequences.list",
-        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#% Metodi",
+        "peekOfCode": "pari = [x for x in range(10) if x % 2 == 0]\nprint(pari)  # [0, 2, 4, 6, 8]\n#, Copie\n## Per riferimento - da lista a lista\noriginale = [1, 2, 3]\ncopia_riferimento = originale\noriginale[1] = \"Hello\"\nprint(originale) # [1, 'Hello', 3]\nprint(copia_riferimento) #  [1, 'Hello', 3]\n## Shallow copy - copia riferimenti elementi interni",
         "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "originale",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "originale = [1, 2, 3]\ncopia_riferimento = originale\noriginale[1] = \"Hello\"\nprint(originale) # [1, 'Hello', 3]\nprint(copia_riferimento) #  [1, 'Hello', 3]\n## Shallow copy - copia riferimenti elementi interni\nlista_originale = [[1, 2], [3, 4]] # Gli elementi interni sono mutabili (altre liste)\ncopia_superficiale = lista_originale.copy()\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "copia_riferimento",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "copia_riferimento = originale\noriginale[1] = \"Hello\"\nprint(originale) # [1, 'Hello', 3]\nprint(copia_riferimento) #  [1, 'Hello', 3]\n## Shallow copy - copia riferimenti elementi interni\nlista_originale = [[1, 2], [3, 4]] # Gli elementi interni sono mutabili (altre liste)\ncopia_superficiale = lista_originale.copy()\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "originale[1]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "originale[1] = \"Hello\"\nprint(originale) # [1, 'Hello', 3]\nprint(copia_riferimento) #  [1, 'Hello', 3]\n## Shallow copy - copia riferimenti elementi interni\nlista_originale = [[1, 2], [3, 4]] # Gli elementi interni sono mutabili (altre liste)\ncopia_superficiale = lista_originale.copy()\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia superficiale:\", copia_superficiale)  # Output: [[99, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista_originale",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista_originale = [[1, 2], [3, 4]] # Gli elementi interni sono mutabili (altre liste)\ncopia_superficiale = lista_originale.copy()\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia superficiale:\", copia_superficiale)  # Output: [[99, 2], [3, 4]]\n## Deep copy - copia valori elementi interni\nimport copy\nlista_originale = [[1, 2], [3, 4]]\ncopia_profonda = copy.deepcopy(lista_originale)",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "copia_superficiale",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "copia_superficiale = lista_originale.copy()\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia superficiale:\", copia_superficiale)  # Output: [[99, 2], [3, 4]]\n## Deep copy - copia valori elementi interni\nimport copy\nlista_originale = [[1, 2], [3, 4]]\ncopia_profonda = copy.deepcopy(lista_originale)\n# Modifica di un elemento nella lista annidata della lista originale",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista_originale[0][0]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia superficiale:\", copia_superficiale)  # Output: [[99, 2], [3, 4]]\n## Deep copy - copia valori elementi interni\nimport copy\nlista_originale = [[1, 2], [3, 4]]\ncopia_profonda = copy.deepcopy(lista_originale)\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista_originale",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista_originale = [[1, 2], [3, 4]]\ncopia_profonda = copy.deepcopy(lista_originale)\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia profonda:\", copia_profonda)    # Output: [[1, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "copia_profonda",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "copia_profonda = copy.deepcopy(lista_originale)\n# Modifica di un elemento nella lista annidata della lista originale\nlista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia profonda:\", copia_profonda)    # Output: [[1, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista_originale[0][0]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list",
+        "description": "2-data-types.Sequences.list",
+        "peekOfCode": "lista_originale[0][0] = 99\nprint(\"Lista originale:\", lista_originale)  # Output: [[99, 2], [3, 4]]\nprint(\"Copia profonda:\", copia_profonda)    # Output: [[1, 2], [3, 4]]",
+        "detail": "2-data-types.Sequences.list",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.append(4)\nprint(lista)  # Output: [1, 2, 3, 4]\nlista = [1, 2, 3]\nlista.extend([4, 5])\nprint(lista)  # Output: [1, 2, 3, 4, 5]\nlista = [1, 2, 3]\nlista.insert(1, 10)  # Inserisce 10 alla posizione 1\nprint(lista)  # Output: [1, 10, 2, 3]\n## Metodi per rimuovere elementi",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.extend([4, 5])\nprint(lista)  # Output: [1, 2, 3, 4, 5]\nlista = [1, 2, 3]\nlista.insert(1, 10)  # Inserisce 10 alla posizione 1\nprint(lista)  # Output: [1, 10, 2, 3]\n## Metodi per rimuovere elementi\nlista = [1, 2, 3, 2]\nlista.remove(2)\nprint(lista)  # Output: [1, 3, 2]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.insert(1, 10)  # Inserisce 10 alla posizione 1\nprint(lista)  # Output: [1, 10, 2, 3]\n## Metodi per rimuovere elementi\nlista = [1, 2, 3, 2]\nlista.remove(2)\nprint(lista)  # Output: [1, 3, 2]\nlista = [1, 2, 3]\nultimo = lista.pop()\nprint(ultimo)  # Output: 3",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3, 2]\nlista.remove(2)\nprint(lista)  # Output: [1, 3, 2]\nlista = [1, 2, 3]\nultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "ultimo",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "ultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3\nlista = [1, 1, 0, 3, 5, 6, 2, 2]\nslice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3\nlista = [1, 1, 0, 3, 5, 6, 2, 2]\nslice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2\nlista = [1, 2, 3, 2]\nconteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "posizione",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "posizione = lista.index(2)\nprint(posizione)  # Output: 3\nlista = [1, 1, 0, 3, 5, 6, 2, 2]\nslice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2\nlista = [1, 2, 3, 2]\nconteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista\nlista = [3, 1, 4, 2]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 1, 0, 3, 5, 6, 2, 2]\nslice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2\nlista = [1, 2, 3, 2]\nconteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista\nlista = [3, 1, 4, 2]\nlista.sort()\nprint(lista)  # Output: [1, 2, 3, 4]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "slice_list",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "slice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2\nlista = [1, 2, 3, 2]\nconteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista\nlista = [3, 1, 4, 2]\nlista.sort()\nprint(lista)  # Output: [1, 2, 3, 4]\nlista.sort(reverse=True)",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3, 2]\nconteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista\nlista = [3, 1, 4, 2]\nlista.sort()\nprint(lista)  # Output: [1, 2, 3, 4]\nlista.sort(reverse=True)\nprint(lista)  # Output: [4, 3, 2, 1]\n# Ordinare per lunghezza delle stringhe",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "conteggio",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "conteggio = lista.count(2)\nprint(conteggio)  # Output: 2\n## Ordinare o invertire la lista\nlista = [3, 1, 4, 2]\nlista.sort()\nprint(lista)  # Output: [1, 2, 3, 4]\nlista.sort(reverse=True)\nprint(lista)  # Output: [4, 3, 2, 1]\n# Ordinare per lunghezza delle stringhe\nlista_stringhe = [\"abc\", \"a\", \"ab\"]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [3, 1, 4, 2]\nlista.sort()\nprint(lista)  # Output: [1, 2, 3, 4]\nlista.sort(reverse=True)\nprint(lista)  # Output: [4, 3, 2, 1]\n# Ordinare per lunghezza delle stringhe\nlista_stringhe = [\"abc\", \"a\", \"ab\"]\nlista_stringhe.sort(key=len)\nprint(lista_stringhe)  # Output: ['a', 'ab', 'abc']\nlista = [1, 2, 3]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista_stringhe",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista_stringhe = [\"abc\", \"a\", \"ab\"]\nlista_stringhe.sort(key=len)\nprint(lista_stringhe)  # Output: ['a', 'ab', 'abc']\nlista = [1, 2, 3]\nlista.reverse()\nprint(lista)  # Output: [3, 2, 1]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.reverse()\nprint(lista)  # Output: [3, 2, 1]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"python è fantastico\"\nprint(s.capitalize())  # Output: 'Python è fantastico'\ns = \"python è fantastico\"\nprint(s.title())  # Output: 'Python È Fantastico'\ns = \"Python\"\nprint(s.upper())  # Output: 'PYTHON'\nprint(s.lower())  # Output: 'python'\ns = \"Python\"\nprint(s.swapcase())  # Output: 'pYTHON'\n#, Ricerca e sostituzione",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"python è fantastico\"\nprint(s.title())  # Output: 'Python È Fantastico'\ns = \"Python\"\nprint(s.upper())  # Output: 'PYTHON'\nprint(s.lower())  # Output: 'python'\ns = \"Python\"\nprint(s.swapcase())  # Output: 'pYTHON'\n#, Ricerca e sostituzione\ns = \"python è fantastico\"\nprint(s.find(\"è\"))    # Output: 7",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"Python\"\nprint(s.upper())  # Output: 'PYTHON'\nprint(s.lower())  # Output: 'python'\ns = \"Python\"\nprint(s.swapcase())  # Output: 'pYTHON'\n#, Ricerca e sostituzione\ns = \"python è fantastico\"\nprint(s.find(\"è\"))    # Output: 7\nprint(s.rfind(\"a\"))   # Output: 15\nprint(s.find(\"z\"))    # Output: -1 - non trovato",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"Python\"\nprint(s.swapcase())  # Output: 'pYTHON'\n#, Ricerca e sostituzione\ns = \"python è fantastico\"\nprint(s.find(\"è\"))    # Output: 7\nprint(s.rfind(\"a\"))   # Output: 15\nprint(s.find(\"z\"))    # Output: -1 - non trovato\ns = \"python è fantastico\"\nprint(s.index(\"è\"))   # Output: 7\ns = \"ciao ciao\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"python è fantastico\"\nprint(s.find(\"è\"))    # Output: 7\nprint(s.rfind(\"a\"))   # Output: 15\nprint(s.find(\"z\"))    # Output: -1 - non trovato\ns = \"python è fantastico\"\nprint(s.index(\"è\"))   # Output: 7\ns = \"ciao ciao\"\nprint(s.replace(\"ciao\", \"salve\"))  # Output: 'salve salve'\nstring = \"Hello world\"\nprint(min(string))",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"python è fantastico\"\nprint(s.index(\"è\"))   # Output: 7\ns = \"ciao ciao\"\nprint(s.replace(\"ciao\", \"salve\"))  # Output: 'salve salve'\nstring = \"Hello world\"\nprint(min(string))\nprint(max(string))\n#, Controlli su contenuto e formato\ns = \"documento.pdf\"\nprint(s.startswith(\"doc\"))   # Output: True",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"ciao ciao\"\nprint(s.replace(\"ciao\", \"salve\"))  # Output: 'salve salve'\nstring = \"Hello world\"\nprint(min(string))\nprint(max(string))\n#, Controlli su contenuto e formato\ns = \"documento.pdf\"\nprint(s.startswith(\"doc\"))   # Output: True\nprint(s.endswith(\".pdf\"))    # Output: True\nprint(\"123\".isdigit())     # Output: True",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "string = \"Hello world\"\nprint(min(string))\nprint(max(string))\n#, Controlli su contenuto e formato\ns = \"documento.pdf\"\nprint(s.startswith(\"doc\"))   # Output: True\nprint(s.endswith(\".pdf\"))    # Output: True\nprint(\"123\".isdigit())     # Output: True\nprint(\"abc\".isalpha())     # Output: True\nprint(\"abc123\".isalnum())  # Output: True",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"documento.pdf\"\nprint(s.startswith(\"doc\"))   # Output: True\nprint(s.endswith(\".pdf\"))    # Output: True\nprint(\"123\".isdigit())     # Output: True\nprint(\"abc\".isalpha())     # Output: True\nprint(\"abc123\".isalnum())  # Output: True\nprint(\"   \".isspace())     # Output: True\nprint(\"123\".isnumeric())  # Output: True\nprint(\"abc\".isascii())    # Output: True\ns = \"Python\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"Python\"\nprint(s.islower())   # Output: False\nprint(s.isupper())   # Output: False\nprint(\"Python Is Cool\".istitle())  # Output: True\n#, Allineamento e padding\ns = \"test\"\nprint(s.center(10, '-'))  # Output: '---test---'\nprint(s.ljust(10, '.'))   # Output: 'test......'\nprint(s.rjust(10, '*'))   # Output: '******test'\ns = \"42\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"test\"\nprint(s.center(10, '-'))  # Output: '---test---'\nprint(s.ljust(10, '.'))   # Output: 'test......'\nprint(s.rjust(10, '*'))   # Output: '******test'\ns = \"42\"\nprint(s.zfill(5))  # Output: '00042'\n#, Divisione e unione di stringhe\ns = \"uno,due,tre\"\nprint(s.split(','))  # Output: ['uno', 'due', 'tre']\ns = \"prima riga\\nseconda riga\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"42\"\nprint(s.zfill(5))  # Output: '00042'\n#, Divisione e unione di stringhe\ns = \"uno,due,tre\"\nprint(s.split(','))  # Output: ['uno', 'due', 'tre']\ns = \"prima riga\\nseconda riga\"\nprint(s.splitlines())  # Output: ['prima riga', 'seconda riga']\nlista = ['a', 'b', 'c']\nprint('-'.join(lista))  # Output: 'a-b-c'\n#, Rimozione e gestione spazi",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"uno,due,tre\"\nprint(s.split(','))  # Output: ['uno', 'due', 'tre']\ns = \"prima riga\\nseconda riga\"\nprint(s.splitlines())  # Output: ['prima riga', 'seconda riga']\nlista = ['a', 'b', 'c']\nprint('-'.join(lista))  # Output: 'a-b-c'\n#, Rimozione e gestione spazi\ns = \"  testo  \"\nprint(s.strip())   # Output: 'testo'\nprint(s.lstrip())   # Output: 'testo  '",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"prima riga\\nseconda riga\"\nprint(s.splitlines())  # Output: ['prima riga', 'seconda riga']\nlista = ['a', 'b', 'c']\nprint('-'.join(lista))  # Output: 'a-b-c'\n#, Rimozione e gestione spazi\ns = \"  testo  \"\nprint(s.strip())   # Output: 'testo'\nprint(s.lstrip())   # Output: 'testo  '\nprint(s.rstrip())   # Output: '  testo'\n#, Traduzione e codifica",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "lista = ['a', 'b', 'c']\nprint('-'.join(lista))  # Output: 'a-b-c'\n#, Rimozione e gestione spazi\ns = \"  testo  \"\nprint(s.strip())   # Output: 'testo'\nprint(s.lstrip())   # Output: 'testo  '\nprint(s.rstrip())   # Output: '  testo'\n#, Traduzione e codifica\ntabella = str.maketrans(\"aeiou\", \"12345\")\ns = \"ciao\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"  testo  \"\nprint(s.strip())   # Output: 'testo'\nprint(s.lstrip())   # Output: 'testo  '\nprint(s.rstrip())   # Output: '  testo'\n#, Traduzione e codifica\ntabella = str.maketrans(\"aeiou\", \"12345\")\ns = \"ciao\"\nprint(s.translate(tabella))  # Output: 'c143'\ns = \"test\"\nb = s.encode('utf-8')        # Output: b'test'",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "tabella",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "tabella = str.maketrans(\"aeiou\", \"12345\")\ns = \"ciao\"\nprint(s.translate(tabella))  # Output: 'c143'\ns = \"test\"\nb = s.encode('utf-8')        # Output: b'test'\nprint(b.decode('utf-8'))     # Output: 'test'\n#, Metodi di tabulazione e spaziatura\ns = \"uno\\tdue\"\nprint(s.expandtabs(4))  # Output: 'uno due'\n#, Utility per controllo e conteggio",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"ciao\"\nprint(s.translate(tabella))  # Output: 'c143'\ns = \"test\"\nb = s.encode('utf-8')        # Output: b'test'\nprint(b.decode('utf-8'))     # Output: 'test'\n#, Metodi di tabulazione e spaziatura\ns = \"uno\\tdue\"\nprint(s.expandtabs(4))  # Output: 'uno due'\n#, Utility per controllo e conteggio\ns = \"banana\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"test\"\nb = s.encode('utf-8')        # Output: b'test'\nprint(b.decode('utf-8'))     # Output: 'test'\n#, Metodi di tabulazione e spaziatura\ns = \"uno\\tdue\"\nprint(s.expandtabs(4))  # Output: 'uno due'\n#, Utility per controllo e conteggio\ns = \"banana\"\nprint(s.count(\"a\"))   # Output: 3\ns = \"abc:def:ghi\"",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "b = s.encode('utf-8')        # Output: b'test'\nprint(b.decode('utf-8'))     # Output: 'test'\n#, Metodi di tabulazione e spaziatura\ns = \"uno\\tdue\"\nprint(s.expandtabs(4))  # Output: 'uno due'\n#, Utility per controllo e conteggio\ns = \"banana\"\nprint(s.count(\"a\"))   # Output: 3\ns = \"abc:def:ghi\"\nprint(s.partition(':'))  # Output: ('abc', ':', 'def:ghi')",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"uno\\tdue\"\nprint(s.expandtabs(4))  # Output: 'uno due'\n#, Utility per controllo e conteggio\ns = \"banana\"\nprint(s.count(\"a\"))   # Output: 3\ns = \"abc:def:ghi\"\nprint(s.partition(':'))  # Output: ('abc', ':', 'def:ghi')\n#% Nuovi metodi per rimuovere prefissi e suffissi dalle stringhe\na = \"resettare e ritentare\"\nprint(a.lstrip('re'))   # Risultato: 'settare e ritentare'",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"banana\"\nprint(s.count(\"a\"))   # Output: 3\ns = \"abc:def:ghi\"\nprint(s.partition(':'))  # Output: ('abc', ':', 'def:ghi')\n#% Nuovi metodi per rimuovere prefissi e suffissi dalle stringhe\na = \"resettare e ritentare\"\nprint(a.lstrip('re'))   # Risultato: 'settare e ritentare'\nprint(a.rstrip('re'))   # Risultato: 'resettare e ritenta'\nprint(a.strip('er'))    # Risultato: 'settare e ritenta'\nprint(a.removeprefix('re')) # 'settare e ritentare'",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "s = \"abc:def:ghi\"\nprint(s.partition(':'))  # Output: ('abc', ':', 'def:ghi')\n#% Nuovi metodi per rimuovere prefissi e suffissi dalle stringhe\na = \"resettare e ritentare\"\nprint(a.lstrip('re'))   # Risultato: 'settare e ritentare'\nprint(a.rstrip('re'))   # Risultato: 'resettare e ritenta'\nprint(a.strip('er'))    # Risultato: 'settare e ritenta'\nprint(a.removeprefix('re')) # 'settare e ritentare'\nprint(a.removeprefix('er')) # 'resettare e ritentare' (nessun match all'inizio)\nprint(a.removesuffix('re')) # 'resettare e ritenta'",
+        "detail": "2-data-types.Sequences.string_methods",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.string_methods",
+        "description": "2-data-types.Sequences.string_methods",
+        "peekOfCode": "a = \"resettare e ritentare\"\nprint(a.lstrip('re'))   # Risultato: 'settare e ritentare'\nprint(a.rstrip('re'))   # Risultato: 'resettare e ritenta'\nprint(a.strip('er'))    # Risultato: 'settare e ritenta'\nprint(a.removeprefix('re')) # 'settare e ritentare'\nprint(a.removeprefix('er')) # 'resettare e ritentare' (nessun match all'inizio)\nprint(a.removesuffix('re')) # 'resettare e ritenta'\nprint(a.removesuffix('er')) # 'resettare e ritentare' (nessun match alla fine)",
+        "detail": "2-data-types.Sequences.string_methods",
         "documentation": {}
     },
     {
@@ -2011,7 +2542,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.strings",
         "description": "2-data-types.Sequences.strings",
-        "peekOfCode": "c = str(\"Hello World\")\n# , Sequenze di escape\n## Uso di apici diversi\nprint('Ciao \"Mondo\"')\nprint(\"Ciao 'Mondo'\")\nprint(\"Ciao 'Mondo'\")\nprint('Ciao \"Mondo\"')\nescaping_phrase = \"\"\"\nStiamo scrivendo una stringa multilinea\ndove gli apici singoli ' e doppi \"",
+        "peekOfCode": "c = str(\"Hello World\")\n# , Sequenze di escape\n## Uso di apici diversi\nprint('Ciao \"Mondo\"')\nprint(\"Ciao 'Mondo'\")\nprint(\"Ciao 'Mondo'\")\nprint('Ciao \"Mondo\"')\nescaping_phrase = \"\"\"\n    Stiamo scrivendo una stringa multilinea\n    dove gli apici singoli ' e doppi \"",
         "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
@@ -2020,7 +2551,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.strings",
         "description": "2-data-types.Sequences.strings",
-        "peekOfCode": "escaping_phrase = \"\"\"\nStiamo scrivendo una stringa multilinea\ndove gli apici singoli ' e doppi \"\nsono automaticamente sfuggiti all'interprete\ncome se li avessimo preceduti con il backslash \\' e \\\"\n\"\"\"\nprint(escaping_phrase)\n## Sequenze di escape comuni\nprint(\"Ciao\\nMondo\")  # \\n: Nuova linea\nprint(\"Ciao\\rMondo\")  # \\r: Ritorno a capo",
+        "peekOfCode": "escaping_phrase = \"\"\"\n    Stiamo scrivendo una stringa multilinea\n    dove gli apici singoli ' e doppi \"\n    sono automaticamente sfuggiti all'interprete\n    come se li avessimo preceduti con il backslash \\' e \\\"\n\"\"\"\nprint(escaping_phrase)\n## Sequenze di escape comuni\nprint(\"Ciao\\nMondo\")  # \\n: Nuova linea\nprint(\"Ciao\\rMondo\")  # \\r: Ritorno a capo",
         "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
@@ -2029,7 +2560,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.strings",
         "description": "2-data-types.Sequences.strings",
-        "peekOfCode": "stringa = \"Ciao\"\n# Questo solleva un errore\n# stringa[0] = 'P' non è possibile sostituire un carattere di una stringa\n# Creazione di una nuova stringa\nnuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18",
+        "peekOfCode": "stringa = \"Ciao\"\n# Questo solleva un errore\n# stringa[0] = 'P' non è possibile sostituire un carattere di una stringa\n# Creazione di una nuova stringa\nnuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\nprint(id(stringa), id(nuova_stringa))\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)",
         "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
@@ -2038,7 +2569,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.strings",
         "description": "2-data-types.Sequences.strings",
-        "peekOfCode": "nuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18\n## String interpolation\nname = \"John\"\nage = 30\nprint(\"Ciao, sono \" + name + \" e ho \" + str(age) + \" anni.\")",
+        "peekOfCode": "nuova_stringa = \"P\" + stringa[1:]\nprint(nuova_stringa)  # 'Piao'\nprint(id(stringa), id(nuova_stringa))\n## Lunghezza\nstringa = \"Buongiorno a tutti\"\nlunghezza = len(stringa)\nprint(lunghezza)  # 18\n## String interpolation\nname = \"John\"\nage = 30",
         "detail": "2-data-types.Sequences.strings",
         "documentation": {}
     },
