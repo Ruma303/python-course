@@ -2200,7 +2200,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list_methods",
         "description": "2-data-types.Sequences.list_methods",
-        "peekOfCode": "lista = [1, 2, 3]\nultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)",
+        "peekOfCode": "lista = [1, 2, 3]\nultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\nlista = [1, 2, 3, 4, 5, 6]\ndel lista[0]\nprint(lista)  # Output: [2, 3, 4, 5, 6]",
         "detail": "2-data-types.Sequences.list_methods",
         "documentation": {}
     },
@@ -2209,7 +2209,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list_methods",
         "description": "2-data-types.Sequences.list_methods",
-        "peekOfCode": "ultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3",
+        "peekOfCode": "ultimo = lista.pop()\nprint(ultimo)  # Output: 3\nprint(lista)   # Output: [1, 2]\nlista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\nlista = [1, 2, 3, 4, 5, 6]\ndel lista[0]\nprint(lista)  # Output: [2, 3, 4, 5, 6]\ndel lista[1:4:2]",
         "detail": "2-data-types.Sequences.list_methods",
         "documentation": {}
     },
@@ -2218,7 +2218,16 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.list_methods",
         "description": "2-data-types.Sequences.list_methods",
-        "peekOfCode": "lista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3\nlista = [1, 1, 0, 3, 5, 6, 2, 2]\nslice_list = lista[:-1].index(2)\nprint(posizione)  # Output: 2",
+        "peekOfCode": "lista = [1, 2, 3]\nlista.clear()\nprint(lista)  # Output: []\nlista = [1, 2, 3, 4, 5, 6]\ndel lista[0]\nprint(lista)  # Output: [2, 3, 4, 5, 6]\ndel lista[1:4:2]\nprint(lista) # Output: [2, 4, 6]\n## Trovare informazioni\nlista = [1, 1, 0, 2]",
+        "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.list_methods",
+        "description": "2-data-types.Sequences.list_methods",
+        "peekOfCode": "lista = [1, 2, 3, 4, 5, 6]\ndel lista[0]\nprint(lista)  # Output: [2, 3, 4, 5, 6]\ndel lista[1:4:2]\nprint(lista) # Output: [2, 4, 6]\n## Trovare informazioni\nlista = [1, 1, 0, 2]\nposizione = lista.index(2)\nprint(posizione)  # Output: 3\nlista = [1, 1, 0, 3, 5, 6, 2, 2]",
         "detail": "2-data-types.Sequences.list_methods",
         "documentation": {}
     },
@@ -2709,6 +2718,15 @@
         "documentation": {}
     },
     {
+        "label": "coord",
+        "kind": 2,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "def coord():\n    return (10, 20)\nx, y = coord()\n# x = 10, y = 20\ndati = [(\"a\", 1), (\"b\", 2), (\"c\", 3)]\nfor lettera, numero in dati:\n    print(lettera, numero)\n## Utilizzo di tuple come chiavi di dizionario\ndiz = {}\nchiave = (3, 5)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
         "label": "tupla_vuota",
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
@@ -2794,16 +2812,16 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "tupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)\n## Immutabilità\n\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa",
+        "peekOfCode": "tupla = (10, 20, 30, 40, 50)\nprint(tupla[0])   # Output: 10 (primo elemento)\nprint(tupla[-1])  # Output: 50 (ultimo elemento)\nprint(tupla[1:4]) # Output: (20, 30, 40) (sub-tupla con slicing)\nprint(tupla[::-1])  # Output: (50, 40, 30, 20, 10) (reversed tuple)\nprint(tupla[:3:2])  # Output: (10, 30) (dal primo al quarto elemento saltando di 2)\n## Immutabilità\n\"\"\"\ntupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment",
         "detail": "2-data-types.Sequences.tuple",
         "documentation": {}
     },
     {
-        "label": "\"\"\"tupla",
+        "label": "tupla",
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "\"\"\"tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)",
+        "peekOfCode": "tupla = (1, 2, 3)\ntupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\n\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla",
         "detail": "2-data-types.Sequences.tuple",
         "documentation": {}
     },
@@ -2812,7 +2830,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "tupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)\ntupla2 = tuple(ele * 2 for ele in tupla1)",
+        "peekOfCode": "tupla[0] = 10  # Errore: TypeError: 'tuple' object does not support item assignment\n\"\"\"\n#* 1. Conversione da tupla a lista e viceversa\ntupla = (1, 2, 3)\nlista = list(tupla)\nlista[0] = 10\ntupla = tuple(lista)\nprint(tupla)  # Output: (10, 2, 3)\n#* 2. Creare una seconda tupla\ntupla1 = (1, 2, 3)",
         "detail": "2-data-types.Sequences.tuple",
         "documentation": {}
     },
@@ -2911,7 +2929,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)",
+        "peekOfCode": "tupla = 1, 2, 3\nprint(tupla)  # Output: (1, 2, 3)\n## Unpacking\ntupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n## Utilizzando l'operatore rest *\ntupla = (1, 2, 3, 4, 5)",
         "detail": "2-data-types.Sequences.tuple",
         "documentation": {}
     },
@@ -2920,7 +2938,7 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "tupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n# Es 2\ntupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]",
+        "peekOfCode": "tupla = (10, 20, 30)\na, b, c = tupla\nprint(a)  # Output: 10\nprint(b)  # Output: 20\nprint(c)  # Output: 30\n## Utilizzando l'operatore rest *\ntupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]",
         "detail": "2-data-types.Sequences.tuple",
         "documentation": {}
     },
@@ -2929,8 +2947,494 @@
         "kind": 5,
         "importPath": "2-data-types.Sequences.tuple",
         "description": "2-data-types.Sequences.tuple",
-        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]\nprint(c)  # Output: 5",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\na, *b, c = tupla\nprint(a)  # Output: 1\nprint(b)  # Output: [2, 3, 4]\nprint(c)  # Output: 5\n## Unpacking avanzato\ntupla = (1, 2, 3, 4, 5, 6)\na, b, *c, d = tupla\nprint(a, b, c, d)\n# a = 1, b = 2, c = [3, 4, 5], d = 6",
         "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5, 6)\na, b, *c, d = tupla\nprint(a, b, c, d)\n# a = 1, b = 2, c = [3, 4, 5], d = 6\nt = (1, (2, 3))\nx, (y, z) = t\nprint(x, y, z)\n# x = 1, y = 2, z = 3\n#,Operazioni comuni\n## Concatenazione",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t = (1, (2, 3))\nx, (y, z) = t\nprint(x, y, z)\n# x = 1, y = 2, z = 3\n#,Operazioni comuni\n## Concatenazione\ntupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\nnuova_tupla = tupla1 + tupla2\nprint(nuova_tupla)  # Output: (1, 2, 3, 4, 5, 6)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla1 = (1, 2, 3)\ntupla2 = (4, 5, 6)\nnuova_tupla = tupla1 + tupla2\nprint(nuova_tupla)  # Output: (1, 2, 3, 4, 5, 6)\n## Ripetizione\ntupla = (1, 2, 3)\nripetuta = tupla * 3\nprint(ripetuta)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)\n## Verifica di appartenenza\ntupla = (10, 20, 30, 40)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla2 = (4, 5, 6)\nnuova_tupla = tupla1 + tupla2\nprint(nuova_tupla)  # Output: (1, 2, 3, 4, 5, 6)\n## Ripetizione\ntupla = (1, 2, 3)\nripetuta = tupla * 3\nprint(ripetuta)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)\n## Verifica di appartenenza\ntupla = (10, 20, 30, 40)\nprint(20 in tupla)   # Output: True",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "nuova_tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "nuova_tupla = tupla1 + tupla2\nprint(nuova_tupla)  # Output: (1, 2, 3, 4, 5, 6)\n## Ripetizione\ntupla = (1, 2, 3)\nripetuta = tupla * 3\nprint(ripetuta)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)\n## Verifica di appartenenza\ntupla = (10, 20, 30, 40)\nprint(20 in tupla)   # Output: True\nprint(50 in tupla)   # Output: False",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3)\nripetuta = tupla * 3\nprint(ripetuta)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)\n## Verifica di appartenenza\ntupla = (10, 20, 30, 40)\nprint(20 in tupla)   # Output: True\nprint(50 in tupla)   # Output: False\n## Lunghezza\ntupla = (1, 2, 3, 4, 5)\nprint(len(tupla))  # Output: 5",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "ripetuta",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "ripetuta = tupla * 3\nprint(ripetuta)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)\n## Verifica di appartenenza\ntupla = (10, 20, 30, 40)\nprint(20 in tupla)   # Output: True\nprint(50 in tupla)   # Output: False\n## Lunghezza\ntupla = (1, 2, 3, 4, 5)\nprint(len(tupla))  # Output: 5\n## Iterazione",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (10, 20, 30, 40)\nprint(20 in tupla)   # Output: True\nprint(50 in tupla)   # Output: False\n## Lunghezza\ntupla = (1, 2, 3, 4, 5)\nprint(len(tupla))  # Output: 5\n## Iterazione\ntupla = (10, 20, 30)\nfor elemento in tupla:\n    print(elemento)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (1, 2, 3, 4, 5)\nprint(len(tupla))  # Output: 5\n## Iterazione\ntupla = (10, 20, 30)\nfor elemento in tupla:\n    print(elemento)\n#, Proprietà avanzate\n## Hashabilità e tuple come chiavi\nt1 = (1, 2, 3)  # hashable\nd = {t1: \"valore\"}",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "tupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "tupla = (10, 20, 30)\nfor elemento in tupla:\n    print(elemento)\n#, Proprietà avanzate\n## Hashabilità e tuple come chiavi\nt1 = (1, 2, 3)  # hashable\nd = {t1: \"valore\"}\nprint(d)\n# d[(1, 2, 3)] restituisce 'valore'\nt2 = ([1, 2], 3)  # NON hashable, contiene una lista",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t1 = (1, 2, 3)  # hashable\nd = {t1: \"valore\"}\nprint(d)\n# d[(1, 2, 3)] restituisce 'valore'\nt2 = ([1, 2], 3)  # NON hashable, contiene una lista\n# d = {t2: \"errore\"}  # TypeError: unhashable type: 'list'\n## Tuple come oggetti ricorsivi e contenimento\nt = (1, 2)\nt_nid = (t, (3, 4), (\"a\", \"b\", (5, 6)))\nprint(t_nid)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "d = {t1: \"valore\"}\nprint(d)\n# d[(1, 2, 3)] restituisce 'valore'\nt2 = ([1, 2], 3)  # NON hashable, contiene una lista\n# d = {t2: \"errore\"}  # TypeError: unhashable type: 'list'\n## Tuple come oggetti ricorsivi e contenimento\nt = (1, 2)\nt_nid = (t, (3, 4), (\"a\", \"b\", (5, 6)))\nprint(t_nid)\n# t_nid[2][2][1] restituisce 6",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t2 = ([1, 2], 3)  # NON hashable, contiene una lista\n# d = {t2: \"errore\"}  # TypeError: unhashable type: 'list'\n## Tuple come oggetti ricorsivi e contenimento\nt = (1, 2)\nt_nid = (t, (3, 4), (\"a\", \"b\", (5, 6)))\nprint(t_nid)\n# t_nid[2][2][1] restituisce 6\n## Ordinamento e conversione\nt = (5, 3, 1, 4)\nordinata = tuple(sorted(t))",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t = (1, 2)\nt_nid = (t, (3, 4), (\"a\", \"b\", (5, 6)))\nprint(t_nid)\n# t_nid[2][2][1] restituisce 6\n## Ordinamento e conversione\nt = (5, 3, 1, 4)\nordinata = tuple(sorted(t))\n# ordinata = (1, 3, 4, 5)\n## Confronti tra tuple\nprint((1, 2, 3) < (1, 2, 4))   # True",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t_nid",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t_nid = (t, (3, 4), (\"a\", \"b\", (5, 6)))\nprint(t_nid)\n# t_nid[2][2][1] restituisce 6\n## Ordinamento e conversione\nt = (5, 3, 1, 4)\nordinata = tuple(sorted(t))\n# ordinata = (1, 3, 4, 5)\n## Confronti tra tuple\nprint((1, 2, 3) < (1, 2, 4))   # True\nprint((1, 2) < (1, 2, -1))      # True",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t = (5, 3, 1, 4)\nordinata = tuple(sorted(t))\n# ordinata = (1, 3, 4, 5)\n## Confronti tra tuple\nprint((1, 2, 3) < (1, 2, 4))   # True\nprint((1, 2) < (1, 2, -1))      # True\nprint((2, 0) > (1, 10, 100))    # True\n## Utilizzo nei cicli e in assegnazioni multiple\ndef coord():\n    return (10, 20)",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "ordinata",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "ordinata = tuple(sorted(t))\n# ordinata = (1, 3, 4, 5)\n## Confronti tra tuple\nprint((1, 2, 3) < (1, 2, 4))   # True\nprint((1, 2) < (1, 2, -1))      # True\nprint((2, 0) > (1, 10, 100))    # True\n## Utilizzo nei cicli e in assegnazioni multiple\ndef coord():\n    return (10, 20)\nx, y = coord()",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "dati",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "dati = [(\"a\", 1), (\"b\", 2), (\"c\", 3)]\nfor lettera, numero in dati:\n    print(lettera, numero)\n## Utilizzo di tuple come chiavi di dizionario\ndiz = {}\nchiave = (3, 5)\ndiz[chiave] = \"valore\"\nprint(diz)\n## Conversione tra tuple e altri tipi\ntuple(\"abc\")         # ('a', 'b', 'c')",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "diz",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "diz = {}\nchiave = (3, 5)\ndiz[chiave] = \"valore\"\nprint(diz)\n## Conversione tra tuple e altri tipi\ntuple(\"abc\")         # ('a', 'b', 'c')\ntuple([1, 2, 3])     # (1, 2, 3)\ntuple({1, 2, 3})     # (1, 2, 3) - ordine arbitrario coi set\n## Rappresentazione letterale e annidamento\nt = (1, 2, (3, 4))",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "chiave",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "chiave = (3, 5)\ndiz[chiave] = \"valore\"\nprint(diz)\n## Conversione tra tuple e altri tipi\ntuple(\"abc\")         # ('a', 'b', 'c')\ntuple([1, 2, 3])     # (1, 2, 3)\ntuple({1, 2, 3})     # (1, 2, 3) - ordine arbitrario coi set\n## Rappresentazione letterale e annidamento\nt = (1, 2, (3, 4))\nprint(repr(t))  # restituisce '(1, 2, (3, 4))'",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "diz[chiave]",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "diz[chiave] = \"valore\"\nprint(diz)\n## Conversione tra tuple e altri tipi\ntuple(\"abc\")         # ('a', 'b', 'c')\ntuple([1, 2, 3])     # (1, 2, 3)\ntuple({1, 2, 3})     # (1, 2, 3) - ordine arbitrario coi set\n## Rappresentazione letterale e annidamento\nt = (1, 2, (3, 4))\nprint(repr(t))  # restituisce '(1, 2, (3, 4))'",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple",
+        "description": "2-data-types.Sequences.tuple",
+        "peekOfCode": "t = (1, 2, (3, 4))\nprint(repr(t))  # restituisce '(1, 2, (3, 4))'",
+        "detail": "2-data-types.Sequences.tuple",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "def f(a, b, c):\n    return a + b + c\nt = (1, 2, 3)\nrisultato = f(*t)  # 6\nt = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3, 2, 2, 4)\noccorrenze = t.count(2)  # 3\nprint(occorrenze)\n## conteggio di una sottotupla\nt = (1, 2, 2, 3, 4, 2, 5)\nsottotupla = t[1:5]  # (2, 2, 3, 4)\noccorrenze = sottotupla.count(2)  # 2\nprint(occorrenze)\nt = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "occorrenze",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "occorrenze = t.count(2)  # 3\nprint(occorrenze)\n## conteggio di una sottotupla\nt = (1, 2, 2, 3, 4, 2, 5)\nsottotupla = t[1:5]  # (2, 2, 3, 4)\noccorrenze = sottotupla.count(2)  # 2\nprint(occorrenze)\nt = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1\nprint(indice)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 2, 3, 4, 2, 5)\nsottotupla = t[1:5]  # (2, 2, 3, 4)\noccorrenze = sottotupla.count(2)  # 2\nprint(occorrenze)\nt = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1\nprint(indice)\nt = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "sottotupla",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "sottotupla = t[1:5]  # (2, 2, 3, 4)\noccorrenze = sottotupla.count(2)  # 2\nprint(occorrenze)\nt = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1\nprint(indice)\nt = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "occorrenze",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "occorrenze = sottotupla.count(2)  # 2\nprint(occorrenze)\nt = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1\nprint(indice)\nt = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (10, 20, 30, 20, 40)\nindice = t.index(20, 3, 4)  # 1\nprint(indice)\nt = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "indice",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "indice = t.index(20, 3, 4)  # 1\nprint(indice)\nt = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)\nreverse_iter = reversed(t)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (3, 1, 4, 2)\nlista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)\nreverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista_ordinata",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "lista_ordinata = sorted(t)  # [1, 2, 3, 4]\nprint(lista_ordinata)\nt = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)\nreverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (\"pippo\", \"pluto\", \"qui\", \"paperino\")\nordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)\nreverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "ordinati",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "ordinati = sorted(t, key=len)  # ['qui', 'pippo', 'pluto', 'paperino']\nprint(ordinati)\nt = (1, 2, 3)\nreverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)\n# 0 a",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3)\nreverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)\n# 0 a\n# 1 b\n# 2 c",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_iter",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "reverse_iter = reversed(t)\nlista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)\n# 0 a\n# 1 b\n# 2 c\nt1 = (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "lista_reverse",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "lista_reverse = list(reverse_iter)  # [3, 2, 1]\nprint(lista_reverse)\nt = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)\n# 0 a\n# 1 b\n# 2 c\nt1 = (1, 2, 3)\nt2 = ('a', 'b', 'c')",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (\"a\", \"b\", \"c\")\nfor idx, val in enumerate(t):\n    print(idx, val)\n# 0 a\n# 1 b\n# 2 c\nt1 = (1, 2, 3)\nt2 = ('a', 'b', 'c')\nfor a, b in zip(t1, t2):\n    print(a, b)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t1 = (1, 2, 3)\nt2 = ('a', 'b', 'c')\nfor a, b in zip(t1, t2):\n    print(a, b)\n# 1 a\n# 2 b\n# 3 c\nt1 = (1, 2, 3, 4)\nt2 = ('a', 'b')\nresult = list(zip(t1, t2))  # [(1, 'a'), (2, 'b')]",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t2 = ('a', 'b', 'c')\nfor a, b in zip(t1, t2):\n    print(a, b)\n# 1 a\n# 2 b\n# 3 c\nt1 = (1, 2, 3, 4)\nt2 = ('a', 'b')\nresult = list(zip(t1, t2))  # [(1, 'a'), (2, 'b')]\nprint(result)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t1 = (1, 2, 3, 4)\nt2 = ('a', 'b')\nresult = list(zip(t1, t2))  # [(1, 'a'), (2, 'b')]\nprint(result)\nt = (0, 1, 2)\nprint(any(t))  # True\nprint(all(t)) # False\nt = (True, True, False)\nprint(all(t))  # False\nt2 = (x > 0 for x in (1, 2, 3))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t2 = ('a', 'b')\nresult = list(zip(t1, t2))  # [(1, 'a'), (2, 'b')]\nprint(result)\nt = (0, 1, 2)\nprint(any(t))  # True\nprint(all(t)) # False\nt = (True, True, False)\nprint(all(t))  # False\nt2 = (x > 0 for x in (1, 2, 3))\nprint(all(t2))  # True",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "result = list(zip(t1, t2))  # [(1, 'a'), (2, 'b')]\nprint(result)\nt = (0, 1, 2)\nprint(any(t))  # True\nprint(all(t)) # False\nt = (True, True, False)\nprint(all(t))  # False\nt2 = (x > 0 for x in (1, 2, 3))\nprint(all(t2))  # True\nt = (1, 2, 3, 4)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (0, 1, 2)\nprint(any(t))  # True\nprint(all(t)) # False\nt = (True, True, False)\nprint(all(t))  # False\nt2 = (x > 0 for x in (1, 2, 3))\nprint(all(t2))  # True\nt = (1, 2, 3, 4)\nprint(min(t))  # 1\nprint(max(t))  # 4",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (True, True, False)\nprint(all(t))  # False\nt2 = (x > 0 for x in (1, 2, 3))\nprint(all(t2))  # True\nt = (1, 2, 3, 4)\nprint(min(t))  # 1\nprint(max(t))  # 4\nprint(sum(t))  # 10\nt = (1, 2, 3, 4, 5)\nsomma_pari = sum(x for x in t if x % 2 == 0)  # 6",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t2 = (x > 0 for x in (1, 2, 3))\nprint(all(t2))  # True\nt = (1, 2, 3, 4)\nprint(min(t))  # 1\nprint(max(t))  # 4\nprint(sum(t))  # 10\nt = (1, 2, 3, 4, 5)\nsomma_pari = sum(x for x in t if x % 2 == 0)  # 6\nprint(somma_pari)\ndef f(a, b, c):",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3, 4)\nprint(min(t))  # 1\nprint(max(t))  # 4\nprint(sum(t))  # 10\nt = (1, 2, 3, 4, 5)\nsomma_pari = sum(x for x in t if x % 2 == 0)  # 6\nprint(somma_pari)\ndef f(a, b, c):\n    return a + b + c\nt = (1, 2, 3)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3, 4, 5)\nsomma_pari = sum(x for x in t if x % 2 == 0)  # 6\nprint(somma_pari)\ndef f(a, b, c):\n    return a + b + c\nt = (1, 2, 3)\nrisultato = f(*t)  # 6\nt = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "somma_pari",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "somma_pari = sum(x for x in t if x % 2 == 0)  # 6\nprint(somma_pari)\ndef f(a, b, c):\n    return a + b + c\nt = (1, 2, 3)\nrisultato = f(*t)  # 6\nt = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3)\nrisultato = f(*t)  # 6\nt = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))\nprint(dir(filtrati))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "risultato",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "risultato = f(*t)  # 6\nt = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))\nprint(dir(filtrati))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "t",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "t = (1, 2, 3, 4)\nquad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))\nprint(dir(filtrati))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "quad",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "quad = tuple(map(lambda x: x**2, t))  # (1, 4, 9, 16)\nprint(quad)\nfiltrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))\nprint(dir(filtrati))",
+        "detail": "2-data-types.Sequences.tuple_methods",
+        "documentation": {}
+    },
+    {
+        "label": "filtrati",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.tuple_methods",
+        "description": "2-data-types.Sequences.tuple_methods",
+        "peekOfCode": "filtrati = tuple(filter(lambda x: x % 2 == 0, t))  # (2, 4)\nprint(filtrati)\nprint(dir(\"Test\"))\nprint(dir(filtrati))",
+        "detail": "2-data-types.Sequences.tuple_methods",
         "documentation": {}
     },
     {
@@ -3082,7 +3586,7 @@
         "kind": 5,
         "importPath": "2-data-types.datatypes",
         "description": "2-data-types.datatypes",
-        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]",
+        "peekOfCode": "x = [1, 2, 3]\ny = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]\n## dir()\nprint(dir())",
         "detail": "2-data-types.datatypes",
         "documentation": {}
     },
@@ -3091,7 +3595,7 @@
         "kind": 5,
         "importPath": "2-data-types.datatypes",
         "description": "2-data-types.datatypes",
-        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]",
+        "peekOfCode": "y = x.copy()\nprint(id(x), id(y))\nx.pop() # Esempio di modifica: rimuove l'ultimo elemento\nprint(x) # [1, 2]\nprint(y) # [1, 2, 3]\n## dir()\nprint(dir())",
         "detail": "2-data-types.datatypes",
         "documentation": {}
     },
@@ -3253,7 +3757,7 @@
         "kind": 5,
         "importPath": "3-logic.Lessons.conditions",
         "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:\n    print(\"x è maggiore di 10 ma minore di 20\")\nelse:\n    print(\"x è maggiore o uguale a 20\")\n## Condizioni multiple con operatori logici",
+        "peekOfCode": "x = 10\nif x > 5:\n    print(\"x è maggiore di 5\")\n## Struttura if-elif-else\nx = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:",
         "detail": "3-logic.Lessons.conditions",
         "documentation": {}
     },
@@ -3262,7 +3766,7 @@
         "kind": 5,
         "importPath": "3-logic.Lessons.conditions",
         "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 8\nif x > 5 and x < 10:\n    print(\"x è compreso tra 5 e 10\")\nx = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "peekOfCode": "x = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:\n    print(\"x è maggiore di 10 ma minore di 20\")\nelse:\n    print(\"x è maggiore o uguale a 20\")\n#, Condizioni multiple con operatori logici",
         "detail": "3-logic.Lessons.conditions",
         "documentation": {}
     },
@@ -3271,7 +3775,7 @@
         "kind": 5,
         "importPath": "3-logic.Lessons.conditions",
         "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "peekOfCode": "x = 8\nif x > 5 and x < 10:\n    print(\"x è compreso tra 5 e 10\")\nx = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)",
         "detail": "3-logic.Lessons.conditions",
         "documentation": {}
     },
@@ -3280,7 +3784,52 @@
         "kind": 5,
         "importPath": "3-logic.Lessons.conditions",
         "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")",
+        "peekOfCode": "x = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)\nx = 5\ny = 8\nif x > 0:",
+        "detail": "3-logic.Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.conditions",
+        "description": "3-logic.Lessons.conditions",
+        "peekOfCode": "x = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)\nx = 5\ny = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:",
+        "detail": "3-logic.Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.conditions",
+        "description": "3-logic.Lessons.conditions",
+        "peekOfCode": "x = 5\ny = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:\n        print(\"x è positivo, ma y non lo è\")\n#, L'operatore ternario\nx = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"",
+        "detail": "3-logic.Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.conditions",
+        "description": "3-logic.Lessons.conditions",
+        "peekOfCode": "y = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:\n        print(\"x è positivo, ma y non lo è\")\n#, L'operatore ternario\nx = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
+        "detail": "3-logic.Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.conditions",
+        "description": "3-logic.Lessons.conditions",
+        "peekOfCode": "x = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
+        "detail": "3-logic.Lessons.conditions",
+        "documentation": {}
+    },
+    {
+        "label": "messaggio",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.conditions",
+        "description": "3-logic.Lessons.conditions",
+        "peekOfCode": "messaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
         "detail": "3-logic.Lessons.conditions",
         "documentation": {}
     },
@@ -3395,136 +3944,136 @@
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s, t]:\n        print(f\"Trovato {p}, {s} e {t}\")   # Output: Trovato 1, 2 e 3\n## Esempio con wildcard\nprint(\"\\nEsempi con wildcard\")\nsubject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [p, _, t]:\n        print(f\"Trovato {p} e {t}\")   # Output: Trovato 1 e 3\n    case _:\n        print(\"Altri valori trovati\")\n## Capture pattern\nprint(\"\\nCapture pattern\")\nsubject_value = [1, 2, 3]\nmatch subject_value:",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [p, s]:\n        print(f\"Trovati {p} e {s}\")\n    case [p, s, t]:\n        print(f\"Trovati {p}, {s} e {t}\")\n    case _:\n        print(\"Nessun valore trovato\")\n## Esempio con resto \"splat\"\nprint(\"\\nResto splat\")",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [1, 2, 3, 4, 5, 6]\nmatch subject_value:\n    case [i, *splat, f]:\n        print(f\"Primo elemento: {i}, ultimo: {f}. Altri elementi del pattern: {splat}\")\n        # Primo elemento: 1, ultimo: 6. Altri elementi del pattern: [2, 3, 4, 5]\n## Literal patterns\nprint(\"\\nLiteral pattern\")\nsubject_value = [1, 2, 3]\nmatch subject_value:\n    case [1, 2, 3]:",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [1, 2, 3]\nmatch subject_value:\n    case [1, 2, 3]:\n        print(\"Trovata lista 1,2,3\")\n    case [1, *rest]:\n        print(f\"Il resto è {rest}\")\n## Or patterns\nprint(\"\\nOr pattern\")\nsubject_value = [\"autunno\", \"stagione autunnale\"]\nmatch subject_value:",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [\"autunno\", \"stagione autunnale\"]\nmatch subject_value:\n    case [\"autunno\", msg] | [\"inverno\", msg]:\n        print(f\"Nella {msg} fa più freddo\")\n    case [\"primavera\", msg] | [\"estate\", msg]:\n        print(f\"Nella {msg} fa più caldo\")\n## As patterns\nprint(\"\\nAs pattern\")\nsubject_value = \"estate\"\nmatch subject_value:",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = \"estate\"\nmatch subject_value:\n    case \"primavera\" | \"estate\" as stagione:\n        print(f\"in {stagione} fa più caldo\")\n    case \"autunno\" | \"inverno\" as stagione:\n        print(f\"in {stagione} fa più freddo\")\n## Conditional Patterns (Guards)\nprint(\"\\nConditional pattern\")\nsubject_value = [\"pari\", \"50\"]\nmatch subject_value:",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = [\"pari\", \"50\"]\nmatch subject_value:\n    case [\"pari\", valore] if int(valore) % 2 == 0:\n        print(f\"{valore} è un numero pari\")\n    case [\"dispari\", valore] if int(valore) % 2 != 0:\n        print(f\"{valore} è un numero dispari\")\n    case _:\n        print(\"C'è un errore nei dati\")\n## Esempio su dizionari\nprint(\"\\nEsempio di utilizzo su dizionari\")",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "subject_value",
         "kind": 5,
-        "importPath": "3-logic.Lessons.pattern-matching",
-        "description": "3-logic.Lessons.pattern-matching",
+        "importPath": "3-logic.Lessons.pattern_matching",
+        "description": "3-logic.Lessons.pattern_matching",
         "peekOfCode": "subject_value = {\"tipo\": \"errore\", \"messaggio\": \"file mancante\"}\nmatch subject_value:\n    case {\"tipo\": \"errore\", \"messaggio\": msg}:\n        print(f\"Errore: {msg}\")",
-        "detail": "3-logic.Lessons.pattern-matching",
+        "detail": "3-logic.Lessons.pattern_matching",
         "documentation": {}
     },
     {
         "label": "somma",
         "kind": 2,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "def somma(a, b):\n    return a + b\nif (x := somma(5, 3)) > 6:\n    print(\"x maggiore di 6:\", x)\n## Utilizzo nei cicli\nmylist = [1, 2, 3, 4, 5]\nwhile (x := len(mylist)) != 0:\n    print(f\"Numero elementi: {x}, estratto: {mylist.pop()}\")\n## Uso con valore di default\ndef saluta(nome = (n := \"Susanna\")):",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
         "label": "saluta",
         "kind": 2,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "def saluta(nome = (n := \"Susanna\")):\n    print(\"Ciao\", nome)\n    print(\"Saluto di default: \", n.upper())\nsaluta() # Ciao Susanna + default\nsaluta(\"Alice\") # Ciao Alice + default\n## Esempio filtraggio list comprehension\nvalori = [\"1\", \"due\", \"3\", \"quattro\"]\nnumeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
         "label": "val",
         "kind": 5,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "val = input(\"Inserisci un valore: \")\nwhile val != \"q\":\n    print(val)\n    val = input(\"Inserisci un valore: \")\n## Da Python 3.8\nwhile (val := input(\"Inserisci un valore: \")) != \"q\":\n    print(val)\n\"\"\"\n## Esempio di utilizzo\ndef somma(a, b):",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
         "label": "mylist",
         "kind": 5,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "mylist = [1, 2, 3, 4, 5]\nwhile (x := len(mylist)) != 0:\n    print(f\"Numero elementi: {x}, estratto: {mylist.pop()}\")\n## Uso con valore di default\ndef saluta(nome = (n := \"Susanna\")):\n    print(\"Ciao\", nome)\n    print(\"Saluto di default: \", n.upper())\nsaluta() # Ciao Susanna + default\nsaluta(\"Alice\") # Ciao Alice + default\n## Esempio filtraggio list comprehension",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
         "label": "valori",
         "kind": 5,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "valori = [\"1\", \"due\", \"3\", \"quattro\"]\nnumeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
         "label": "numeri",
         "kind": 5,
-        "importPath": "3-logic.Lessons.walrus",
-        "description": "3-logic.Lessons.walrus",
+        "importPath": "3-logic.Lessons.walrus_operator",
+        "description": "3-logic.Lessons.walrus_operator",
         "peekOfCode": "numeri = [int(x) for s in valori if (x := s).isdigit()]\nprint(numeri)  # [1, 3]",
-        "detail": "3-logic.Lessons.walrus",
+        "detail": "3-logic.Lessons.walrus_operator",
         "documentation": {}
     },
     {
@@ -4293,6 +4842,33 @@
         "documentation": {}
     },
     {
+        "label": "Polygon",
+        "kind": 6,
+        "importPath": "5-oop.Exercises.polygons",
+        "description": "5-oop.Exercises.polygons",
+        "peekOfCode": "class Polygon:\n  def __init__(self, number_of_sides, *side_lengths):\n    self.sides = number_of_sides\n    # Verificare se il numero di lati corrisponde a quelli effettivamente passati\n    if len(side_lengths) != number_of_sides:\n      raise ValueError(\n          f\"Attesi {number_of_sides} lati, ma ricevuti {len(side_lengths)} valori.\"\n        )\n    self.side_lengths = side_lengths\n  def perimeter(self):",
+        "detail": "5-oop.Exercises.polygons",
+        "documentation": {}
+    },
+    {
+        "label": "triangle",
+        "kind": 5,
+        "importPath": "5-oop.Exercises.polygons",
+        "description": "5-oop.Exercises.polygons",
+        "peekOfCode": "triangle = Polygon(3, 1, 2, 3)\nprint(\"Triangolo creato\")\nprint(f\"Perimetro è: {triangle.perimeter()}\")\nprint(triangle)\nsquare = Polygon(4, 4, 3, 2, 4)\nprint(\"Quadrato creato\")\nprint(f\"Perimetro è: {square.perimeter()}\")\nprint(square)\nprint(\"I due poligoni sono uguali?\")\nif triangle == square:",
+        "detail": "5-oop.Exercises.polygons",
+        "documentation": {}
+    },
+    {
+        "label": "square",
+        "kind": 5,
+        "importPath": "5-oop.Exercises.polygons",
+        "description": "5-oop.Exercises.polygons",
+        "peekOfCode": "square = Polygon(4, 4, 3, 2, 4)\nprint(\"Quadrato creato\")\nprint(f\"Perimetro è: {square.perimeter()}\")\nprint(square)\nprint(\"I due poligoni sono uguali?\")\nif triangle == square:\n  print(f\"Le due figure sono uguali\")\nelse:\n  print(f\"Le due figure non sono uguali\")\n#, Variante 2: input e sottoclassi",
+        "detail": "5-oop.Exercises.polygons",
+        "documentation": {}
+    },
+    {
         "label": "Persona",
         "kind": 6,
         "importPath": "5-oop.Exercises.school",
@@ -4387,7 +4963,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class NomeClasse:\n    def __init__(self, arg1, arg2):\n        self.arg1 = arg1\n        self.arg2 = arg2\n    def metodo(self):\n        print(f\"Metodo invocato. Valori degli argomenti: {1}, {2}\", self.arg1, self.arg2)\n# Definizione membri di classe\nclass Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome",
+        "peekOfCode": "class NomeClasse:\n    def __init__(self, arg1, arg2):\n        self.arg1 = arg1\n        self.arg2 = arg2\n    def metodo(self):\n        print(f\"Metodo invocato. Valori degli argomenti: {1}, {2}\", self.arg1, self.arg2)\n#, Definizione membri di classe\nclass Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4396,7 +4972,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    def saluta(self):\n        print(f\"Ciao, mi chiamo  {self.nome} e ho {self.eta} anni\")\n# Istanziamento della classe Persona\npersona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n# Attributi di istanza e di classe",
+        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    def saluta(self):\n        print(f\"Ciao, mi chiamo  {self.nome} e ho {self.eta} anni\")\n#, Istanziamento della classe Persona\npersona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Attributi di istanza e di classe",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4414,7 +4990,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n# Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42 \nprint(Test.valore)",
+        "peekOfCode": "class Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4423,7 +4999,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42 \nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 99",
+        "peekOfCode": "class Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4432,7 +5008,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 99\nprint(m2.myAttr) # 99\n# Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 100",
+        "peekOfCode": "class MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99\nprint(m2.myAttr) #, 99\n#, Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4441,7 +5017,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class InstanceMethod:\n    def myMethod(self):\n        print(\"Chiamato da\", id(self))\nm3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n# Ispezione\nprint(type(m3.myMethod)) # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>",
+        "peekOfCode": "class InstanceMethod:\n    def myMethod(self):\n        print(\"Chiamato da\", id(self))\nm3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4459,7 +5035,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')\n# Esempio\nclass Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1",
+        "peekOfCode": "class MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')\n#, Esempio\nclass Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4468,7 +5044,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1\n    @classmethod\n    def instances(cls):\n        print(f\"Numero di instanze prodotte {cls.counter}\")\nc1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n# Metodi statici",
+        "peekOfCode": "class Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1\n    @classmethod\n    def instances(cls):\n        print(f\"Numero di instanze prodotte {cls.counter}\")\nc1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n#, Metodi statici",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4486,7 +5062,7 @@
         "kind": 6,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod\n    def da_stringa(cls, stringa):\n        nome, eta = stringa.split(\",\")\n        return cls(nome, int(eta))\np = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  # Mario",
+        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod\n    def da_stringa(cls, stringa):\n        nome, eta = stringa.split(\",\")\n        return cls(nome, int(eta))\np = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  #, Mario",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4495,7 +5071,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "persona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n# Attributi di istanza e di classe\nclass Auto:\n    ruote = 4\n    def __init__(self, marca):\n        self.marca = marca\nauto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)",
+        "peekOfCode": "persona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Attributi di istanza e di classe\nclass Auto:\n    ruote = 4\n    def __init__(self, marca):\n        self.marca = marca\nauto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4504,7 +5080,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "auto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n# Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):",
+        "peekOfCode": "auto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4513,7 +5089,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "auto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n# Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo",
+        "peekOfCode": "auto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4522,7 +5098,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "x = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n# Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42 ",
+        "peekOfCode": "x = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4531,7 +5107,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "prova = Prova()\nprova.stampa_x()\n# Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42 \nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99",
+        "peekOfCode": "prova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4540,7 +5116,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 99\nprint(m2.myAttr) # 99\n# Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 100\nprint(m2.myAttr) # 99\n# Accesso dinamico agli Attributi",
+        "peekOfCode": "m1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99\nprint(m2.myAttr) #, 99\n#, Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100\nprint(m2.myAttr) #, 99\n#, Accesso dinamico agli Attributi",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4549,7 +5125,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m1.myAttr = 100\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 100\nprint(m2.myAttr) # 99\n# Accesso dinamico agli Attributi\nprint(getattr(MyClass, 'myAttr'))\nsetattr(MyClass, 'myAttr', 20)\nprint(MyClass.myAttr)\nprint(hasattr(MyClass, 'myAttr'))\nprint(hasattr(MyClass, 'valore'))",
+        "peekOfCode": "m1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100\nprint(m2.myAttr) #, 99\n#, Accesso dinamico agli Attributi\nprint(getattr(MyClass, 'myAttr'))\nsetattr(MyClass, 'myAttr', 20)\nprint(MyClass.myAttr)\nprint(hasattr(MyClass, 'myAttr'))\nprint(hasattr(MyClass, 'valore'))",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4558,7 +5134,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n# Ispezione\nprint(type(m3.myMethod)) # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0",
+        "peekOfCode": "m3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4567,7 +5143,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n# Ispezione\nprint(type(m3.myMethod)) # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0\n    def incrementa(self):",
+        "peekOfCode": "m4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0\n    def incrementa(self):",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4576,7 +5152,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "c = Contatore()\nc.incrementa()\nc.incrementa()\nc.mostra()  # 2\n#% Metodi di classe\nclass MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')",
+        "peekOfCode": "c = Contatore()\nc.incrementa()\nc.incrementa()\nc.mostra()  #, 2\n#% Metodi di classe\nclass MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4585,7 +5161,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "c1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n# Metodi statici\nclass StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))\nclass Persona:\n    def __init__(self, nome, eta):",
+        "peekOfCode": "c1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n#, Metodi statici\nclass StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))\nclass Persona:\n    def __init__(self, nome, eta):",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },
@@ -4594,7 +5170,7 @@
         "kind": 5,
         "importPath": "5-oop.Lesson.classes",
         "description": "5-oop.Lesson.classes",
-        "peekOfCode": "p = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  # Mario\nprint(p.eta)   # 40",
+        "peekOfCode": "p = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  #, Mario\nprint(p.eta)   #, 40",
         "detail": "5-oop.Lesson.classes",
         "documentation": {}
     },

@@ -29,6 +29,13 @@ lista = [1, 2, 3]
 lista.clear()
 print(lista)  # Output: []
 
+lista = [1, 2, 3, 4, 5, 6]
+del lista[0]
+print(lista)  # Output: [2, 3, 4, 5, 6]
+
+del lista[1:4:2]
+print(lista) # Output: [2, 4, 6]
+
 
 ## Trovare informazioni
 lista = [1, 1, 0, 2]

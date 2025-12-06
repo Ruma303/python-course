@@ -1,5 +1,5 @@
 
-#% class 
+#% class
 class NomeClasse:
     def __init__(self, arg1, arg2):
         self.arg1 = arg1
@@ -9,21 +9,21 @@ class NomeClasse:
         print(f"Metodo invocato. Valori degli argomenti: {1}, {2}", self.arg1, self.arg2)
 
 
-# Definizione membri di classe
+#, Definizione membri di classe
 class Persona:
     def __init__(self, nome, eta):
         self.nome = nome
         self.eta = eta
-    
+
     def saluta(self):
         print(f"Ciao, mi chiamo  {self.nome} e ho {self.eta} anni")
 
-# Istanziamento della classe Persona
+#, Istanziamento della classe Persona
 persona1 = Persona("Luca", 30)
 persona1.saluta()
 
 
-# Attributi di istanza e di classe
+#, Attributi di istanza e di classe
 class Auto:
     ruote = 4
 
@@ -39,22 +39,22 @@ print(auto1.marca)
 print(auto2.marca)
 
 
-# Scope e visibilità
+#, Scope e visibilità
 x = 5
 
 class Prova:
 
     def stampa_x(self):
-        print(x) # accede a x definita nel modulo
+        print(x) #, accede a x definita nel modulo
 
 prova = Prova()
 prova.stampa_x()
 
 
-# Esecuzione immediata
+#, Esecuzione immediata
 class Test:
     print("Classe in fase di definizione")
-    valore = 42 
+    valore = 42
 
 print(Test.valore)
 
@@ -64,17 +64,17 @@ class MyClass:
     myAttr = 99
 
 m1 = MyClass(); m2 = MyClass()
-print(MyClass.myAttr) # 99
-print(m1.myAttr) # 99
-print(m2.myAttr) # 99
+print(MyClass.myAttr) #, 99
+print(m1.myAttr) #, 99
+print(m2.myAttr) #, 99
 
-# Modifica locale
+#, Modifica locale
 m1.myAttr = 100
-print(MyClass.myAttr) # 99
-print(m1.myAttr) # 100
-print(m2.myAttr) # 99
+print(MyClass.myAttr) #, 99
+print(m1.myAttr) #, 100
+print(m2.myAttr) #, 99
 
-# Accesso dinamico agli Attributi
+#, Accesso dinamico agli Attributi
 
 print(getattr(MyClass, 'myAttr'))
 
@@ -98,9 +98,9 @@ m4 = InstanceMethod()
 m3.myMethod()
 m4.myMethod()
 
-# Ispezione
-print(type(m3.myMethod)) # <class 'method'>
-print(type(InstanceMethod.myMethod)) # <class 'function'>
+#, Ispezione
+print(type(m3.myMethod)) #, <class 'method'>
+print(type(InstanceMethod.myMethod)) #, <class 'function'>
 
 class Contatore:
     def __init__(self):
@@ -114,7 +114,7 @@ class Contatore:
 c = Contatore()
 c.incrementa()
 c.incrementa()
-c.mostra()  # 2
+c.mostra()  #, 2
 
 
 #% Metodi di classe
@@ -126,7 +126,7 @@ class MethodClass:
 
 MethodClass.class_method('Argomento 1')
 
-# Esempio
+#, Esempio
 class Counter:
     counter = 0
 
@@ -141,7 +141,7 @@ c1 = Counter(); c2 = Counter(); c3 = Counter()
 Counter.instances()
 
 
-# Metodi statici
+#, Metodi statici
 class StaticMethod:
     @staticmethod
     def static_method(val):
@@ -161,5 +161,5 @@ class Persona:
         return cls(nome, int(eta))
 
 p = Persona.da_stringa("Mario,40")
-print(p.nome)  # Mario
-print(p.eta)   # 40
+print(p.nome)  #, Mario
+print(p.eta)   #, 40

@@ -59,3 +59,5 @@ x.pop() # Esempio di modifica: rimuove l'ultimo elemento
 print(x) # [1, 2]
 print(y) # [1, 2, 3]
 
+## dir()
+print(dir())

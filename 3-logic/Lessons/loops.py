@@ -1,4 +1,7 @@
-# , While
+
+#% Loops
+
+#, While
 
 ## Evitare cicli infiniti
 counter = 0
