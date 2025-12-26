@@ -68,6 +68,14 @@
         "documentation": {}
     },
     {
+        "label": "singledispatchmethod",
+        "importPath": "functools",
+        "description": "functools",
+        "isExtraImport": true,
+        "detail": "functools",
+        "documentation": {}
+    },
+    {
         "label": "builtins",
         "kind": 6,
         "isExtraImport": true,
@@ -90,6 +98,22 @@
         "description": "abc",
         "isExtraImport": true,
         "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "Protocol",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
         "documentation": {}
     },
     {
@@ -265,7 +289,7 @@
         "kind": 5,
         "importPath": "1-start.start",
         "description": "1-start.start",
-        "peekOfCode": "numbers = (1, 2, 3,\n4, 5, 6)\nprint(numbers)\ns = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"",
+        "peekOfCode": "numbers = (1, 2, 3,\n4, 5, 6)\nprint(numbers)\ns = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n  s = \"il numero è minore di 10\"\n  print(s)\nelif x == 10:\n\ts = \"il numero vale 10\"",
         "detail": "1-start.start",
         "documentation": {}
     },
@@ -274,7 +298,7 @@
         "kind": 5,
         "importPath": "1-start.start",
         "description": "1-start.start",
-        "peekOfCode": "s = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"",
+        "peekOfCode": "s = \"Ciao\" ; print(s)\nx = 15\nif x < 10:\n  s = \"il numero è minore di 10\"\n  print(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"",
         "detail": "1-start.start",
         "documentation": {}
     },
@@ -283,16 +307,7 @@
         "kind": 5,
         "importPath": "1-start.start",
         "description": "1-start.start",
-        "peekOfCode": "x = 15\nif x < 10:\n\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
-        "detail": "1-start.start",
-        "documentation": {}
-    },
-    {
-        "label": "\ts",
-        "kind": 5,
-        "importPath": "1-start.start",
-        "description": "1-start.start",
-        "peekOfCode": "\ts = \"il numero è minore di 10\"\n\tprint(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
+        "peekOfCode": "x = 15\nif x < 10:\n  s = \"il numero è minore di 10\"\n  print(s)\nelif x == 10:\n\ts = \"il numero vale 10\"\n\tprint(s)\nelse:\n\ts = \"il numero è maggiore di 10\"\n\tprint(s)",
         "detail": "1-start.start",
         "documentation": {}
     },
@@ -3753,87 +3768,6 @@
         "documentation": {}
     },
     {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 10\nif x > 5:\n    print(\"x è maggiore di 5\")\n## Struttura if-elif-else\nx = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 15\nif x < 10:\n    print(\"x è minore di 10\")\nelif x == 10:\n    print(\"x è uguale a 10\")\nelif x < 20:\n    print(\"x è maggiore di 10 ma minore di 20\")\nelse:\n    print(\"x è maggiore o uguale a 20\")\n#, Condizioni multiple con operatori logici",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 8\nif x > 5 and x < 10:\n    print(\"x è compreso tra 5 e 10\")\nx = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 3\nif x < 5 or x > 10:\n    print(\"x è minore di 5 o maggiore di 10\")\nx = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)\nx = 5\ny = 8\nif x > 0:",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 5\nif not x > 10:\n    print(\"x non è maggiore di 10\")\n#, Condizioni nidificate (nested)\nx = 5\ny = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 5\ny = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:\n        print(\"x è positivo, ma y non lo è\")\n#, L'operatore ternario\nx = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "y",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "y = 8\nif x > 0:\n    if y > 0:\n        print(\"x e y sono entrambi positivi\")\n    else:\n        print(\"x è positivo, ma y non lo è\")\n#, L'operatore ternario\nx = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "x = 10\nmessaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
-        "label": "messaggio",
-        "kind": 5,
-        "importPath": "3-logic.Lessons.conditions",
-        "description": "3-logic.Lessons.conditions",
-        "peekOfCode": "messaggio = \"Maggiore di 5\" if x > 5 else \"Minore o uguale a 5\"\nprint(messaggio)",
-        "detail": "3-logic.Lessons.conditions",
-        "documentation": {}
-    },
-    {
         "label": "number",
         "kind": 5,
         "importPath": "3-logic.Lessons.head_tail",
@@ -3892,7 +3826,79 @@
         "kind": 5,
         "importPath": "3-logic.Lessons.operators",
         "description": "3-logic.Lessons.operators",
-        "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Valutazione intervalli\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(True and False)\nprint(True or False)",
+        "peekOfCode": "a = 35\nprint(+a)    # 35\nprint(-a)    # -35\nprint(not a) # False\n## Operatori aritmetici\na = 10 + 5 # 15\nb = 10 - 5 # 5\nc = 13 * 2 # 26\nd = 2 / 3 # 0.666666...\ne = 7 // 3  # 2",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "a = 10 + 5 # 15\nb = 10 - 5 # 5\nc = 13 * 2 # 26\nd = 2 / 3 # 0.666666...\ne = 7 // 3  # 2\nf = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "b = 10 - 5 # 5\nc = 13 * 2 # 26\nd = 2 / 3 # 0.666666...\ne = 7 // 3  # 2\nf = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "c = 13 * 2 # 26\nd = 2 / 3 # 0.666666...\ne = 7 // 3  # 2\nf = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "d = 2 / 3 # 0.666666...\ne = 7 // 3  # 2\nf = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "e",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "e = 7 // 3  # 2\nf = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(\"Operatori Logici\")",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "f = 9 % 2 # 1\ng = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(\"Operatori Logici\")\nprint(True and True) # True",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "g = 3 ** 3 # 27\nprint(\"Operatori aritmetici \\n\" , a,b,c,d,e,f,g)\n## Valutazione intervalli\nprint(\"Operatori di confronto\")\nprint(1 < 2 < 3)\nprint(10 >= 3 != 5)\n## Valutazione logica\nprint(\"Operatori Logici\")\nprint(True and True) # True\nprint(True and False) # False",
+        "detail": "3-logic.Lessons.operators",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "3-logic.Lessons.operators",
+        "description": "3-logic.Lessons.operators",
+        "peekOfCode": "x = 10\nprint(x) # x ora è 10\nx += 5\nprint(x) # x ora è 15\nx *= 2\nprint(x) # x ora è 15\nx //= 3\nprint(x) # x ora è 10\n## Operatore ternario\nx = 10",
         "detail": "3-logic.Lessons.operators",
         "documentation": {}
     },
@@ -4086,6 +4092,51 @@
         "documentation": {}
     },
     {
+        "label": "a",
+        "kind": 5,
+        "importPath": "4-functions.Exercises.math_calc",
+        "description": "4-functions.Exercises.math_calc",
+        "peekOfCode": "a = 10\nb = 5\narithmetic_calc = [\n  lambda a: a + 1,\n  lambda a: a - 1,\n  lambda a: a * 2,\n  lambda a: a / 2,\n  lambda a: a ** 2,\n  lambda a: a % 2 == 0,\n]",
+        "detail": "4-functions.Exercises.math_calc",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "4-functions.Exercises.math_calc",
+        "description": "4-functions.Exercises.math_calc",
+        "peekOfCode": "b = 5\narithmetic_calc = [\n  lambda a: a + 1,\n  lambda a: a - 1,\n  lambda a: a * 2,\n  lambda a: a / 2,\n  lambda a: a ** 2,\n  lambda a: a % 2 == 0,\n]\nprint(\"\\nArithmetic operations\")",
+        "detail": "4-functions.Exercises.math_calc",
+        "documentation": {}
+    },
+    {
+        "label": "arithmetic_calc",
+        "kind": 5,
+        "importPath": "4-functions.Exercises.math_calc",
+        "description": "4-functions.Exercises.math_calc",
+        "peekOfCode": "arithmetic_calc = [\n  lambda a: a + 1,\n  lambda a: a - 1,\n  lambda a: a * 2,\n  lambda a: a / 2,\n  lambda a: a ** 2,\n  lambda a: a % 2 == 0,\n]\nprint(\"\\nArithmetic operations\")\nfor calc in arithmetic_calc:",
+        "detail": "4-functions.Exercises.math_calc",
+        "documentation": {}
+    },
+    {
+        "label": "logic_calc",
+        "kind": 5,
+        "importPath": "4-functions.Exercises.math_calc",
+        "description": "4-functions.Exercises.math_calc",
+        "peekOfCode": "logic_calc = (\n  lambda a, b: a and 1,\n  lambda a, b: a or 1,\n  lambda a, b: not a,\n)\nprint(\"\\nLogic operations\")\nfor calc in logic_calc:\n  print(calc(a, b=None))\ncomparison_calc = {\n  \"equal\" : lambda a, b: a == b,",
+        "detail": "4-functions.Exercises.math_calc",
+        "documentation": {}
+    },
+    {
+        "label": "comparison_calc",
+        "kind": 5,
+        "importPath": "4-functions.Exercises.math_calc",
+        "description": "4-functions.Exercises.math_calc",
+        "peekOfCode": "comparison_calc = {\n  \"equal\" : lambda a, b: a == b,\n  \"different\" : lambda a, b: a != b,\n  \"less_or_equal\" : lambda a, b: a <= b,\n  \"greater_or_equal\" : lambda a, b: a >= b,\n}\nprint(\"\\nComparison operations\")\nfor op, calc in comparison_calc.items():\n  print(f\"{op}: {calc(a, b)}\")",
+        "detail": "4-functions.Exercises.math_calc",
+        "documentation": {}
+    },
+    {
         "label": "Decoratore",
         "kind": 6,
         "importPath": "4-functions.Lessons.decorators",
@@ -4126,7 +4177,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def myFunc():\n    print('la funzione myFunc')\nmyFunc = myDecorator(myFunc)\nmyFunc()\n## Decoratori con argomenti\ndef decoratore(f):\n    def wrapper(*args, **kwargs):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args, **kwargs)\n    return wrapper",
+        "peekOfCode": "def myFunc():\n    print('la funzione myFunc')\nmyFunc = myDecorator(myFunc)\nmyFunc()\n## Decoratori con argomenti\ndef decoratore(f):\n    def wrapper(*args):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args)\n    return wrapper",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4135,7 +4186,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def decoratore(f):\n    def wrapper(*args, **kwargs):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args, **kwargs)\n    return wrapper\n@decoratore\ndef somma(a, b):\n    return a + b\nprint(somma(2, 3))\n## Decoratori annidati (multipli)",
+        "peekOfCode": "def decoratore(f):\n    def wrapper(*args):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args)\n    return wrapper\n@decoratore\ndef somma(a, b):\n    return a + b\nprint(somma(2, 3))\n## Decoratori annidati (multipli)",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4144,7 +4195,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def somma(a, b):\n    return a + b\nprint(somma(2, 3))\n## Decoratori annidati (multipli)\ndef decoratore1(f):\n    def wrapper(*args, **kwargs):\n        print(\"decoratore1\")\n        return f(*args, **kwargs)\n    return wrapper\ndef decoratore2(f):",
+        "peekOfCode": "def somma(a, b):\n    return a + b\nprint(somma(2, 3))\n## Decoratori annidati (multipli)\ndef decoratore1(f):\n    def wrapper(*args):\n        print(\"decoratore1\")\n        return f(*args)\n    return wrapper\ndef decoratore2(f):",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4153,7 +4204,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def decoratore1(f):\n    def wrapper(*args, **kwargs):\n        print(\"decoratore1\")\n        return f(*args, **kwargs)\n    return wrapper\ndef decoratore2(f):\n    def wrapper(*args, **kwargs):\n        print(\"decoratore2\")\n        return f(*args, **kwargs)\n    return wrapper",
+        "peekOfCode": "def decoratore1(f):\n    def wrapper(*args):\n        print(\"decoratore1\")\n        return f(*args)\n    return wrapper\ndef decoratore2(f):\n    def wrapper(**kwargs):\n        print(\"decoratore2\")\n        return f(**kwargs)\n    return wrapper",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4162,7 +4213,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def decoratore2(f):\n    def wrapper(*args, **kwargs):\n        print(\"decoratore2\")\n        return f(*args, **kwargs)\n    return wrapper\n@decoratore1\n@decoratore2\ndef funzione():\n    print(\"Funzione originale\")\nfunzione()",
+        "peekOfCode": "def decoratore2(f):\n    def wrapper(**kwargs):\n        print(\"decoratore2\")\n        return f(**kwargs)\n    return wrapper\n@decoratore1\n@decoratore2\ndef funzione():\n    print(\"Funzione decorata\")\nfunzione()",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4171,7 +4222,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def funzione():\n    print(\"Funzione originale\")\nfunzione()\n## Decoratori con parametri\ndef ripeti(n):\n    def decoratore(f):\n        def wrapper(*args, **kwargs):\n            for _ in range(n):\n                f(*args, **kwargs)\n        return wrapper",
+        "peekOfCode": "def funzione():\n    print(\"Funzione decorata\")\nfunzione()\n## Decoratori con parametri\ndef ripeti(n):\n    def decoratore(f):\n        def wrapper(*args, **kwargs):\n            for _ in range(n):\n                f(*args, **kwargs)\n        return wrapper",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4189,7 +4240,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "def saluta():\n    print(\"Ciao!\")\nsaluta()\n## Decoratori e `functools.wraps`\nimport functools\ndef decoratore(f):\n    @functools.wraps(f)\n    def wrapper(*args, **kwargs):\n        print(\"Decorato\")\n        return f(*args, **kwargs)",
+        "peekOfCode": "def saluta():\n    print(\"Ciao!\")\nsaluta()\n## Decoratori e functools.wraps\nimport functools\ndef decoratore(f):\n    @functools.wraps(f)\n    def wrapper(*args, **kwargs):\n        print(\"Decorato\")\n        return f(*args, **kwargs)",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4225,7 +4276,7 @@
         "kind": 5,
         "importPath": "4-functions.Lessons.decorators",
         "description": "4-functions.Lessons.decorators",
-        "peekOfCode": "myFunc = myDecorator(myFunc)\nmyFunc()\n## Decoratori con argomenti\ndef decoratore(f):\n    def wrapper(*args, **kwargs):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args, **kwargs)\n    return wrapper\n@decoratore\ndef somma(a, b):",
+        "peekOfCode": "myFunc = myDecorator(myFunc)\nmyFunc()\n## Decoratori con argomenti\ndef decoratore(f):\n    def wrapper(*args):\n        print(\"Chiamata a funzione con decoratore\")\n        return f(*args)\n    return wrapper\n@decoratore\ndef somma(a, b):",
         "detail": "4-functions.Lessons.decorators",
         "documentation": {}
     },
@@ -4270,7 +4321,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.functions",
         "description": "4-functions.Lessons.functions",
-        "peekOfCode": "def stampa_dettagli(**info):\n    for chiave, valore in info.items():\n        print(f\"{chiave}: {valore}\")\nstampa_dettagli(nome=\"Marco\", età=25, città=\"Roma\")\n## Parametri passati per riferimento\n#* Passare oggetti immutabili\ndef myFunc(x):\n    x = 10  # x viene reindirizzato a un nuovo oggetto intero\n    print(x)  # Stampa 10\ny = 20  # y è un intero, quindi immutabile",
+        "peekOfCode": "def stampa_dettagli(**info):\n    for chiave, valore in info.items():\n        print(f\"{chiave}: {valore}\")\nstampa_dettagli(nome=\"Marco\", età=25, città=\"Roma\")\n## Tipi di passaggi nei parametri\n#* Passare oggetti immutabili\ndef myFunc(x):\n    x = 10  # x viene reindirizzato a un nuovo oggetto intero\n    print(x)  # Stampa 10\ny = 20  # y è un intero, quindi immutabile",
         "detail": "4-functions.Lessons.functions",
         "documentation": {}
     },
@@ -4572,11 +4623,56 @@
         "documentation": {}
     },
     {
+        "label": "modifica_globale",
+        "kind": 2,
+        "importPath": "4-functions.Lessons.global_nonlocal",
+        "description": "4-functions.Lessons.global_nonlocal",
+        "peekOfCode": "def modifica_globale():\n    global x\n    x = 20\n    print(x) # 20\nmodifica_globale()\nprint(x)  # 20\n## Modifica di variabili enclosed\ndef modifica_enclosed():\n    y = 20\n    def inner():",
+        "detail": "4-functions.Lessons.global_nonlocal",
+        "documentation": {}
+    },
+    {
+        "label": "modifica_enclosed",
+        "kind": 2,
+        "importPath": "4-functions.Lessons.global_nonlocal",
+        "description": "4-functions.Lessons.global_nonlocal",
+        "peekOfCode": "def modifica_enclosed():\n    y = 20\n    def inner():\n        nonlocal y\n        y = 50\n        print(y) # 50\n    inner()\n    print(y)  # 50\nmodifica_enclosed()\n#* Esempio mixato",
+        "detail": "4-functions.Lessons.global_nonlocal",
+        "documentation": {}
+    },
+    {
+        "label": "outer",
+        "kind": 2,
+        "importPath": "4-functions.Lessons.global_nonlocal",
+        "description": "4-functions.Lessons.global_nonlocal",
+        "peekOfCode": "def outer():\n    y = 20\n    def inner():\n        global x\n        nonlocal y\n        x = 100\n        y = 200\n    inner()\n    print(f\"x (global): {x}\")\n    print(f\"y (enclosed): {y}\")",
+        "detail": "4-functions.Lessons.global_nonlocal",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "4-functions.Lessons.global_nonlocal",
+        "description": "4-functions.Lessons.global_nonlocal",
+        "peekOfCode": "x = 10\ndef modifica_globale():\n    global x\n    x = 20\n    print(x) # 20\nmodifica_globale()\nprint(x)  # 20\n## Modifica di variabili enclosed\ndef modifica_enclosed():\n    y = 20",
+        "detail": "4-functions.Lessons.global_nonlocal",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "4-functions.Lessons.global_nonlocal",
+        "description": "4-functions.Lessons.global_nonlocal",
+        "peekOfCode": "x = 10\ndef outer():\n    y = 20\n    def inner():\n        global x\n        nonlocal y\n        x = 100\n        y = 200\n    inner()\n    print(f\"x (global): {x}\")",
+        "detail": "4-functions.Lessons.global_nonlocal",
+        "documentation": {}
+    },
+    {
         "label": "quadrato",
         "kind": 5,
         "importPath": "4-functions.Lessons.lambas",
         "description": "4-functions.Lessons.lambas",
-        "peekOfCode": "quadrato = lambda x: x**2\nprint(quadrato(5))  # 25\nsomma = lambda x, y: x + y\nprint(somma(3, 6))  # 9\npari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4))  # th\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))",
+        "peekOfCode": "quadrato = lambda x: x**2\nprint(quadrato(5))  # 25\nsomma = lambda x, y: x + y\nprint(somma(3, 6))  # 9\npari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4)) # th\nprint(sottostringa(\"Java\", 0, 3)) # Jav\nprint(sottostringa(\"Elixir\", 0, -2)) # Elix",
         "detail": "4-functions.Lessons.lambas",
         "documentation": {}
     },
@@ -4585,7 +4681,7 @@
         "kind": 5,
         "importPath": "4-functions.Lessons.lambas",
         "description": "4-functions.Lessons.lambas",
-        "peekOfCode": "somma = lambda x, y: x + y\nprint(somma(3, 6))  # 9\npari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4))  # th\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))\nprint(saluti_ordinati)\ndati = [{'nome': 'Anna', 'età': 30}, {'nome': 'Luca', 'età': 25}]",
+        "peekOfCode": "somma = lambda x, y: x + y\nprint(somma(3, 6))  # 9\npari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4)) # th\nprint(sottostringa(\"Java\", 0, 3)) # Jav\nprint(sottostringa(\"Elixir\", 0, -2)) # Elix\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))",
         "detail": "4-functions.Lessons.lambas",
         "documentation": {}
     },
@@ -4594,7 +4690,7 @@
         "kind": 5,
         "importPath": "4-functions.Lessons.lambas",
         "description": "4-functions.Lessons.lambas",
-        "peekOfCode": "pari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4))  # th\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))\nprint(saluti_ordinati)\ndati = [{'nome': 'Anna', 'età': 30}, {'nome': 'Luca', 'età': 25}]\nordinati = sorted(dati, key=lambda x: x['età'])\nprint(ordinati)",
+        "peekOfCode": "pari = lambda x: x % 2 == 0\nprint(pari(7))  # False\nsottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4)) # th\nprint(sottostringa(\"Java\", 0, 3)) # Jav\nprint(sottostringa(\"Elixir\", 0, -2)) # Elix\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))\nprint(saluti_ordinati)\ndati = [{'nome': 'Anna', 'età': 30}, {'nome': 'Luca', 'età': 25}]",
         "detail": "4-functions.Lessons.lambas",
         "documentation": {}
     },
@@ -4603,7 +4699,7 @@
         "kind": 5,
         "importPath": "4-functions.Lessons.lambas",
         "description": "4-functions.Lessons.lambas",
-        "peekOfCode": "sottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4))  # th\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))\nprint(saluti_ordinati)\ndati = [{'nome': 'Anna', 'età': 30}, {'nome': 'Luca', 'età': 25}]\nordinati = sorted(dati, key=lambda x: x['età'])\nprint(ordinati)\nnumeri = [1, 2, 3, 4]\nquadrati = list(map(lambda x: x**2, numeri))",
+        "peekOfCode": "sottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]\nprint(sottostringa(\"Python\", 2, 4)) # th\nprint(sottostringa(\"Java\", 0, 3)) # Jav\nprint(sottostringa(\"Elixir\", 0, -2)) # Elix\nsaluti = [\"buongiorno\", \"arrivederci\", \"salve\", \"ciao\"]\nsaluti_ordinati = sorted(saluti, key=lambda parola: len(parola))\nprint(saluti_ordinati)\ndati = [{'nome': 'Anna', 'età': 30}, {'nome': 'Luca', 'età': 25}]\nordinati = sorted(dati, key=lambda x: x['età'])\nprint(ordinati)",
         "detail": "4-functions.Lessons.lambas",
         "documentation": {}
     },
@@ -4684,7 +4780,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.namespaces_scopes",
         "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def funzione():\n    x = 5  # Variabile locale\n    print(f\"Locale: {x}\")\nfunzione()\nprint(f\"Globale: {x}\")\n## Enclosed scope\ndef outer(x):\n    y = 20\n    def inner():\n        print(x + y)",
+        "peekOfCode": "def funzione():\n    x = 5  # Variabile locale\n    print(f\"Locale: {x}\")\nfunzione()\n# print(f\"Globale: {x}\") # Errore: x non sopravvive fuori dalla funzione\n## Enclosed scope\ndef outer(x):\n    y = 20\n    def inner():\n        print(x + y)",
         "detail": "4-functions.Lessons.namespaces_scopes",
         "documentation": {}
     },
@@ -4702,7 +4798,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.namespaces_scopes",
         "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def myFunc():\n    x = 20\n    print(x)\nmyFunc()     # stampa 20 (x locale)\nprint(x)     # stampa 100 (x globale)\n## Ispezionare namespace\ndef test():\n    a = 1\n    b = 2\n    print(locals()) # dizionario namespace locale",
+        "peekOfCode": "def myFunc():\n    x = 20\n    print(x)\nmyFunc()     # stampa 20 (x locale)\nprint(x)     # stampa 100 (x globale)\n## Ispezionare namespace\ndef test():\n    a = 1\n    b = 2\n    print(locals()) # dizionario namespace locale {'a': 1, 'b': 2}",
         "detail": "4-functions.Lessons.namespaces_scopes",
         "documentation": {}
     },
@@ -4711,43 +4807,7 @@
         "kind": 2,
         "importPath": "4-functions.Lessons.namespaces_scopes",
         "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def test():\n    a = 1\n    b = 2\n    print(locals()) # dizionario namespace locale\n    print(globals()) # dizionario namespace globale\n    print(vars(test)) # restituisce il __dict__ di un oggetto, se esiste\ntest() # Output: {'a': 1, 'b': 2}\n#% Modifica di variabili global e enclosed\n## Modifica delle variabili globali\nx = 10",
-        "detail": "4-functions.Lessons.namespaces_scopes",
-        "documentation": {}
-    },
-    {
-        "label": "modifica_globale",
-        "kind": 2,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def modifica_globale():\n    global x\n    x = 20\n    print(x) # 20\nmodifica_globale()\nprint(x)  # 20\n## Modifica di variabili enclosed\ndef modifica_enclosed():\n    y = 20\n    def inner():",
-        "detail": "4-functions.Lessons.namespaces_scopes",
-        "documentation": {}
-    },
-    {
-        "label": "modifica_enclosed",
-        "kind": 2,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def modifica_enclosed():\n    y = 20\n    def inner():\n        nonlocal y\n        y = 50\n        print(y) # 50\n    inner()\n    print(y)  # 50\nmodifica_enclosed()\n#* Esempio mixato",
-        "detail": "4-functions.Lessons.namespaces_scopes",
-        "documentation": {}
-    },
-    {
-        "label": "outer",
-        "kind": 2,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "def outer():\n    y = 20\n    def inner():\n        global x\n        nonlocal y\n        x = 100\n        y = 200\n    inner()\n    print(f\"x (global): {x}\")\n    print(f\"y (enclosed): {y}\")",
-        "detail": "4-functions.Lessons.namespaces_scopes",
-        "documentation": {}
-    },
-    {
-        "label": "x",
-        "kind": 5,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "x = 10  # Variabile globale\ndef funzione():\n    x = 5  # Variabile locale\n    print(f\"Locale: {x}\")\nfunzione()\nprint(f\"Globale: {x}\")\n## Enclosed scope\ndef outer(x):\n    y = 20\n    def inner():",
+        "peekOfCode": "def test():\n    a = 1\n    b = 2\n    print(locals()) # dizionario namespace locale {'a': 1, 'b': 2}\n    print(globals()) # dizionario namespace globale\n    print(vars(test)) # restituisce il __dict__ di un oggetto, se esiste\ntest()",
         "detail": "4-functions.Lessons.namespaces_scopes",
         "documentation": {}
     },
@@ -4761,21 +4821,93 @@
         "documentation": {}
     },
     {
-        "label": "x",
-        "kind": 5,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "x = 10\ndef modifica_globale():\n    global x\n    x = 20\n    print(x) # 20\nmodifica_globale()\nprint(x)  # 20\n## Modifica di variabili enclosed\ndef modifica_enclosed():\n    y = 20",
-        "detail": "4-functions.Lessons.namespaces_scopes",
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "4-functions.Lessons.type_annotations",
+        "description": "4-functions.Lessons.type_annotations",
+        "peekOfCode": "class MyClass:\n    nome: str\n    cognome: str\n    def __init__(self, nome, cognome):\n        self.nome = nome\n        self.cognome = cognome\nmc = MyClass(\"Mario\", \"Rossi\")\nprint(mc.nome)        # Mario\nprint(mc.cognome)     # Rossi",
+        "detail": "4-functions.Lessons.type_annotations",
         "documentation": {}
     },
     {
-        "label": "x",
+        "label": "myFunc",
+        "kind": 2,
+        "importPath": "4-functions.Lessons.type_annotations",
+        "description": "4-functions.Lessons.type_annotations",
+        "peekOfCode": "def myFunc(x: str) -> \"ritorno\":\n    return \"rit\"\nprint(myFunc.__annotations__)\n# Output: {'x': 'parametro x', 'return': 'ritorno'}\n#, Type hints\ndef foo(a: str, b: int) -> None:\n  print(f\"Primo parametro {a}, secondo parametro {b}\")\nfoo(\"Hello\", 42)\n# Primo parametro Hello, secondo parametro 42\n#, Syntax fo Variable annotations",
+        "detail": "4-functions.Lessons.type_annotations",
+        "documentation": {}
+    },
+    {
+        "label": "foo",
+        "kind": 2,
+        "importPath": "4-functions.Lessons.type_annotations",
+        "description": "4-functions.Lessons.type_annotations",
+        "peekOfCode": "def foo(a: str, b: int) -> None:\n  print(f\"Primo parametro {a}, secondo parametro {b}\")\nfoo(\"Hello\", 42)\n# Primo parametro Hello, secondo parametro 42\n#, Syntax fo Variable annotations\na: int = 10\nb: str\nprint(__annotations__)\n# Output: {'a': <class 'int'>, 'b': <class 'str'>}\n#, Per classi e attributi",
+        "detail": "4-functions.Lessons.type_annotations",
+        "documentation": {}
+    },
+    {
+        "label": "mc",
         "kind": 5,
-        "importPath": "4-functions.Lessons.namespaces_scopes",
-        "description": "4-functions.Lessons.namespaces_scopes",
-        "peekOfCode": "x = 10\ndef outer():\n    y = 20\n    def inner():\n        global x\n        nonlocal y\n        x = 100\n        y = 200\n    inner()\n    print(f\"x (global): {x}\")",
-        "detail": "4-functions.Lessons.namespaces_scopes",
+        "importPath": "4-functions.Lessons.type_annotations",
+        "description": "4-functions.Lessons.type_annotations",
+        "peekOfCode": "mc = MyClass(\"Mario\", \"Rossi\")\nprint(mc.nome)        # Mario\nprint(mc.cognome)     # Rossi",
+        "detail": "4-functions.Lessons.type_annotations",
+        "documentation": {}
+    },
+    {
+        "label": "get_doppio_gen",
+        "kind": 2,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while e < 300:\n        yield e\n        e *= 2\ngen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())",
+        "detail": "4-functions.generators",
+        "documentation": {}
+    },
+    {
+        "label": "get_doppio_gen",
+        "kind": 2,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2\n        if e >= 300:\n            return\ngen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))",
+        "detail": "4-functions.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "gen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())\ndef get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2",
+        "detail": "4-functions.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "gen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:",
+        "detail": "4-functions.generators",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
+        "detail": "4-functions.generators",
+        "documentation": {}
+    },
+    {
+        "label": "newGen",
+        "kind": 5,
+        "importPath": "4-functions.generators",
+        "description": "4-functions.generators",
+        "peekOfCode": "newGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
+        "detail": "4-functions.generators",
         "documentation": {}
     },
     {
@@ -4923,588 +5055,1326 @@
         "documentation": {}
     },
     {
-        "label": "Personaggio",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.abstracts",
-        "description": "5-oop.Lesson.abstracts",
-        "peekOfCode": "class Personaggio(ABC):\n    def __init__(self, nome, forza, vita):\n        self.nome = nome\n        self.forza = forza\n        self.vita = vita\n    @abstractmethod\n    def attacca(self):\n        pass\nclass Guerriero(Personaggio):\n    def attacca(self):",
-        "detail": "5-oop.Lesson.abstracts",
-        "documentation": {}
-    },
-    {
-        "label": "Guerriero",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.abstracts",
-        "description": "5-oop.Lesson.abstracts",
-        "peekOfCode": "class Guerriero(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\"\nclass Mago(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} lancia incantesimo con una forza di {self.forza}\"\nclass Ladro(Personaggio):\n    \"\"\" def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\" \"\"\"\nif __name__ == \"__main__\":",
-        "detail": "5-oop.Lesson.abstracts",
-        "documentation": {}
-    },
-    {
-        "label": "Mago",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.abstracts",
-        "description": "5-oop.Lesson.abstracts",
-        "peekOfCode": "class Mago(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} lancia incantesimo con una forza di {self.forza}\"\nclass Ladro(Personaggio):\n    \"\"\" def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\" \"\"\"\nif __name__ == \"__main__\":\n    aragon = Guerriero(\"Guerriero\", 20, 100)\n    gandalf = Mago(\"Mago\", 15, 100)\n    legolas = Ladro(\"Ladro\", 10, 100)",
-        "detail": "5-oop.Lesson.abstracts",
-        "documentation": {}
-    },
-    {
-        "label": "Ladro",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.abstracts",
-        "description": "5-oop.Lesson.abstracts",
-        "peekOfCode": "class Ladro(Personaggio):\n    \"\"\" def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\" \"\"\"\nif __name__ == \"__main__\":\n    aragon = Guerriero(\"Guerriero\", 20, 100)\n    gandalf = Mago(\"Mago\", 15, 100)\n    legolas = Ladro(\"Ladro\", 10, 100)\n    print(aragon.attacca())\n    print(gandalf.attacca())\n    print(legolas.attacca())",
-        "detail": "5-oop.Lesson.abstracts",
-        "documentation": {}
-    },
-    {
         "label": "NomeClasse",
         "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
         "peekOfCode": "class NomeClasse:\n    def __init__(self, arg1, arg2):\n        self.arg1 = arg1\n        self.arg2 = arg2\n    def metodo(self):\n        print(f\"Metodo invocato. Valori degli argomenti: {1}, {2}\", self.arg1, self.arg2)\n#, Definizione membri di classe\nclass Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome",
-        "detail": "5-oop.Lesson.classes",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "Persona",
         "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    def saluta(self):\n        print(f\"Ciao, mi chiamo  {self.nome} e ho {self.eta} anni\")\n#, Istanziamento della classe Persona\npersona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Attributi di istanza e di classe",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    def saluta(self):\n        print(f\"Ciao, mi chiamo  {self.nome} e ho {self.eta} anni\")\n## Istanziamento della classe Persona\npersona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Membri di classe e di istanza",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "Auto",
         "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
         "peekOfCode": "class Auto:\n    ruote = 4\n    def __init__(self, marca):\n        self.marca = marca\nauto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)",
-        "detail": "5-oop.Lesson.classes",
+        "detail": "5-oop.Lesson.classi.classes",
+        "documentation": {}
+    },
+    {
+        "label": "Esempio",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "class Esempio:\n    x = 10\n    def stampa(self):\n        print(self.x)\n#, Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo\nprova = Prova()",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "Prova",
         "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "class Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Classi come first-class objects\ndef aggiungi_metodo(cls):\n    def nuovo_metodo(self):\n        return \"Metodo Aggiunto\"\n    cls.metodo = nuovo_metodo",
+        "detail": "5-oop.Lesson.classi.classes",
+        "documentation": {}
+    },
+    {
+        "label": "Prova",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "class Prova:\n    pass\np = Prova()\nprint(p.metodo())  # Metodo Aggiunto\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "Test",
         "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "class Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
-        "label": "MyClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99\nprint(m2.myAttr) #, 99\n#, Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "InstanceMethod",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class InstanceMethod:\n    def myMethod(self):\n        print(\"Chiamato da\", id(self))\nm3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "Contatore",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Contatore:\n    def __init__(self):\n        self.valore = 0\n    def incrementa(self):\n        self.valore += 1\n    def mostra(self):\n        print(self.valore)\nc = Contatore()\nc.incrementa()\nc.incrementa()",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "MethodClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')\n#, Esempio\nclass Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "Counter",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Counter:\n    counter = 0\n    def __init__(self):\n        Counter.counter += 1\n    @classmethod\n    def instances(cls):\n        print(f\"Numero di instanze prodotte {cls.counter}\")\nc1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n#, Metodi statici",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "StaticMethod",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))\nclass Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "Persona",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod\n    def da_stringa(cls, stringa):\n        nome, eta = stringa.split(\",\")\n        return cls(nome, int(eta))\np = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  #, Mario",
-        "detail": "5-oop.Lesson.classes",
+        "label": "aggiungi_metodo",
+        "kind": 2,
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "def aggiungi_metodo(cls):\n    def nuovo_metodo(self):\n        return \"Metodo Aggiunto\"\n    cls.metodo = nuovo_metodo\n    return cls\n@aggiungi_metodo\nclass Prova:\n    pass\np = Prova()\nprint(p.metodo())  # Metodo Aggiunto",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "persona1",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "persona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Attributi di istanza e di classe\nclass Auto:\n    ruote = 4\n    def __init__(self, marca):\n        self.marca = marca\nauto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "persona1 = Persona(\"Luca\", 30)\npersona1.saluta()\n#, Membri di classe e di istanza\nclass Auto:\n    ruote = 4\n    def __init__(self, marca):\n        self.marca = marca\nauto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "auto1",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "auto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "auto1 = Auto(\"Fiat\")\nauto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Class body\nclass Esempio:\n    x = 10\n    def stampa(self):",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "auto2",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "auto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Scope e visibilità\nx = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "auto2 = Auto(\"BMW\")\nprint(auto1.ruote)\nprint(auto2.ruote)\nprint(auto1.marca)\nprint(auto2.marca)\n#, Class body\nclass Esempio:\n    x = 10\n    def stampa(self):\n        print(self.x)",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "x",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "x = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) #, accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "x = 5\nclass Prova:\n    def stampa_x(self):\n        print(x) # accede a x definita nel modulo\nprova = Prova()\nprova.stampa_x()\n#, Classi come first-class objects\ndef aggiungi_metodo(cls):\n    def nuovo_metodo(self):\n        return \"Metodo Aggiunto\"",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "prova",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "prova = Prova()\nprova.stampa_x()\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)\n#% Attributi di classe\nclass MyClass:\n    myAttr = 99",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "m1",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 99\nprint(m2.myAttr) #, 99\n#, Modifica locale\nm1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100\nprint(m2.myAttr) #, 99\n#, Accesso dinamico agli Attributi",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "m1.myAttr",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m1.myAttr = 100\nprint(MyClass.myAttr) #, 99\nprint(m1.myAttr) #, 100\nprint(m2.myAttr) #, 99\n#, Accesso dinamico agli Attributi\nprint(getattr(MyClass, 'myAttr'))\nsetattr(MyClass, 'myAttr', 20)\nprint(MyClass.myAttr)\nprint(hasattr(MyClass, 'myAttr'))\nprint(hasattr(MyClass, 'valore'))",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "m3",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m3 = InstanceMethod()\nm4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "m4",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "m4 = InstanceMethod()\nm3.myMethod()\nm4.myMethod()\n#, Ispezione\nprint(type(m3.myMethod)) #, <class 'method'>\nprint(type(InstanceMethod.myMethod)) #, <class 'function'>\nclass Contatore:\n    def __init__(self):\n        self.valore = 0\n    def incrementa(self):",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "c",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "c = Contatore()\nc.incrementa()\nc.incrementa()\nc.mostra()  #, 2\n#% Metodi di classe\nclass MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "c1",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "c1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\n#, Metodi statici\nclass StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))\nclass Persona:\n    def __init__(self, nome, eta):",
-        "detail": "5-oop.Lesson.classes",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "prova = Prova()\nprova.stampa_x()\n#, Classi come first-class objects\ndef aggiungi_metodo(cls):\n    def nuovo_metodo(self):\n        return \"Metodo Aggiunto\"\n    cls.metodo = nuovo_metodo\n    return cls\n@aggiungi_metodo\nclass Prova:",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "p",
         "kind": 5,
-        "importPath": "5-oop.Lesson.classes",
-        "description": "5-oop.Lesson.classes",
-        "peekOfCode": "p = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  #, Mario\nprint(p.eta)   #, 40",
-        "detail": "5-oop.Lesson.classes",
-        "documentation": {}
-    },
-    {
-        "label": "Automobile",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.dict",
-        "description": "5-oop.Lesson.dict",
-        "peekOfCode": "class Automobile:\n  def __init__(self, marca, modelo):\n    self.marca = marca\n    self.modelo = modelo\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\nprint(mia_auto.__dict__)",
-        "detail": "5-oop.Lesson.dict",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.dict",
-        "description": "5-oop.Lesson.dict",
-        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\")\nprint(mia_auto.__dict__)",
-        "detail": "5-oop.Lesson.dict",
-        "documentation": {}
-    },
-    {
-        "label": "saluta",
-        "kind": 2,
-        "importPath": "5-oop.Lesson.docstrings",
-        "description": "5-oop.Lesson.docstrings",
-        "peekOfCode": "def saluta(nome):\n    \"\"\"\n    Questa funzione stampa un saluto personalizzato.\n    Parametri:\n    nome (str): Il nome della persona da salutare.\n    Ritorno:\n    str: Una stringa che contiene il saluto personalizzato.\n    \"\"\"\n    return f\"Ciao, {nome}!\"\nprint(saluta(\"Mario\"))",
-        "detail": "5-oop.Lesson.docstrings",
-        "documentation": {}
-    },
-    {
-        "label": "funzione",
-        "kind": 2,
-        "importPath": "5-oop.Lesson.docstrings",
-        "description": "5-oop.Lesson.docstrings",
-        "peekOfCode": "def funzione(par1, par2):\n\t\"\"\"\n\tDescrizione breve.\n\tArgs:\n\t\tpar1 (int): Descrizione di par1.\n\t\tpar2 (str): Descrizione di par2.\n\tReturns:\n\t\tbool: Descrizione del valore di ritorno.\n\t\"\"\"",
-        "detail": "5-oop.Lesson.docstrings",
-        "documentation": {}
-    },
-    {
-        "label": "get_doppio_gen",
-        "kind": 2,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while e < 300:\n        yield e\n        e *= 2\ngen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "get_doppio_gen",
-        "kind": 2,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2\n        if e >= 300:\n            return\ngen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "gen",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "gen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())\ndef get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "gen",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "gen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "numbers",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "newGen",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.generators",
-        "description": "5-oop.Lesson.generators",
-        "peekOfCode": "newGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
-        "detail": "5-oop.Lesson.generators",
-        "documentation": {}
-    },
-    {
-        "label": "DClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "class DClass:\n  def xFunc(self):\n    print(\"Sono in DClass\")\nclass BClass:\n    \"\"\" b = 10\n    def bFunc(self):\n        print(\"Sono in bFunc\")\n    def xFunc(self):\n        print(\"Sono in BClass\")\n    \"\"\"",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "BClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "class BClass:\n    \"\"\" b = 10\n    def bFunc(self):\n        print(\"Sono in bFunc\")\n    def xFunc(self):\n        print(\"Sono in BClass\")\n    \"\"\"\n    pass\nclass BClass(object):\n    pass",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "BClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "class BClass(object):\n    pass\nclass CClass(BClass):\n    \"\"\" c = 20\n    def cFunc(self):\n        print(\"Sono in cFunc\")\n    def xFunc(self):\n        print(\"Sono in CClass\") \"\"\"\n    pass\nclass AClass(BClass, CClass):",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "CClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "class CClass(BClass):\n    \"\"\" c = 20\n    def cFunc(self):\n        print(\"Sono in cFunc\")\n    def xFunc(self):\n        print(\"Sono in CClass\") \"\"\"\n    pass\nclass AClass(BClass, CClass):\n    pass\na = AClass()",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "AClass",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "class AClass(BClass, CClass):\n    pass\na = AClass()\n# print(a.b)\n# print(a.c)\n# a.bFunc()\n# a.cFunc()\na.xFunc()",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "a",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.inheritance",
-        "description": "5-oop.Lesson.inheritance",
-        "peekOfCode": "a = AClass()\n# print(a.b)\n# print(a.c)\n# a.bFunc()\n# a.cFunc()\na.xFunc()",
-        "detail": "5-oop.Lesson.inheritance",
-        "documentation": {}
-    },
-    {
-        "label": "MyIterator",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "class MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.myattr < 300:\n            n = self.myattr\n            self.myattr *= 2\n            return n",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "Infinite",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "class Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):\n        n = self.n\n        self.n += 1\n        return n\nmyInfinite = Infinite()",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "class Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit\n  def __iter__(self):\n      return self\n  def __next__(self):\n      if self.current <= self.limit:\n          n = self.current\n          self.current += 1",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myList",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myList = [\"primo\", \"secondo\", \"terzo\"]\nmyIterator = iter(myList)\nprint(type(myList))  # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n## print(next(myIterator))\n#? Un altro print solleverebbe l'errore StopIteration\n\"\"\"",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myIterator",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myIterator = iter(myList)\nprint(type(myList))  # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n## print(next(myIterator))\n#? Un altro print solleverebbe l'errore StopIteration\n\"\"\"\nTraceback (most recent call last):",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myList",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myList = [1, 2, 3, 4, 5]\nfor item in myList: # crea automaticamente iter(iterable)\n    print(item) # chiama automaticamente next(iterator)\n    # Gestisce automaticamente StopIteration\n## Verificare se un oggetto è iterabile o iteratore\nhasattr(myList, \"__iter__\") # True (iterabile)\nhasattr(myList, \"__next__\") # False (non iteratore)\nit = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "it",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "it = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)\n## Sia iteratore e iterabile\n#? Iteratore che restituisca un numero che raddoppia fino a 300\nclass MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myClass",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myClass = MyIterator()\nmyIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myIter",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myInfinite",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myInfinite = Infinite()\nmyInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myInfiniteIter",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.iterators",
-        "description": "5-oop.Lesson.iterators",
-        "peekOfCode": "myInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit",
-        "detail": "5-oop.Lesson.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "Automobile",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "class Automobile:\n  def __init__(self, marca, modelo):\n    self.marca = marca\n    self.modelo = modelo\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\nmia_auto.anno = 2010\nprint(mia_auto.marca)\nprint(mia_auto.modelo)\nprint(mia_auto.anno)\nsua_auto = Automobile(\"Honda\", \"Civic\", 2020)",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "Automobile",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "class Automobile:\n  __slots__ = [\"marca\", \"modelo\"]\n  def __init__(self, marca, modelo):\n    self.marca = marca\n    self.modelo = modelo\nmia_auto = Automobile(\"Toyota\", \"Yaris\", 2010)\nprint(mia_auto.marca)\nprint(mia_auto.modelo)\nprint(mia_auto.anno)\n\"\"\"",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\")\nmia_auto.anno = 2010\nprint(mia_auto.marca)\nprint(mia_auto.modelo)\nprint(mia_auto.anno)\nsua_auto = Automobile(\"Honda\", \"Civic\", 2020)\nprint(sua_auto.anno)\n\"\"\"\n\"\"\"\nclass Automobile:",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto.anno",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "mia_auto.anno = 2010\nprint(mia_auto.marca)\nprint(mia_auto.modelo)\nprint(mia_auto.anno)\nsua_auto = Automobile(\"Honda\", \"Civic\", 2020)\nprint(sua_auto.anno)\n\"\"\"\n\"\"\"\nclass Automobile:\n  __slots__ = [\"marca\", \"modelo\"]",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "sua_auto",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "sua_auto = Automobile(\"Honda\", \"Civic\", 2020)\nprint(sua_auto.anno)\n\"\"\"\n\"\"\"\nclass Automobile:\n  __slots__ = [\"marca\", \"modelo\"]\n  def __init__(self, marca, modelo):\n    self.marca = marca\n    self.modelo = modelo\nmia_auto = Automobile(\"Toyota\", \"Yaris\", 2010)",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\", 2010)\nprint(mia_auto.marca)\nprint(mia_auto.modelo)\nprint(mia_auto.anno)\n\"\"\"\n\"\"\"\nmia_auto = Automobile(\"Honda\", \"Civic\")\nmia_auto.anno = 2010\nprint(sua_auto.anno)\n\"\"\"",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "mia_auto = Automobile(\"Honda\", \"Civic\")\nmia_auto.anno = 2010\nprint(sua_auto.anno)\n\"\"\"",
-        "detail": "5-oop.Lesson.slots",
-        "documentation": {}
-    },
-    {
-        "label": "mia_auto.anno",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.slots",
-        "description": "5-oop.Lesson.slots",
-        "peekOfCode": "mia_auto.anno = 2010\nprint(sua_auto.anno)\n\"\"\"",
-        "detail": "5-oop.Lesson.slots",
+        "importPath": "5-oop.Lesson.classi.classes",
+        "description": "5-oop.Lesson.classi.classes",
+        "peekOfCode": "p = Prova()\nprint(p.metodo())  # Metodo Aggiunto\n#, Esecuzione immediata\nclass Test:\n    print(\"Classe in fase di definizione\")\n    valore = 42\nprint(Test.valore)",
+        "detail": "5-oop.Lesson.classi.classes",
         "documentation": {}
     },
     {
         "label": "MyClass",
         "kind": 6,
-        "importPath": "5-oop.Lesson.special_methods",
-        "description": "5-oop.Lesson.special_methods",
-        "peekOfCode": "class MyClass:\n    def __init__(self, valore):\n        self.valore = valore\n    def __str__(self):\n        return f\"Valore: {self.valore}\"\n    def __repr__(self):\n        return f\"Valore: {self.valore}\"\nobj = MyClass(125)\nprint(obj)\nprint(str(obj))",
-        "detail": "5-oop.Lesson.special_methods",
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __init__(self, message):\n        self.message = message\n    def printMessage(self):\n        print(self.message)\n# m1 = MyClass() Caso errato, manca l'argomento message\nm1 = MyClass(\"primo\")\nm2 = MyClass(\"secondo\")\nm1.printMessage()  # Stampa: primo\nm2.printMessage()  # Stampa: secondo",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __init__(self, message=\"Nessun messaggio\"):\n        self.message = message\n    def printMessage(self):\n        print(self.message)\na = MyClass()\nb = MyClass(\"Benvenuto\")\na.printMessage()  # Stampa: Nessun messaggio\nb.printMessage()  # Stampa: Benvenuto\n#, Verifica del tipo o del contenuto del parametro",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __init__(self, message):\n        if not isinstance(message, str):\n            raise TypeError(\"message deve essere una stringa\")\n        self.message = message\n# m = MyClass(123)  # TypeError: message deve essere una stringa\n#% Il ciclo di creazione degli oggetti in Python:\n#, Istanza personalizzata\nclass MyClass:\n    def __new__(cls):",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __new__(cls):\n        istanza = super().__new__(cls)\n        print(\"istanza creata\")\n        return istanza\n    def __init__(self):\n        print(\"istanza inizializzata\")\nmc = MyClass()\n#, Esempio errato, new non restituisce nulla\nclass MyClass:",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __new__(cls):\n        print(\"istanza creata\")\n        # manca il return\n    def __init__(self):\n        print(\"istanza inizializzata\")\nmc = MyClass()\n#, Esempio con argomenti\nclass MyClass:\n    def __new__(cls, message):",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MyClass:\n    def __new__(cls, message):\n        istanza = super().__new__(cls)\n        print(\"istanza creata riceve il parametro: \", message)\n        return istanza\n    def __init__(self, message):\n        self.message = message\n        print(\"istanza inizializzata con messaggio:\", self.message)\nmc = MyClass(\"Python\")\n#, Esempi concreti di utilizzo di new",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "Singleton",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class Singleton:\n    _istanza = None\n    def __new__(cls):\n        if cls._istanza is None:\n            cls._istanza = super().__new__(cls)\n        return cls._istanza\n    def __init__(self, valore=0):\n        self.valore = valore\n        print(\"inizializzazione\")\n    def set_val(self, valore):",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "MiaStringa",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class MiaStringa(str):\n    def __new__(cls, valore):\n        valore = valore.upper()\n        return super().__new__(cls, valore)\ns = MiaStringa(\"ciao mondo\")\nprint(s)  # CIAO MONDO\n## Validazione o controllo della creazione\nclass NonNegativo:\n    def __new__(cls, valore):\n        if valore < 0:",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "NonNegativo",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class NonNegativo:\n    def __new__(cls, valore):\n        if valore < 0:\n            raise ValueError(\"Il valore deve essere non negativo\")\n        return super().__new__(cls)\n    def __init__(self, valore):\n        self.valore = valore\ntry:\n    x = NonNegativo(-5)\nexcept ValueError as e:",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class A:\n    def __new__(cls, tipo):\n        if tipo == \"B\":\n            return B()\n        return super().__new__(cls)\nclass B:\n    pass\na = A(\"B\")\nprint(type(a))  # <class '__main__.B'>",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "class B:\n    pass\na = A(\"B\")\nprint(type(a))  # <class '__main__.B'>",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "m1 = MyClass(\"primo\")\nm2 = MyClass(\"secondo\")\nm1.printMessage()  # Stampa: primo\nm2.printMessage()  # Stampa: secondo\n#, Parametri opzionali e valori di default nel costruttore\nclass MyClass:\n    def __init__(self, message=\"Nessun messaggio\"):\n        self.message = message\n    def printMessage(self):\n        print(self.message)",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "m2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "m2 = MyClass(\"secondo\")\nm1.printMessage()  # Stampa: primo\nm2.printMessage()  # Stampa: secondo\n#, Parametri opzionali e valori di default nel costruttore\nclass MyClass:\n    def __init__(self, message=\"Nessun messaggio\"):\n        self.message = message\n    def printMessage(self):\n        print(self.message)\na = MyClass()",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "a = MyClass()\nb = MyClass(\"Benvenuto\")\na.printMessage()  # Stampa: Nessun messaggio\nb.printMessage()  # Stampa: Benvenuto\n#, Verifica del tipo o del contenuto del parametro\nclass MyClass:\n    def __init__(self, message):\n        if not isinstance(message, str):\n            raise TypeError(\"message deve essere una stringa\")\n        self.message = message",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "b = MyClass(\"Benvenuto\")\na.printMessage()  # Stampa: Nessun messaggio\nb.printMessage()  # Stampa: Benvenuto\n#, Verifica del tipo o del contenuto del parametro\nclass MyClass:\n    def __init__(self, message):\n        if not isinstance(message, str):\n            raise TypeError(\"message deve essere una stringa\")\n        self.message = message\n# m = MyClass(123)  # TypeError: message deve essere una stringa",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "mc",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "mc = MyClass()\n#, Esempio errato, new non restituisce nulla\nclass MyClass:\n    def __new__(cls):\n        print(\"istanza creata\")\n        # manca il return\n    def __init__(self):\n        print(\"istanza inizializzata\")\nmc = MyClass()\n#, Esempio con argomenti",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "mc",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "mc = MyClass()\n#, Esempio con argomenti\nclass MyClass:\n    def __new__(cls, message):\n        istanza = super().__new__(cls)\n        print(\"istanza creata riceve il parametro: \", message)\n        return istanza\n    def __init__(self, message):\n        self.message = message\n        print(\"istanza inizializzata con messaggio:\", self.message)",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "mc",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "mc = MyClass(\"Python\")\n#, Esempi concreti di utilizzo di new\n## Implementazione di un Singleton\nclass Singleton:\n    _istanza = None\n    def __new__(cls):\n        if cls._istanza is None:\n            cls._istanza = super().__new__(cls)\n        return cls._istanza\n    def __init__(self, valore=0):",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "a = Singleton()\n# b = Singleton(10) # Errore\nb = Singleton()\nprint(a is b)  # True\nprint(a.valore)  # 0\na.set_val(10)\nprint(a.valore)  # 10\n## Subclassing di tipi immutabili\nclass MiaStringa(str):\n    def __new__(cls, valore):",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "b = Singleton()\nprint(a is b)  # True\nprint(a.valore)  # 0\na.set_val(10)\nprint(a.valore)  # 10\n## Subclassing di tipi immutabili\nclass MiaStringa(str):\n    def __new__(cls, valore):\n        valore = valore.upper()\n        return super().__new__(cls, valore)",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "s = MiaStringa(\"ciao mondo\")\nprint(s)  # CIAO MONDO\n## Validazione o controllo della creazione\nclass NonNegativo:\n    def __new__(cls, valore):\n        if valore < 0:\n            raise ValueError(\"Il valore deve essere non negativo\")\n        return super().__new__(cls)\n    def __init__(self, valore):\n        self.valore = valore",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.constructors",
+        "description": "5-oop.Lesson.classi.constructors",
+        "peekOfCode": "a = A(\"B\")\nprint(type(a))  # <class '__main__.B'>",
+        "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "InstanceMethod",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class InstanceMethod:\n    def myMethod(self):\n        print(\"Chiamato da\", id(self))\nm1 = InstanceMethod()\nm2 = InstanceMethod()\nm1.myMethod()\nm2.myMethod()\n#, Introspezione\nprint(type(m1.myMethod))             # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Contatore",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Contatore:\n    def __init__(self):\n        self.valore = 0\n    def incrementa(self):\n        self.valore += 1\n    def mostra(self):\n        print(self.valore)\nc = Contatore()\nc.incrementa()\nc.incrementa()",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Person:\n    def saluta(self):\n        print(\"Saluto base\")\n    def saluta(self):\n        print(\"Saluto base sovrascritto\")\n    def saluta(self, name):\n        print(f\"Saluto {name}\")\n    def saluta(self, id):\n        print(f\"Saluto random a utente con id: {id}\")\np = Person()",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Person:\n    def saluta(self, arg=None):\n        if arg is None:\n            print(\"Saluto base\")\n        elif isinstance(arg, str):\n            print(f\"Saluto {arg}\")\n        elif isinstance(arg, int):\n            print(f\"Saluto random a utente con id: {arg}\")\n        else:\n            print(\"Saluto sconosciuto\")",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Person:\n    def saluta(self, *args, **kwargs):\n        if not args:\n            print(\"Saluto base\")\n        elif len(args) == 1 and isinstance(args[0], str):\n            print(f\"Saluto {args[0]}\")\n        elif len(args) == 1 and isinstance(args[0], int):\n            print(f\"Saluto random a utente con id: {args[0]}\")\n        else:\n            print(\"Saluto sconosciuto\")",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Person:\n    @singledispatchmethod\n    def saluta(self, arg):\n        print(\"Saluto sconosciuto\")\n    @saluta.register\n    def _(self, name: str):\n        print(f\"Saluto {name}\")\n    @saluta.register\n    def _(self, id: int):\n        print(f\"Saluto random a utente con id: {id}\")",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "class Person:\n    def saluta(self):\n        print(\"Saluto base\")\n    def saluta_con_nome(self, name):\n        print(f\"Saluto {name}\")\n    def saluta_con_id(self, id):\n        print(f\"Saluto random a utente con id: {id}\")\np = Person()\np.saluta()\np.saluta_con_nome(\"Andrea\")",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "m1 = InstanceMethod()\nm2 = InstanceMethod()\nm1.myMethod()\nm2.myMethod()\n#, Introspezione\nprint(type(m1.myMethod))             # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>\nprint(m1.myMethod.__self__)    # <__main__.InstanceMethod object at 0x10...>\nprint(m1.myMethod.__func__)    # <function InstanceMethod.myMethod at 0x10...>\n#, Ispezione",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "m2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "m2 = InstanceMethod()\nm1.myMethod()\nm2.myMethod()\n#, Introspezione\nprint(type(m1.myMethod))             # <class 'method'>\nprint(type(InstanceMethod.myMethod)) # <class 'function'>\nprint(m1.myMethod.__self__)    # <__main__.InstanceMethod object at 0x10...>\nprint(m1.myMethod.__func__)    # <function InstanceMethod.myMethod at 0x10...>\n#, Ispezione\nclass Contatore:",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "c = Contatore()\nc.incrementa()\nc.incrementa()\nc.mostra()  # 2\n#, Overload dei metodi\n\"\"\"\nclass Person:\n    def saluta(self):\n        print(\"Saluto base\")\n    def saluta(self):",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "p = Person()\np.saluta()\np.saluta(\"Andrea\")\np.saluta(20)\n\"\"\"\n## Soluzione 1\nclass Person:\n    def saluta(self, arg=None):\n        if arg is None:\n            print(\"Saluto base\")",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "p = Person()\np.saluta()           # Saluto base\np.saluta(\"Andrea\")   # Saluto Andrea\np.saluta(20)         # Saluto random a utente con id: 20\n## Soluzione 2\nclass Person:\n    def saluta(self, *args, **kwargs):\n        if not args:\n            print(\"Saluto base\")\n        elif len(args) == 1 and isinstance(args[0], str):",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "p = Person()\np.saluta()\np.saluta(\"Andrea\")\np.saluta(20)\n## Soluzione 3\n\"\"\"\nfrom functools import singledispatchmethod\nclass Person:\n    @singledispatchmethod\n    def saluta(self, arg):",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "p = Person()\np.saluta()\np.saluta(\"Andrea\")\np.saluta(20)\n\"\"\"\n## Soluzione 4\nclass Person:\n    def saluta(self):\n        print(\"Saluto base\")\n    def saluta_con_nome(self, name):",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.methods",
+        "description": "5-oop.Lesson.classi.methods",
+        "peekOfCode": "p = Person()\np.saluta()\np.saluta_con_nome(\"Andrea\")\np.saluta_con_id(20)",
+        "detail": "5-oop.Lesson.classi.methods",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "class MyClass(object):\n    pass\nmyObject = MyClass()\nprint(isinstance(myObject, object))  # True\nprint(isinstance(MyClass, object))  # True\n#, Metaclasse Type\nclass MyClass:\n    pass\nprint(type(MyClass))     # <class 'type'> (oggetto classe)\nprint(type(MyClass()))   # <class '__main__.MyClass'> (oggetto istanza)",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "class MyClass:\n    pass\nprint(type(MyClass))     # <class 'type'> (oggetto classe)\nprint(type(MyClass()))   # <class '__main__.MyClass'> (oggetto istanza)\nprint(isinstance(myObject, type))  # False\n## Verifica di appartenenza\nclass MyClass:\n    pass\nmyObject = MyClass()\nprint(isinstance(myObject, MyClass))  # True",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "class MyClass:\n    pass\nmyObject = MyClass()\nprint(isinstance(myObject, MyClass))  # True\nprint(isinstance(myObject, object))   # True\nprint(isinstance(MyClass, object))    # True\nprint(isinstance(MyClass, type))      # True\nprint(isinstance(myObject, type))     # False\nprint(isinstance(object, object))     # True\nprint(isinstance(type, type))         # True",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "myObject",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "myObject = MyClass()\nprint(isinstance(myObject, object))  # True\nprint(isinstance(MyClass, object))  # True\n#, Metaclasse Type\nclass MyClass:\n    pass\nprint(type(MyClass))     # <class 'type'> (oggetto classe)\nprint(type(MyClass()))   # <class '__main__.MyClass'> (oggetto istanza)\nprint(isinstance(myObject, type))  # False\n## Verifica di appartenenza",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "myObject",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "myObject = MyClass()\nprint(isinstance(myObject, MyClass))  # True\nprint(isinstance(myObject, object))   # True\nprint(isinstance(MyClass, object))    # True\nprint(isinstance(MyClass, type))      # True\nprint(isinstance(myObject, type))     # False\nprint(isinstance(object, object))     # True\nprint(isinstance(type, type))         # True\nprint(isinstance(object, type))       # True\nprint(isinstance(type, object))       # True",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "MyClass2 = type('MyClass', (), {'x': 42})\nistanza = MyClass2()\nprint(istanza.x)  # 42",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "istanza",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.object_type",
+        "description": "5-oop.Lesson.classi.object_type",
+        "peekOfCode": "istanza = MyClass2()\nprint(istanza.x)  # 42",
+        "detail": "5-oop.Lesson.classi.object_type",
+        "documentation": {}
+    },
+    {
+        "label": "Personaggio",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class Personaggio(ABC):\n    def __init__(self, nome, forza, vita):\n        self.nome = nome\n        self.forza = forza\n        self.vita = vita\n    @abstractmethod\n    def attacca(self):\n        pass\n    # Implementazione di default\n    @abstractmethod",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "Guerriero",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class Guerriero(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\"\n    def descrizione(self):\n        print(f\"{self.nome} ha vita iniziale: {self.vita}\")\nclass Mago(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} lancia incantesimo con una forza di {self.forza}\"\n    def descrizione(self):\n        print(f\"{self.nome} ha vita iniziale: {self.vita}\")",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "Mago",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class Mago(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} lancia incantesimo con una forza di {self.forza}\"\n    def descrizione(self):\n        print(f\"{self.nome} ha vita iniziale: {self.vita}\")\nclass Ladro(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\"\n    def descrizione(self):\n        print(f\"{self.nome} ha vita iniziale: {self.vita}\")",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "Ladro",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class Ladro(Personaggio):\n    def attacca(self):\n        return f\"{self.nome} attacca con la spada con una forza di {self.forza}\"\n    def descrizione(self):\n        print(f\"{self.nome} ha vita iniziale: {self.vita}\")\nif __name__ == \"__main__\":\n    aragon = Guerriero(\"Guerriero\", 20, 100)\n    gandalf = Mago(\"Mago\", 15, 100)\n    legolas = Ladro(\"Ladro\", 10, 100)\n    print(aragon.descrizione())",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "Scrivibile",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class Scrivibile(Protocol):\n    def write(self, testo: str) -> None: ...\nclass FileScrivibile:\n    def write(self, testo: str) -> None:\n        print(f\"Scrivo: {testo}\")\ndef scrivi_qualcosa(s: Scrivibile):\n    s.write(\"Ciao\")\nf = FileScrivibile()\nscrivi_qualcosa(f)  # Accettato dal type checker",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "FileScrivibile",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "class FileScrivibile:\n    def write(self, testo: str) -> None:\n        print(f\"Scrivo: {testo}\")\ndef scrivi_qualcosa(s: Scrivibile):\n    s.write(\"Ciao\")\nf = FileScrivibile()\nscrivi_qualcosa(f)  # Accettato dal type checker",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "scrivi_qualcosa",
+        "kind": 2,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "def scrivi_qualcosa(s: Scrivibile):\n    s.write(\"Ciao\")\nf = FileScrivibile()\nscrivi_qualcosa(f)  # Accettato dal type checker",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.abstracts",
+        "description": "5-oop.Lesson.inheritance.abstracts",
+        "peekOfCode": "f = FileScrivibile()\nscrivi_qualcosa(f)  # Accettato dal type checker",
+        "detail": "5-oop.Lesson.inheritance.abstracts",
+        "documentation": {}
+    },
+    {
+        "label": "Parent",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Parent:\n    pass\nclass Child(Parent):\n    pass\nm1 = Child()\nprint(isinstance(m1, Child))  # True\nprint(isinstance(m1, Parent))  # True\n# , Ereditarietà di metodi\n## Uso diretto\nclass MessageParent:",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Child",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Child(Parent):\n    pass\nm1 = Child()\nprint(isinstance(m1, Child))  # True\nprint(isinstance(m1, Parent))  # True\n# , Ereditarietà di metodi\n## Uso diretto\nclass MessageParent:\n    def setMessage(self, message):\n        self.message = message",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "MessageParent",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class MessageParent:\n    def setMessage(self, message):\n        self.message = message\n    def printMessage(self):\n        print(self.message)\nclass MessageChild(MessageParent):\n    pass\nm1 = MessageChild()\nm1.setMessage(\"python\")\nm1.printMessage()  # Output: python",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "MessageChild",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class MessageChild(MessageParent):\n    pass\nm1 = MessageChild()\nm1.setMessage(\"python\")\nm1.printMessage()  # Output: python\n## Override\nclass Human:\n    def saluta(self):\n        print(\"Ciao da Human\")\nclass Person(Human):",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Human",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Human:\n    def saluta(self):\n        print(\"Ciao da Human\")\nclass Person(Human):\n    def saluta(self):  # override\n        print(\"Ciao da Person\")\np1 = Person()\np1.saluta()  # \"Ciao da Person\"\n## Estensione con super()\nclass Animal:",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Person",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Person(Human):\n    def saluta(self):  # override\n        print(\"Ciao da Person\")\np1 = Person()\np1.saluta()  # \"Ciao da Person\"\n## Estensione con super()\nclass Animal:\n    def __init__(self, limbs=None):\n        self.limbs = None\n        print(\"Inizializzatore di Animal class\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Animal",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Animal:\n    def __init__(self, limbs=None):\n        self.limbs = None\n        print(\"Inizializzatore di Animal class\")\nclass Dog(Animal):\n    def __init__(self):\n        super().__init__()\n        self.limbs = 4\n        print(\"Inizializzatore di Dog class\")\nanimal = Animal()",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "Dog",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class Dog(Animal):\n    def __init__(self):\n        super().__init__()\n        self.limbs = 4\n        print(\"Inizializzatore di Dog class\")\nanimal = Animal()\nprint(animal.limbs) # None\ndog = Dog()\nprint(dog.limbs) # 4\nprint(issubclass(Dog, Animal)) # True",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "BClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class BClass:\n    b = 10\n    def bFunc(self):\n        print(\"Sono in bFunc\")\n    def xFunc(self):\n        print(\"Sono in BClass\")\nclass CClass:\n    c = 20\n    def cFunc(self):\n        print(\"Sono in cFunc\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "CClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class CClass:\n    c = 20\n    def cFunc(self):\n        print(\"Sono in cFunc\")\n    def xFunc(self):\n        print(\"Sono in CClass\")\nclass AClass(BClass, CClass):\n    pass\na = AClass()\nprint(a.b)         # 10",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "AClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class AClass(BClass, CClass):\n    pass\na = AClass()\nprint(a.b)         # 10\nprint(a.c)         # 20\na.bFunc()          # Sono in bFunc\na.cFunc()          # Sono in cFunc\na.xFunc()          # Sono in BClass\n## MRO\nprint(AClass.__mro__)",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "A",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class A:\n    def x(self):\n        print(\"A\")\nclass B(A):\n    def x(self):\n        print(\"B\")\n        super().x()\nclass C(A):\n    def x(self):\n        print(\"C\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "B",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class B(A):\n    def x(self):\n        print(\"B\")\n        super().x()\nclass C(A):\n    def x(self):\n        print(\"C\")\n        super().x()\nclass D(B, C):\n    def x(self):",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "C",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class C(A):\n    def x(self):\n        print(\"C\")\n        super().x()\nclass D(B, C):\n    def x(self):\n        print(\"D\")\n        super().x()\nd = D()\nd.x()",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "D",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "class D(B, C):\n    def x(self):\n        print(\"D\")\n        super().x()\nd = D()\nd.x()",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "m1 = Child()\nprint(isinstance(m1, Child))  # True\nprint(isinstance(m1, Parent))  # True\n# , Ereditarietà di metodi\n## Uso diretto\nclass MessageParent:\n    def setMessage(self, message):\n        self.message = message\n    def printMessage(self):\n        print(self.message)",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "m1 = MessageChild()\nm1.setMessage(\"python\")\nm1.printMessage()  # Output: python\n## Override\nclass Human:\n    def saluta(self):\n        print(\"Ciao da Human\")\nclass Person(Human):\n    def saluta(self):  # override\n        print(\"Ciao da Person\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "p1 = Person()\np1.saluta()  # \"Ciao da Person\"\n## Estensione con super()\nclass Animal:\n    def __init__(self, limbs=None):\n        self.limbs = None\n        print(\"Inizializzatore di Animal class\")\nclass Dog(Animal):\n    def __init__(self):\n        super().__init__()",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "animal",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "animal = Animal()\nprint(animal.limbs) # None\ndog = Dog()\nprint(dog.limbs) # 4\nprint(issubclass(Dog, Animal)) # True\n#, Ereditarietà multipla\nclass BClass:\n    b = 10\n    def bFunc(self):\n        print(\"Sono in bFunc\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "dog",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "dog = Dog()\nprint(dog.limbs) # 4\nprint(issubclass(Dog, Animal)) # True\n#, Ereditarietà multipla\nclass BClass:\n    b = 10\n    def bFunc(self):\n        print(\"Sono in bFunc\")\n    def xFunc(self):\n        print(\"Sono in BClass\")",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "a = AClass()\nprint(a.b)         # 10\nprint(a.c)         # 20\na.bFunc()          # Sono in bFunc\na.cFunc()          # Sono in cFunc\na.xFunc()          # Sono in BClass\n## MRO\nprint(AClass.__mro__)\n# oppure\n# help(AClass)",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.inheritance.inheritance",
+        "description": "5-oop.Lesson.inheritance.inheritance",
+        "peekOfCode": "d = D()\nd.x()",
+        "detail": "5-oop.Lesson.inheritance.inheritance",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class MyClass:\n    myAttr = 99\nm1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 99\nprint(m2.myAttr) # 99\n## Verifica degli scopes\nprint(m1.__dict__) # {} vuoto\nprint(m1.__class__.__dict__) # contiene 'myAttr': 99\n#, Modifica livello di classe",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "Prova",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class Prova:\n    x = 5\nprint(getattr(Prova, 'x'))       # 5\nsetattr(Prova, 'x', 20) # Aggiorna valore attributo\nsetattr(Prova, 'y', \"hello\") # Crea nuovo attributo\nprint(Prova.__dict__) # { 'x': 20, 'y': 'hello', altri... }\nprint(hasattr(Prova, 'x'))       # True\ndelattr(Prova, 'x')\nprint(hasattr(Prova, 'x'))       # False\n#% Metodi di classe",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "MethodClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class MethodClass:\n    @classmethod\n    def class_method(cls, arg1):\n        print(f\"Metodo della classe {cls.__name__} e parametro: {arg1}\")\nMethodClass.class_method('Argomento 1')\n#, Esempi\nclass Counter:\n    counter = 0\n    def __new__(cls):\n        cls.counter += 1",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class Counter:\n    counter = 0\n    def __new__(cls):\n        cls.counter += 1\n    def __init__(self):\n        pass\n        # Counter.counter += 1\n        # __class__.counter += 1\n    @classmethod\n    def instances(cls):",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod\n    def da_stringa(cls, stringa):\n        nome, eta = stringa.split(\",\")\n        return cls(nome, int(eta))\np = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  # Mario",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class MyClass:\n    @staticmethod\n    def somma(a, b):\n        return a + b\nprint(MyClass.somma(10, 20)) # 30\nclass StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "StaticMethod",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "class StaticMethod:\n    @staticmethod\n    def static_method(val):\n        return val\nprint(StaticMethod.static_method(\"Hello World\"))",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "m1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "m1 = MyClass(); m2 = MyClass()\nprint(MyClass.myAttr) # 99\nprint(m1.myAttr) # 99\nprint(m2.myAttr) # 99\n## Verifica degli scopes\nprint(m1.__dict__) # {} vuoto\nprint(m1.__class__.__dict__) # contiene 'myAttr': 99\n#, Modifica livello di classe\nMyClass.myAttr = 100\nprint(MyClass.myAttr) # 100",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass.myAttr",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "MyClass.myAttr = 100\nprint(MyClass.myAttr) # 100\nprint(m1.myAttr) # 100\nprint(m2.myAttr) # 100\n#, Modifica locale per istanza\nm1.myAttr = 101\nprint(m1.myAttr) # 101\nprint(m2.myAttr) # 100\nprint(MyClass.myAttr) # 100\nprint(m1.__dict__) # {'myAttr': 101}",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "m1.myAttr",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "m1.myAttr = 101\nprint(m1.myAttr) # 101\nprint(m2.myAttr) # 100\nprint(MyClass.myAttr) # 100\nprint(m1.__dict__) # {'myAttr': 101}\nprint(m2.__dict__) # {} vuoto\n#, Accesso dinamico agli Attributi\nclass Prova:\n    x = 5\nprint(getattr(Prova, 'x'))       # 5",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "c1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "c1 = Counter(); c2 = Counter(); c3 = Counter()\nCounter.instances()\nclass Persona:\n    def __init__(self, nome, eta):\n        self.nome = nome\n        self.eta = eta\n    @classmethod\n    def da_stringa(cls, stringa):\n        nome, eta = stringa.split(\",\")\n        return cls(nome, int(eta))",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.class_members",
+        "description": "5-oop.Lesson.membri.class_members",
+        "peekOfCode": "p = Persona.da_stringa(\"Mario,40\")\nprint(p.nome)  # Mario\nprint(p.eta)   # 40\n#, Metodi statici\nclass MyClass:\n    @staticmethod\n    def somma(a, b):\n        return a + b\nprint(MyClass.somma(10, 20)) # 30\nclass StaticMethod:",
+        "detail": "5-oop.Lesson.membri.class_members",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class MyClass:\n    pass\nobj = MyClass()\nprint(obj)  # <__main__.MyClass object at 0x...>\n## Differenza str e repr\nclass MyClass:\n    def __init__(self, valore):\n        self.valore = valore\n    def __str__(self):\n        return f\"Valore: {self.valore}\"",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class MyClass:\n    def __init__(self, valore):\n        self.valore = valore\n    def __str__(self):\n        return f\"Valore: {self.valore}\"\n    def __repr__(self):\n        return f\"{self.__class__} con valore: {self.valore}\"\nobj = MyClass(125)\nprint(obj)        # Valore: 125\nprint(str(obj))   # Valore: 125",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class MyClass:\n    def __init__(self, x):\n        self.x = x\n    def __repr__(self):\n        return f\"MyClass({self.x})\"\nobj = MyClass(10)\nprint(obj)           # MyClass(10)\n## Implementazione robusta consigliata\nclass Punto:\n    def __init__(self, x, y):",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "Punto",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class Punto:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __repr__(self):\n        return f\"Punto({self.x}, {self.y})\"\n    def __str__(self):\n        return f\"Coordinate: ({self.x}, {self.y})\"\np1 = Punto(3, 4)\nprint(p1)           # Coordinate: (3, 4)",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "Automobile",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class Automobile:\n    def __init__(self, marca, modello):\n        self.marca = marca\n        self.modello = modello\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\nprint(mia_auto.__dict__)\n## Modifica dict\nmia_auto.__dict__[\"anno\"] = 2010\nprint(mia_auto.anno)  # 2010\nmia_auto.colore = \"rosso\"",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "Automobile",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class Automobile:\n    def __init__(self, marca, modello):\n        self.marca = marca\n        self.modello = modello\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\nmia_auto.anno = 2010  # aggiunto dinamicamente\nprint(mia_auto.anno)  # 2010\nprint(mia_auto.__dict__)\n# {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010}\n# sua_auto = Automobile(\"Honda\", \"Civic\")",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "Automobile",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "class Automobile:\n    __slots__ = [\"marca\", \"modello\"]\n    def __init__(self, marca, modello):\n        self.marca = marca\n        self.modello = modello\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\n# mia_auto.anno = 2010 # AttributeError: 'Automobile' object has no attribute 'anno'\nprint(mia_auto.__slots__)   # ['marca', 'modello']\n# oppure sulla classe\nprint(Automobile.__slots__) # ['marca', 'modello']",
+        "detail": "5-oop.Lesson.membri.dunder",
         "documentation": {}
     },
     {
         "label": "obj",
         "kind": 5,
-        "importPath": "5-oop.Lesson.special_methods",
-        "description": "5-oop.Lesson.special_methods",
-        "peekOfCode": "obj = MyClass(125)\nprint(obj)\nprint(str(obj))\nprint(repr(obj))",
-        "detail": "5-oop.Lesson.special_methods",
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "obj = MyClass()\nprint(obj)  # <__main__.MyClass object at 0x...>\n## Differenza str e repr\nclass MyClass:\n    def __init__(self, valore):\n        self.valore = valore\n    def __str__(self):\n        return f\"Valore: {self.valore}\"\n    def __repr__(self):\n        return f\"{self.__class__} con valore: {self.valore}\"",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "obj = MyClass(125)\nprint(obj)        # Valore: 125\nprint(str(obj))   # Valore: 125\nprint(repr(obj))  # <class '__main__.MyClass'> con valore: 125\n## repr come fallback in assenza di str\nclass MyClass:\n    def __init__(self, x):\n        self.x = x\n    def __repr__(self):\n        return f\"MyClass({self.x})\"",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "obj = MyClass(10)\nprint(obj)           # MyClass(10)\n## Implementazione robusta consigliata\nclass Punto:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __repr__(self):\n        return f\"Punto({self.x}, {self.y})\"\n    def __str__(self):",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "p1 = Punto(3, 4)\nprint(p1)           # Coordinate: (3, 4)\nprint(repr(p1))     # Punto(3, 4)\np2 = eval(repr(p1)) # Ricostruzione dell'oggetto se Punto è definito\nprint(p2)           # Coordinate: (3, 4)\nprint(p2 == p1)     # False (a meno di definire __eq__)\n#, dict\nclass Automobile:\n    def __init__(self, marca, modello):\n        self.marca = marca",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "p2 = eval(repr(p1)) # Ricostruzione dell'oggetto se Punto è definito\nprint(p2)           # Coordinate: (3, 4)\nprint(p2 == p1)     # False (a meno di definire __eq__)\n#, dict\nclass Automobile:\n    def __init__(self, marca, modello):\n        self.marca = marca\n        self.modello = modello\nmia_auto = Automobile(\"Toyota\", \"Yaris\")\nprint(mia_auto.__dict__)",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\")\nprint(mia_auto.__dict__)\n## Modifica dict\nmia_auto.__dict__[\"anno\"] = 2010\nprint(mia_auto.anno)  # 2010\nmia_auto.colore = \"rosso\"\nprint(mia_auto.__dict__)  # {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010, 'colore': 'rosso'}\n## Clonazione oggetti\n# nuova_auto = Automobile(**mia_auto.__dict__)\nfor k, v in {\"anno\": 2010, \"colore\": \"rosso\"}.items():",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto.__dict__[\"anno\"]",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto.__dict__[\"anno\"] = 2010\nprint(mia_auto.anno)  # 2010\nmia_auto.colore = \"rosso\"\nprint(mia_auto.__dict__)  # {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010, 'colore': 'rosso'}\n## Clonazione oggetti\n# nuova_auto = Automobile(**mia_auto.__dict__)\nfor k, v in {\"anno\": 2010, \"colore\": \"rosso\"}.items():\n    setattr(mia_auto, k, v)\n## Accesso programmatico\nfor chiave, valore in mia_auto.__dict__.items():",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto.colore",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto.colore = \"rosso\"\nprint(mia_auto.__dict__)  # {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010, 'colore': 'rosso'}\n## Clonazione oggetti\n# nuova_auto = Automobile(**mia_auto.__dict__)\nfor k, v in {\"anno\": 2010, \"colore\": \"rosso\"}.items():\n    setattr(mia_auto, k, v)\n## Accesso programmatico\nfor chiave, valore in mia_auto.__dict__.items():\n    print(f\"{chiave}: {valore}\")\n#, slots",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\")\nmia_auto.anno = 2010  # aggiunto dinamicamente\nprint(mia_auto.anno)  # 2010\nprint(mia_auto.__dict__)\n# {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010}\n# sua_auto = Automobile(\"Honda\", \"Civic\")\n# print(sua_auto.anno)  # AttributeError: 'Automobile' object has no attribute 'anno'\n## Uso di slots\nclass Automobile:\n    __slots__ = [\"marca\", \"modello\"]",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto.anno",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto.anno = 2010  # aggiunto dinamicamente\nprint(mia_auto.anno)  # 2010\nprint(mia_auto.__dict__)\n# {'marca': 'Toyota', 'modello': 'Yaris', 'anno': 2010}\n# sua_auto = Automobile(\"Honda\", \"Civic\")\n# print(sua_auto.anno)  # AttributeError: 'Automobile' object has no attribute 'anno'\n## Uso di slots\nclass Automobile:\n    __slots__ = [\"marca\", \"modello\"]\n    def __init__(self, marca, modello):",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "mia_auto",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.dunder",
+        "description": "5-oop.Lesson.membri.dunder",
+        "peekOfCode": "mia_auto = Automobile(\"Toyota\", \"Yaris\")\n# mia_auto.anno = 2010 # AttributeError: 'Automobile' object has no attribute 'anno'\nprint(mia_auto.__slots__)   # ['marca', 'modello']\n# oppure sulla classe\nprint(Automobile.__slots__) # ['marca', 'modello']\n# print(mia_auto.__dict__)  # Non possibile\nprint(dir(mia_auto))        # Mostra tutti i nomi nello scope",
+        "detail": "5-oop.Lesson.membri.dunder",
+        "documentation": {}
+    },
+    {
+        "label": "Libro",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "class Libro:\n    def __init__(self, titolo, autore, rating):\n        self.titolo = titolo  # membro pubblico\n        self._autore = autore  # membro \"protetto\"\n        self.__rating = rating  # membro \"privato\"\nlibro = Libro(\"1984\", \"Orwell\", 9)\nprint(libro.titolo)          # Accesso libero\nprint(libro._autore)         # Accessibile, ma sconsigliato fuori dalla classe\nprint(libro._Libro__rating)  # Accessibile, ma sconsigliato fuori dalla classe\nclass Libricino(Libro):",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "Libricino",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "class Libricino(Libro):\n    def __init__(self):\n        print(libro._autore)        # Accesso a membro privato\n        print(libro._Libro__rating) # Accesso tramite name mangling\nprint(Libricino())\n#, property()\nclass MyClass:\n    def __init__(self, my_attr):\n        self._priv_attr = my_attr\n    def get_attr(self):",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "class MyClass:\n    def __init__(self, my_attr):\n        self._priv_attr = my_attr\n    def get_attr(self):\n        return self._priv_attr\n    def set_attr(self, value):\n        self._priv_attr = value\n    attr = property(get_attr, set_attr)\nobj = MyClass(\"python\")\nprint(obj.attr)        # python  (usa get_attr)",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "Prodotto",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "class Prodotto:\n    def __init__(self, prezzo):\n        self.__prezzo = prezzo\n    @property\n    def prezzo(self):\n        print(\"Accesso al prezzo\")\n        return self.__prezzo\n    @prezzo.setter\n    def prezzo(self, valore):\n        if valore < 0:",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "libro",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "libro = Libro(\"1984\", \"Orwell\", 9)\nprint(libro.titolo)          # Accesso libero\nprint(libro._autore)         # Accessibile, ma sconsigliato fuori dalla classe\nprint(libro._Libro__rating)  # Accessibile, ma sconsigliato fuori dalla classe\nclass Libricino(Libro):\n    def __init__(self):\n        print(libro._autore)        # Accesso a membro privato\n        print(libro._Libro__rating) # Accesso tramite name mangling\nprint(Libricino())\n#, property()",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "obj = MyClass(\"python\")\nprint(obj.attr)        # python  (usa get_attr)\n## Accesso con property()\nobj.attr = \"prova\"     # (usa set_attr)\nprint(obj.attr)        # prova\n## Accesso diretto\nobj.set_attr(\"manuale\")     # accesso diretto al setter\nprint(obj.get_attr())       # accesso diretto al getter\nobj._priv_attr = \"forzato\"  # accesso diretto all'attributo (sconsigliato)\nprint(obj._priv_attr)",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "obj.attr",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "obj.attr = \"prova\"     # (usa set_attr)\nprint(obj.attr)        # prova\n## Accesso diretto\nobj.set_attr(\"manuale\")     # accesso diretto al setter\nprint(obj.get_attr())       # accesso diretto al getter\nobj._priv_attr = \"forzato\"  # accesso diretto all'attributo (sconsigliato)\nprint(obj._priv_attr)\n#, @property\nclass Prodotto:\n    def __init__(self, prezzo):",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "obj._priv_attr",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "obj._priv_attr = \"forzato\"  # accesso diretto all'attributo (sconsigliato)\nprint(obj._priv_attr)\n#, @property\nclass Prodotto:\n    def __init__(self, prezzo):\n        self.__prezzo = prezzo\n    @property\n    def prezzo(self):\n        print(\"Accesso al prezzo\")\n        return self.__prezzo",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "p = Prodotto(100)\nprint(p.prezzo)  # Accesso al prezzo → 100\np.prezzo = 150   # Modifica del prezzo\nprint(p.prezzo)\n# p.prezzo = -10   # ValueError\ndel p.prezzo\nprint(p.__dict__) # {} nessun attributo",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "p.prezzo",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.membri.properties",
+        "description": "5-oop.Lesson.membri.properties",
+        "peekOfCode": "p.prezzo = 150   # Modifica del prezzo\nprint(p.prezzo)\n# p.prezzo = -10   # ValueError\ndel p.prezzo\nprint(p.__dict__) # {} nessun attributo",
+        "detail": "5-oop.Lesson.membri.properties",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.data",
+        "description": "5-oop.Lesson.speciali.data",
+        "peekOfCode": "class Persona:\n    nome: str\n    cognome: str\n    eta: int = 18 # Valori di default\np1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili",
+        "detail": "5-oop.Lesson.speciali.data",
+        "documentation": {}
+    },
+    {
+        "label": "Record",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.data",
+        "description": "5-oop.Lesson.speciali.data",
+        "peekOfCode": "class Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
+        "detail": "5-oop.Lesson.speciali.data",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.data",
+        "description": "5-oop.Lesson.speciali.data",
+        "peekOfCode": "p1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str",
+        "detail": "5-oop.Lesson.speciali.data",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.data",
+        "description": "5-oop.Lesson.speciali.data",
+        "peekOfCode": "p2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")",
+        "detail": "5-oop.Lesson.speciali.data",
+        "documentation": {}
+    },
+    {
+        "label": "r1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.data",
+        "description": "5-oop.Lesson.speciali.data",
+        "peekOfCode": "r1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
+        "detail": "5-oop.Lesson.speciali.data",
+        "documentation": {}
+    },
+    {
+        "label": "Libro",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.docstrings",
+        "description": "5-oop.Lesson.speciali.docstrings",
+        "peekOfCode": "class Libro:\n    \"\"\"Rappresenta un libro con titolo e autore.\"\"\"\n    def __init__(self, titolo, autore):\n        \"\"\"Inizializza il libro con titolo e autore.\"\"\"\n        self.titolo = titolo\n        self.autore = autore\n    def descrivi(self):\n        \"\"\"Restituisce una descrizione testuale del libro.\"\"\"\n        return f\"{self.titolo} di {self.autore}\"\n# Formattazione e convenzioni",
+        "detail": "5-oop.Lesson.speciali.docstrings",
+        "documentation": {}
+    },
+    {
+        "label": "saluta",
+        "kind": 2,
+        "importPath": "5-oop.Lesson.speciali.docstrings",
+        "description": "5-oop.Lesson.speciali.docstrings",
+        "peekOfCode": "def saluta(nome):\n    \"\"\"\n    Questa funzione stampa un saluto personalizzato.\n    Parametri:\n    nome (str): Il nome della persona da salutare.\n    Ritorno:\n    str: Una stringa che contiene il saluto personalizzato.\n    \"\"\"\n    return f\"Ciao, {nome}!\"\nprint(saluta(\"Mario\"))",
+        "detail": "5-oop.Lesson.speciali.docstrings",
+        "documentation": {}
+    },
+    {
+        "label": "funzione",
+        "kind": 2,
+        "importPath": "5-oop.Lesson.speciali.docstrings",
+        "description": "5-oop.Lesson.speciali.docstrings",
+        "peekOfCode": "def funzione(par1, par2):\n\t\"\"\"\n\tDescrizione breve.\n\tArgs:\n\t\tpar1 (int): Descrizione di par1.\n\t\tpar2 (str): Descrizione di par2.\n\tReturns:\n\t\tbool: Descrizione del valore di ritorno.\n\t\"\"\"",
+        "detail": "5-oop.Lesson.speciali.docstrings",
+        "documentation": {}
+    },
+    {
+        "label": "MyIterator",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "class MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.myattr < 300:\n            n = self.myattr\n            self.myattr *= 2\n            return n",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "Infinite",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "class Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):\n        n = self.n\n        self.n += 1\n        return n\nmyInfinite = Infinite()",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "class Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit\n  def __iter__(self):\n      return self\n  def __next__(self):\n      if self.current <= self.limit:\n          n = self.current\n          self.current += 3",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myList = [\"primo\", \"secondo\", \"terzo\"]\nmyIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myIterator",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))\n\"\"\"",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myList = [1, 2, 3, 4, 5]\nfor item in myList: # crea automaticamente iter(iterable)\n    print(item) # chiama automaticamente next(iterator)\n    # Gestisce automaticamente StopIteration\n#, Verificare se un oggetto è iterabile o iteratore\nhasattr(myList, \"__iter__\") # True (iterabile)\nhasattr(myList, \"__next__\") # False (non iteratore)\nit = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "it",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "it = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)\n#, Oggetti che sono sia iterabili che iteratori\n## Iteratore che restituisca un numero che raddoppia fino a 300\nclass MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myClass",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myClass = MyIterator()\nmyIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myIter",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myInfinite",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myInfinite = Infinite()\nmyInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start",
+        "detail": "5-oop.Lesson.speciali.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myInfiniteIter",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.speciali.iterators",
+        "description": "5-oop.Lesson.speciali.iterators",
+        "peekOfCode": "myInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit",
+        "detail": "5-oop.Lesson.speciali.iterators",
         "documentation": {}
     },
     {

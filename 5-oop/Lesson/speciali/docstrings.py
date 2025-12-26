@@ -18,7 +18,22 @@ print(saluta("Mario"))
 
 # Leggere la documentazione
 print(saluta.__doc__)
-print(help(saluta))
+# print(help(saluta))
+
+
+#, Contesti
+"""Modulo di esempio per la documentazione."""
+
+class Libro:
+    """Rappresenta un libro con titolo e autore."""
+    def __init__(self, titolo, autore):
+        """Inizializza il libro con titolo e autore."""
+        self.titolo = titolo
+        self.autore = autore
+
+    def descrivi(self):
+        """Restituisce una descrizione testuale del libro."""
+        return f"{self.titolo} di {self.autore}"
 
 
 # Formattazione e convenzioni

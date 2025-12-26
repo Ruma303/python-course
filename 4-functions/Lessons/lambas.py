@@ -12,7 +12,9 @@ pari = lambda x: x % 2 == 0
 print(pari(7))  # False
 
 sottostringa = lambda stringa, inizio, fine: stringa[inizio:fine]
-print(sottostringa("Python", 2, 4))  # th
+print(sottostringa("Python", 2, 4)) # th
+print(sottostringa("Java", 0, 3)) # Jav
+print(sottostringa("Elixir", 0, -2)) # Elix
 
 saluti = ["buongiorno", "arrivederci", "salve", "ciao"]
 saluti_ordinati = sorted(saluti, key=lambda parola: len(parola))

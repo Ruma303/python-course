@@ -7,23 +7,49 @@ print(+a)    # 35
 print(-a)    # -35
 print(not a) # False
 
+## Operatori aritmetici
+
+a = 10 + 5 # 15
+b = 10 - 5 # 5
+c = 13 * 2 # 26
+d = 2 / 3 # 0.666666...
+e = 7 // 3  # 2
+f = 9 % 2 # 1
+g = 3 ** 3 # 27
+print("Operatori aritmetici \n" , a,b,c,d,e,f,g)
 
 ## Valutazione intervalli
+print("Operatori di confronto")
 print(1 < 2 < 3)
 print(10 >= 3 != 5)
 
 
 ## Valutazione logica
-print(True and False)
-print(True or False)
-print(not True)
+print("Operatori Logici")
+print(True and True) # True
+print(True and False) # False
+print(True or False) # True
+print(not True) # False
 
 
 ## Operatori logici
+print()
 print(1 < 2 and 2 > 3)
 print(1 < 2 or 2 > 3)
 print(not 1 < 2 and 2 > 3)
 print(not (3 < 2 or 2 > 3))
+
+## Operatori di assegnazione composta
+
+print("Assegnazione composta")
+x = 10
+print(x) # x ora è 10
+x += 5
+print(x) # x ora è 15
+x *= 2
+print(x) # x ora è 15
+x //= 3
+print(x) # x ora è 10
 
 
 ## Operatore ternario

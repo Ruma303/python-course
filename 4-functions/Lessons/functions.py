@@ -44,7 +44,7 @@ def stampa_dettagli(**info):
 stampa_dettagli(nome="Marco", età=25, città="Roma")
 
 
-## Parametri passati per riferimento
+## Tipi di passaggi nei parametri
 
 #* Passare oggetti immutabili
 def myFunc(x):

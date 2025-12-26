@@ -3,25 +3,26 @@
 myList = ["primo", "secondo", "terzo"]
 myIterator = iter(myList)
 
-print(type(myList))  # <class 'list'>
+print(type(myList))      # <class 'list'>
 print(type(myIterator))  # <class 'list_iterator'>
 
+## Avanzamento manuale
 print(next(myIterator))  # primo
 print(next(myIterator))  # secondo
 print(next(myIterator))  # terzo
 
+#! Un altro print solleverebbe l'eccezione StopIteration
+# print(next(myIterator))
 
-## print(next(myIterator))
-#? Un altro print solleverebbe l'errore StopIteration
 """
 Traceback (most recent call last):
-  File "/Users/ruma/Library/Mobile Documents/com~apple~CloudDocs/Sites/Coding/Python/Lessons/python-logic/iterables.py", line 11, in <module>
+  File ".../iterables.py", line 15, in <module>
     print(next(myIterator)) # StopIteration
 StopIteration
 """
 
 
-## Iterazione automatica con for in
+#, Iterazione automatica con for in
 myList = [1, 2, 3, 4, 5]
 
 for item in myList: # crea automaticamente iter(iterable)
@@ -29,7 +30,7 @@ for item in myList: # crea automaticamente iter(iterable)
     # Gestisce automaticamente StopIteration
 
 
-## Verificare se un oggetto è iterabile o iteratore
+#, Verificare se un oggetto è iterabile o iteratore
 hasattr(myList, "__iter__") # True (iterabile)
 hasattr(myList, "__next__") # False (non iteratore)
 
@@ -38,8 +39,9 @@ hasattr(it, "__iter__") # False (non iterabile)
 hasattr(it, "__next__") # True (iteratore)
 
 
-## Sia iteratore e iterabile
-#? Iteratore che restituisca un numero che raddoppia fino a 300
+#, Oggetti che sono sia iterabili che iteratori
+
+## Iteratore che restituisca un numero che raddoppia fino a 300
 class MyIterator:
     def __init__(self):
         self.myattr = 2
@@ -95,10 +97,10 @@ class Sequence:
   def __next__(self):
       if self.current <= self.limit:
           n = self.current
-          self.current += 1
+          self.current += 3
           return n
       else:
           raise StopIteration
 
-for number in Sequence(3, 9):
+for number in Sequence(3, 15):
     print(number)

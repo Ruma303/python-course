@@ -26,8 +26,8 @@ s = "Ciao" ; print(s)
 x = 15
 
 if x < 10:
-	s = "il numero è minore di 10"
-	print(s)
+  s = "il numero è minore di 10"
+  print(s)
 elif x == 10:
 	s = "il numero vale 10"
 	print(s)

@@ -32,9 +32,9 @@ myFunc()
 
 ## Decoratori con argomenti
 def decoratore(f):
-    def wrapper(*args, **kwargs):
+    def wrapper(*args):
         print("Chiamata a funzione con decoratore")
-        return f(*args, **kwargs)
+        return f(*args)
     return wrapper
 
 @decoratore
@@ -46,21 +46,21 @@ print(somma(2, 3))
 
 ## Decoratori annidati (multipli)
 def decoratore1(f):
-    def wrapper(*args, **kwargs):
+    def wrapper(*args):
         print("decoratore1")
-        return f(*args, **kwargs)
+        return f(*args)
     return wrapper
 
 def decoratore2(f):
-    def wrapper(*args, **kwargs):
+    def wrapper(**kwargs):
         print("decoratore2")
-        return f(*args, **kwargs)
+        return f(**kwargs)
     return wrapper
 
 @decoratore1
 @decoratore2
 def funzione():
-    print("Funzione originale")
+    print("Funzione decorata")
 
 funzione()
 
@@ -81,7 +81,7 @@ def saluta():
 saluta()
 
 
-## Decoratori e `functools.wraps`
+## Decoratori e functools.wraps
 import functools
 
 def decoratore(f):
