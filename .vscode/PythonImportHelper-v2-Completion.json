@@ -117,62 +117,12 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "dir_a.main",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "dir_a.main",
-        "description": "dir_a.main",
-        "detail": "dir_a.main",
-        "documentation": {}
-    },
-    {
-        "label": "saluta",
-        "importPath": "dir_a.main",
-        "description": "dir_a.main",
-        "isExtraImport": true,
-        "detail": "dir_a.main",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "dir_a.main",
-        "description": "dir_a.main",
-        "isExtraImport": true,
-        "detail": "dir_a.main",
-        "documentation": {}
-    },
-    {
-        "label": "grazie",
-        "importPath": "dir_a.main",
-        "description": "dir_a.main",
-        "isExtraImport": true,
-        "detail": "dir_a.main",
-        "documentation": {}
-    },
-    {
         "label": "dir_a.dir_b.modulo1",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "dir_a.dir_b.modulo1",
         "description": "dir_a.dir_b.modulo1",
         "detail": "dir_a.dir_b.modulo1",
-        "documentation": {}
-    },
-    {
-        "label": "*",
-        "importPath": "dir_a.dir_b.dir_c.calcoli",
-        "description": "dir_a.dir_b.dir_c.calcoli",
-        "isExtraImport": true,
-        "detail": "dir_a.dir_b.dir_c.calcoli",
         "documentation": {}
     },
     {
@@ -6434,64 +6384,73 @@
     {
         "label": "somma",
         "kind": 2,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.dir_c.calcoli",
-        "description": "7-modules-package-pip.dir_a.dir_b.dir_c.calcoli",
+        "importPath": "7-modules-package.dir_a.dir_b.dir_c.calcoli",
+        "description": "7-modules-package.dir_a.dir_b.dir_c.calcoli",
         "peekOfCode": "def somma(a, b):\n    return a + b\nif __name__ == \"__main__\":\n    print(\"Test interni al modulo\")\n    print(somma(3, 4))  # 7",
-        "detail": "7-modules-package-pip.dir_a.dir_b.dir_c.calcoli",
+        "detail": "7-modules-package.dir_a.dir_b.dir_c.calcoli",
         "documentation": {}
     },
     {
         "label": "radicequadrata",
         "kind": 2,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.dir_c.math_module",
-        "description": "7-modules-package-pip.dir_a.dir_b.dir_c.math_module",
+        "importPath": "7-modules-package.dir_a.dir_b.dir_c.math_module",
+        "description": "7-modules-package.dir_a.dir_b.dir_c.math_module",
         "peekOfCode": "def radicequadrata():\n  print(math.sqrt(4))",
-        "detail": "7-modules-package-pip.dir_a.dir_b.dir_c.math_module",
+        "detail": "7-modules-package.dir_a.dir_b.dir_c.math_module",
         "documentation": {}
     },
     {
-        "label": "saluta",
+        "label": "verifyName",
         "kind": 2,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.main",
-        "description": "7-modules-package-pip.dir_a.dir_b.main",
-        "peekOfCode": "def saluta():\n    print(\"Ciao!\")\ndef grazie():\n    print(\"Grazie!\")\nif __name__ == \"__main__\":\n    print(f\"Valore di __name__: {__name__}\")\n    saluta()\n    grazie()",
-        "detail": "7-modules-package-pip.dir_a.dir_b.main",
-        "documentation": {}
-    },
-    {
-        "label": "grazie",
-        "kind": 2,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.main",
-        "description": "7-modules-package-pip.dir_a.dir_b.main",
-        "peekOfCode": "def grazie():\n    print(\"Grazie!\")\nif __name__ == \"__main__\":\n    print(f\"Valore di __name__: {__name__}\")\n    saluta()\n    grazie()",
-        "detail": "7-modules-package-pip.dir_a.dir_b.main",
+        "importPath": "7-modules-package.dir_a.dir_b.modulo1",
+        "description": "7-modules-package.dir_a.dir_b.modulo1",
+        "peekOfCode": "def verifyName():\n    name = getInput().strip()\n    if isinstance(name, str) and name != \"\":\n        showOutput(name)\nif __name__ == \"__main__\":\n    verifyName()\ndef myFunc(x):\n    print(x)",
+        "detail": "7-modules-package.dir_a.dir_b.modulo1",
         "documentation": {}
     },
     {
         "label": "myFunc",
         "kind": 2,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.modulo1",
-        "description": "7-modules-package-pip.dir_a.dir_b.modulo1",
+        "importPath": "7-modules-package.dir_a.dir_b.modulo1",
+        "description": "7-modules-package.dir_a.dir_b.modulo1",
         "peekOfCode": "def myFunc(x):\n    print(x)",
-        "detail": "7-modules-package-pip.dir_a.dir_b.modulo1",
+        "detail": "7-modules-package.dir_a.dir_b.modulo1",
         "documentation": {}
     },
     {
-        "label": "MyClass",
-        "kind": 6,
-        "importPath": "7-modules-package-pip.dir_a.dir_b.modulo2",
-        "description": "7-modules-package-pip.dir_a.dir_b.modulo2",
-        "peekOfCode": "class MyClass:\n    pass",
-        "detail": "7-modules-package-pip.dir_a.dir_b.modulo2",
+        "label": "getInput",
+        "kind": 2,
+        "importPath": "7-modules-package.dir_a.dir_b.modulo2",
+        "description": "7-modules-package.dir_a.dir_b.modulo2",
+        "peekOfCode": "def getInput():\n  return input(\"Inserisci il tuo nome: \")\ndef showOutput(name):\n  print(f\"Piacere di conoscerti {name}\")",
+        "detail": "7-modules-package.dir_a.dir_b.modulo2",
         "documentation": {}
     },
     {
-        "label": "obj",
-        "kind": 5,
-        "importPath": "7-modules-package-pip.script",
-        "description": "7-modules-package-pip.script",
-        "peekOfCode": "obj = modulo2.MyClass()     # crea un oggetto della classe in modulo2\nprint(type(math.math))      # <class 'module'>\nmain.saluta()               # chiama la funzione saluta definita in main\nsaluta()                    # chiama la funzione saluta definita in main\ngrazie()               # AttributeError: module 'main' has no attribute 'grazie'\nringrazia()\nsomma(3, 4)",
-        "detail": "7-modules-package-pip.script",
+        "label": "showOutput",
+        "kind": 2,
+        "importPath": "7-modules-package.dir_a.dir_b.modulo2",
+        "description": "7-modules-package.dir_a.dir_b.modulo2",
+        "peekOfCode": "def showOutput(name):\n  print(f\"Piacere di conoscerti {name}\")",
+        "detail": "7-modules-package.dir_a.dir_b.modulo2",
+        "documentation": {}
+    },
+    {
+        "label": "saluta",
+        "kind": 2,
+        "importPath": "7-modules-package.dir_a.main",
+        "description": "7-modules-package.dir_a.main",
+        "peekOfCode": "def saluta():\n    print(\"Ciao!\")\ndef grazie():\n    print(\"Grazie!\")\nif __name__ == \"__main__\":\n    print(f\"Valore di __name__: {__name__}\")\n    saluta()\n    grazie()",
+        "detail": "7-modules-package.dir_a.main",
+        "documentation": {}
+    },
+    {
+        "label": "grazie",
+        "kind": 2,
+        "importPath": "7-modules-package.dir_a.main",
+        "description": "7-modules-package.dir_a.main",
+        "peekOfCode": "def grazie():\n    print(\"Grazie!\")\nif __name__ == \"__main__\":\n    print(f\"Valore di __name__: {__name__}\")\n    saluta()\n    grazie()",
+        "detail": "7-modules-package.dir_a.main",
         "documentation": {}
     },
     {
