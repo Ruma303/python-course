@@ -11,6 +11,13 @@ import dir_a.dir_b.modulo1 as modulo1, dir_a.dir_b.modulo2 as modulo2, dir_a.dir
 # from dir_a.main import grazie as ringrazia
 # from dir_a.dir_b.dir_c.calcoli import *
 
+#, Import __all__
+from utils import *
+
+print(math_utils.somma(3, 4))
+# print(string_utils.upper("hello"))
+
+
 ## Percorsi di ricerca e importazione dei moduli
 # print(sys.path)             # stampa il percorso di ricerca dei moduli
 
@@ -24,6 +31,8 @@ import dir_a.dir_b.modulo1 as modulo1, dir_a.dir_b.modulo2 as modulo2, dir_a.dir
 
 # ringrazia()
 # somma(3, 4)
+
+
 
 
 #, Ispezionare bytecode

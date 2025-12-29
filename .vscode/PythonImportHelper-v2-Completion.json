@@ -126,6 +126,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -6451,6 +6459,24 @@
         "description": "7-modules-package.dir_a.main",
         "peekOfCode": "def grazie():\n    print(\"Grazie!\")\nif __name__ == \"__main__\":\n    print(f\"Valore di __name__: {__name__}\")\n    saluta()\n    grazie()",
         "detail": "7-modules-package.dir_a.main",
+        "documentation": {}
+    },
+    {
+        "label": "somma",
+        "kind": 2,
+        "importPath": "7-modules-package.utils.math_utils",
+        "description": "7-modules-package.utils.math_utils",
+        "peekOfCode": "def somma(a, b):\n    return a + b",
+        "detail": "7-modules-package.utils.math_utils",
+        "documentation": {}
+    },
+    {
+        "label": "upper",
+        "kind": 2,
+        "importPath": "7-modules-package.utils.string_utils",
+        "description": "7-modules-package.utils.string_utils",
+        "peekOfCode": "def upper(message):\n  return message.uppercase()",
+        "detail": "7-modules-package.utils.string_utils",
         "documentation": {}
     },
     {
