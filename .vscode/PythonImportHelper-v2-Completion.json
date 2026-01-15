@@ -9,6 +9,71 @@
         "documentation": {}
     },
     {
+        "label": "deepcopy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "mysql.connector",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "Error",
+        "importPath": "mysql.connector",
+        "description": "mysql.connector",
+        "isExtraImport": true,
+        "detail": "mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "importPath": "connector",
+        "description": "connector",
+        "isExtraImport": true,
+        "detail": "connector",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -85,6 +150,14 @@
         "documentation": {}
     },
     {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
         "label": "ABC",
         "importPath": "abc",
         "description": "abc",
@@ -106,14 +179,6 @@
         "description": "typing",
         "isExtraImport": true,
         "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "dataclass",
-        "importPath": "dataclasses",
-        "description": "dataclasses",
-        "isExtraImport": true,
-        "detail": "dataclasses",
         "documentation": {}
     },
     {
@@ -177,60 +242,93 @@
         "documentation": {}
     },
     {
-        "label": "mysql.connector",
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "contextmanager",
+        "importPath": "contextlib",
+        "description": "contextlib",
+        "isExtraImport": true,
+        "detail": "contextlib",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "mysql.connector",
-        "description": "mysql.connector",
-        "detail": "mysql.connector",
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
         "documentation": {}
     },
     {
-        "label": "Error",
-        "importPath": "mysql.connector",
-        "description": "mysql.connector",
+        "label": "io",
+        "kind": 6,
         "isExtraImport": true,
-        "detail": "mysql.connector",
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
         "documentation": {}
     },
     {
-        "label": "Error",
-        "importPath": "mysql.connector",
-        "description": "mysql.connector",
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
         "isExtraImport": true,
-        "detail": "mysql.connector",
+        "detail": "io",
         "documentation": {}
     },
     {
-        "label": "Error",
-        "importPath": "mysql.connector",
-        "description": "mysql.connector",
+        "label": "StringIO",
+        "importPath": "io",
+        "description": "io",
         "isExtraImport": true,
-        "detail": "mysql.connector",
-        "documentation": {}
-    },
-    {
-        "label": "get_connection",
-        "importPath": "connector",
-        "description": "connector",
-        "isExtraImport": true,
-        "detail": "connector",
-        "documentation": {}
-    },
-    {
-        "label": "get_connection",
-        "importPath": "connector",
-        "description": "connector",
-        "isExtraImport": true,
-        "detail": "connector",
-        "documentation": {}
-    },
-    {
-        "label": "get_connection",
-        "importPath": "connector",
-        "description": "connector",
-        "isExtraImport": true,
-        "detail": "connector",
+        "detail": "io",
         "documentation": {}
     },
     {
@@ -465,6 +563,51 @@
         "description": "1-start.variables",
         "peekOfCode": "b[1][0] = 99\nprint(a)  # [1, [2, 3], 4]\nprint(b)  # [1, [99, 3], 4]",
         "detail": "1-start.variables",
+        "documentation": {}
+    },
+    {
+        "label": "get_connection",
+        "kind": 2,
+        "importPath": "10-databases.mysql.connector",
+        "description": "10-databases.mysql.connector",
+        "peekOfCode": "def get_connection():\n    \"\"\"\n    Restituisce una nuova connessione a MySQL.\n    Lancia un'eccezione in caso di errore.\n    \"\"\"\n    database = \"python_db\"\n    return mysql.connector.connect(\n        host=\"127.0.0.1\",\n        user=\"root\",\n        password=\"root\",",
+        "detail": "10-databases.mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "10-databases.mysql.connector",
+        "description": "10-databases.mysql.connector",
+        "peekOfCode": "conn = None\ntry:\n    database = \"python_db\"\n    conn = mysql.connector.connect(\n        host=\"127.0.0.1\", user=\"root\", password=\"root\", database=database, port=3306\n    )\n    if conn.is_connected():\n        print(f\"Connesso al database: {database}\")\nexcept mysql.connector.Error as err:\n    print(f\"Errore durante la connessione a MySQL: {err}\")",
+        "detail": "10-databases.mysql.connector",
+        "documentation": {}
+    },
+    {
+        "label": "query_create_table",
+        "kind": 5,
+        "importPath": "10-databases.mysql.insert",
+        "description": "10-databases.mysql.insert",
+        "peekOfCode": "query_create_table = \"\"\"\n  CREATE TABLE IF NOT EXISTS persone (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    nome VARCHAR(255) NOT NULL,\n    cognome VARCHAR(255) NOT NULL,\n    data_nascita DATE NULL\n  )\n\"\"\"\nquery_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)",
+        "detail": "10-databases.mysql.insert",
+        "documentation": {}
+    },
+    {
+        "label": "query_insert_people",
+        "kind": 5,
+        "importPath": "10-databases.mysql.insert",
+        "description": "10-databases.mysql.insert",
+        "peekOfCode": "query_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)\n  VALUES (%s, %s, %s)\n\"\"\"\npeople = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:",
+        "detail": "10-databases.mysql.insert",
+        "documentation": {}
+    },
+    {
+        "label": "people",
+        "kind": 5,
+        "importPath": "10-databases.mysql.insert",
+        "description": "10-databases.mysql.insert",
+        "peekOfCode": "people = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:\n    with get_connection() as conn:\n        with conn.cursor() as cursor:\n            cursor.execute(query_create_table)\n            cursor.executemany(query_insert_people, people)",
+        "detail": "10-databases.mysql.insert",
         "documentation": {}
     },
     {
@@ -816,6 +959,384 @@
         "description": "2-data-types.Compounds.conversions",
         "peekOfCode": "lista_di_tuple = [(\"a\", 1), (\"b\", 2)]\nchiavi, valori = zip(*lista_di_tuple)\n# chiavi = ('a', 'b'), valori = (1, 2)",
         "detail": "2-data-types.Compounds.conversions",
+        "documentation": {}
+    },
+    {
+        "label": "dizionario_vuoto",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "dizionario_vuoto = {}\nprint(dizionario_vuoto)  # Output: {}\npersona = {\n    \"nome\": \"Alice\",\n    \"età\": 25,\n    \"città\": \"Roma\"\n}\nprint(persona)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}\npersona = dict(nome=\"Alice\", età=25, città=\"Roma\")",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = {\n    \"nome\": \"Alice\",\n    \"età\": 25,\n    \"città\": \"Roma\"\n}\nprint(persona)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}\npersona = dict(nome=\"Alice\", età=25, città=\"Roma\")\nprint(persona)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = dict(nome=\"Alice\", età=25, città=\"Roma\")\nprint(persona)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}\n#, Accesso ai valori\npersona = {\"nome\": \"Alice\", \"età\": 25}\nprint(persona[\"nome\"])  # Output: Alice\nprint(persona[\"età\"])   # Output: 25\n# print(persona[\"città\"])  # KeyError: 'città'\nprint(persona.get(\"nome\"))  # Output: Alice\nprint(persona.get(\"città\"))  # Output: None",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = {\"nome\": \"Alice\", \"età\": 25}\nprint(persona[\"nome\"])  # Output: Alice\nprint(persona[\"età\"])   # Output: 25\n# print(persona[\"città\"])  # KeyError: 'città'\nprint(persona.get(\"nome\"))  # Output: Alice\nprint(persona.get(\"città\"))  # Output: None\nprint(persona.get(\"città\", \"Non disponibile\"))  # Output: Non disponibile, non genera errore\n#, Aggiungere e modificare entries\n## Aggiunta nuovi elementi in un dizionari\ncontatti = {\"nome\": \"Alice\", \"età\": 25}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "contatti",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "contatti = {\"nome\": \"Alice\", \"età\": 25}\ncontatti[\"città\"] = \"Roma\"\nprint(contatti)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}\n## Modifica\ncontatti[\"nome\"] = \"Antonia\"\nprint(contatti)\n# Output: {'nome': 'Antonia', 'età': 25, 'città': 'Roma'}\n## Update: Creazione\ncontatti.update({\"città\": \"Milano\"}) # Modifica",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "contatti[\"città\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "contatti[\"città\"] = \"Roma\"\nprint(contatti)\n# Output: {'nome': 'Alice', 'età': 25, 'città': 'Roma'}\n## Modifica\ncontatti[\"nome\"] = \"Antonia\"\nprint(contatti)\n# Output: {'nome': 'Antonia', 'età': 25, 'città': 'Roma'}\n## Update: Creazione\ncontatti.update({\"città\": \"Milano\"}) # Modifica\nprint(contatti)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "contatti[\"nome\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "contatti[\"nome\"] = \"Antonia\"\nprint(contatti)\n# Output: {'nome': 'Antonia', 'età': 25, 'città': 'Roma'}\n## Update: Creazione\ncontatti.update({\"città\": \"Milano\"}) # Modifica\nprint(contatti)\n# Output: {'nome': 'Antonia', 'età': 25, 'città': 'Milano'}\n## Oppure con keyword args\ncontatti.update(nome=\"Ernesto\", età=40)\nprint(contatti)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "nome_da_rimuovere",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "nome_da_rimuovere = contatti.pop('nome')\nprint(nome_da_rimuovere)\nprint(contatti)\n# Output: {'età': 25}\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nultima_coppia = persona.popitem()\nprint(ultima_coppia)  # Output: ('città', 'Roma')\nprint(persona)  # Output: {'nome': 'Alice', 'età': 25}\npersona.clear()\nprint(persona) # {}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nultima_coppia = persona.popitem()\nprint(ultima_coppia)  # Output: ('città', 'Roma')\nprint(persona)  # Output: {'nome': 'Alice', 'età': 25}\npersona.clear()\nprint(persona) # {}\n#, Metodi utili dei dizionari\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nkeys = persona.keys()\nprint(keys)  # Output: dict_keys(['nome', 'età', 'città'])",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "ultima_coppia",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "ultima_coppia = persona.popitem()\nprint(ultima_coppia)  # Output: ('città', 'Roma')\nprint(persona)  # Output: {'nome': 'Alice', 'età': 25}\npersona.clear()\nprint(persona) # {}\n#, Metodi utili dei dizionari\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nkeys = persona.keys()\nprint(keys)  # Output: dict_keys(['nome', 'età', 'città'])\nkeys = [\"title\", \"author\", \"year\"]",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nkeys = persona.keys()\nprint(keys)  # Output: dict_keys(['nome', 'età', 'città'])\nkeys = [\"title\", \"author\", \"year\"]\ndefault_value = \"undefined\"\nmy_book = dict.fromkeys(keys, default_value)\nprint(my_book) # {'title': 'undefined', 'author': 'undefined', 'year': 'undefined'}\nvalori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "keys",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "keys = persona.keys()\nprint(keys)  # Output: dict_keys(['nome', 'età', 'città'])\nkeys = [\"title\", \"author\", \"year\"]\ndefault_value = \"undefined\"\nmy_book = dict.fromkeys(keys, default_value)\nprint(my_book) # {'title': 'undefined', 'author': 'undefined', 'year': 'undefined'}\nvalori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()\nprint(coppie)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "keys",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "keys = [\"title\", \"author\", \"year\"]\ndefault_value = \"undefined\"\nmy_book = dict.fromkeys(keys, default_value)\nprint(my_book) # {'title': 'undefined', 'author': 'undefined', 'year': 'undefined'}\nvalori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()\nprint(coppie)\n# Output: dict_items([('nome', 'Alice'), ('età', 25), ('città', 'Roma')])\n#, Iterare su un dizionario",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "default_value",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "default_value = \"undefined\"\nmy_book = dict.fromkeys(keys, default_value)\nprint(my_book) # {'title': 'undefined', 'author': 'undefined', 'year': 'undefined'}\nvalori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()\nprint(coppie)\n# Output: dict_items([('nome', 'Alice'), ('età', 25), ('città', 'Roma')])\n#, Iterare su un dizionario\n## Iterare sulle chiavi",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_book",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_book = dict.fromkeys(keys, default_value)\nprint(my_book) # {'title': 'undefined', 'author': 'undefined', 'year': 'undefined'}\nvalori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()\nprint(coppie)\n# Output: dict_items([('nome', 'Alice'), ('età', 25), ('città', 'Roma')])\n#, Iterare su un dizionario\n## Iterare sulle chiavi\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "valori = persona.values()\nprint(valori) # Output: dict_values(['Alice', 25, 'Roma'])\ncoppie = persona.items()\nprint(coppie)\n# Output: dict_items([('nome', 'Alice'), ('età', 25), ('città', 'Roma')])\n#, Iterare su un dizionario\n## Iterare sulle chiavi\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nfor chiave in persona:\n    print(chiave)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "coppie",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "coppie = persona.items()\nprint(coppie)\n# Output: dict_items([('nome', 'Alice'), ('età', 25), ('città', 'Roma')])\n#, Iterare su un dizionario\n## Iterare sulle chiavi\npersona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nfor chiave in persona:\n    print(chiave)\n# Output:\n# nome",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "persona",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "persona = {\"nome\": \"Alice\", \"età\": 25, \"città\": \"Roma\"}\nfor chiave in persona:\n    print(chiave)\n# Output:\n# nome\n# età\n# città\nprint()\n## Iterare sui valori\nfor valore in persona.values():",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "library",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "library = {\n    \"Il Signore degli Anelli\": 3,\n    \"1984\": 5,\n    \"Il Grande Gatsby\": 2\n}\nfor idx, (titolo, copie) in enumerate(library.items(), 1):\n    print(f\"{idx}. {titolo.title()} - {copie} copie disponibili\")\nprint()\n#, Dict Comprehension\nstring = \"python\"",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "string = \"python\"\na = {k : ord(k) for k in string}\nprint(a)\nb = {k : ord(k) for k in string if ord(k) <= 110}\nprint(b)\nprint()\nlist_tuples = [(\"name\", \"John\"), (\"lastname\", \"Doe\")]\nperson = {key: val for key, val in list_tuples}\nprint(person)\n# {'name': 'John', 'lastname': 'Doe'}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "a = {k : ord(k) for k in string}\nprint(a)\nb = {k : ord(k) for k in string if ord(k) <= 110}\nprint(b)\nprint()\nlist_tuples = [(\"name\", \"John\"), (\"lastname\", \"Doe\")]\nperson = {key: val for key, val in list_tuples}\nprint(person)\n# {'name': 'John', 'lastname': 'Doe'}\nprint()",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "b = {k : ord(k) for k in string if ord(k) <= 110}\nprint(b)\nprint()\nlist_tuples = [(\"name\", \"John\"), (\"lastname\", \"Doe\")]\nperson = {key: val for key, val in list_tuples}\nprint(person)\n# {'name': 'John', 'lastname': 'Doe'}\nprint()\n#, Esempi di utilizzo pratico\n## Conteggio delle occorrenze",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "list_tuples",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "list_tuples = [(\"name\", \"John\"), (\"lastname\", \"Doe\")]\nperson = {key: val for key, val in list_tuples}\nprint(person)\n# {'name': 'John', 'lastname': 'Doe'}\nprint()\n#, Esempi di utilizzo pratico\n## Conteggio delle occorrenze\nlista = [\"a\", \"b\", \"a\", \"c\", \"b\", \"a\"]\nconteggio = {}\nfor lettera in lista:",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "person = {key: val for key, val in list_tuples}\nprint(person)\n# {'name': 'John', 'lastname': 'Doe'}\nprint()\n#, Esempi di utilizzo pratico\n## Conteggio delle occorrenze\nlista = [\"a\", \"b\", \"a\", \"c\", \"b\", \"a\"]\nconteggio = {}\nfor lettera in lista:\n    conteggio[lettera] = conteggio.get(lettera, 0) + 1",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "lista",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "lista = [\"a\", \"b\", \"a\", \"c\", \"b\", \"a\"]\nconteggio = {}\nfor lettera in lista:\n    conteggio[lettera] = conteggio.get(lettera, 0) + 1\nprint(conteggio)\n# Output: {'a': 3, 'b': 2, 'c': 1}\nprint()\n## Raggruppare dati\nstudenti = {\n    \"Alice\": {\"età\": 25, \"corsi\": [\"matematica\", \"fisica\"]},",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "conteggio",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "conteggio = {}\nfor lettera in lista:\n    conteggio[lettera] = conteggio.get(lettera, 0) + 1\nprint(conteggio)\n# Output: {'a': 3, 'b': 2, 'c': 1}\nprint()\n## Raggruppare dati\nstudenti = {\n    \"Alice\": {\"età\": 25, \"corsi\": [\"matematica\", \"fisica\"]},\n    \"Bob\": {\"età\": 22, \"corsi\": [\"chimica\", \"biologia\"]}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "studenti",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "studenti = {\n    \"Alice\": {\"età\": 25, \"corsi\": [\"matematica\", \"fisica\"]},\n    \"Bob\": {\"età\": 22, \"corsi\": [\"chimica\", \"biologia\"]}\n}\nprint(studenti[\"Alice\"][\"corsi\"])\n# Output: ['matematica', 'fisica']\n## Aggiornare un dizionario annidato (in-place)\nstudenti['Bob'].update({'età': 20})\nprint(studenti)\nstudenti.update({",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "studenti",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "studenti = {\n    \"Alice\": {\"età\": 25, \"corsi\": [\"matematica\", \"fisica\"]},\n    \"Bob\": {\"età\": 22, \"corsi\": [\"chimica\", \"biologia\"]}\n}\n# Usando .copy() (shallow), l'append modificherà anche studenti\nstudenti_copia = studenti.copy()\nstudenti_copia['Bob']['corsi'].append('cybersecurity')\nstudenti_copia['Bob'].update({'età': 40})\nprint(studenti)\nprint(studenti_copia)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "studenti_copia",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "studenti_copia = studenti.copy()\nstudenti_copia['Bob']['corsi'].append('cybersecurity')\nstudenti_copia['Bob'].update({'età': 40})\nprint(studenti)\nprint(studenti_copia)\nprint(id(studenti), id(studenti_copia))\n# Usando .deepcopy(), le modifiche non influiranno sul dizionario originale\nfrom copy import deepcopy\nstudenti_copia_profonda = deepcopy(studenti)\nstudenti_copia_profonda['Alice']['corsi'].append('ingegneria')",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "studenti_copia_profonda",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "studenti_copia_profonda = deepcopy(studenti)\nstudenti_copia_profonda['Alice']['corsi'].append('ingegneria')\nstudenti_copia_profonda['Alice'].update({'età': 20})\nstudenti_copia_profonda['Bob'].pop('età')\nprint(studenti_copia_profonda)\nprint(studenti)\nprint(id(studenti), id(studenti_copia_profonda))\nprint()\n#, Ordinamento 3.7\nmyDict = {",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "myDict",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "myDict = {\n    \"primo\": 10,\n    \"secondo\": 20,\n    \"terzo\": 30\n}\nmyDict[\"quarto\"] = 40\nprint(myDict.keys())\n# Output: dict_keys(['primo', 'secondo', 'terzo', 'quarto'])\nprint(list(myDict))\n# Output: ['primo', 'secondo', 'terzo', 'quarto']",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "myDict[\"quarto\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "myDict[\"quarto\"] = 40\nprint(myDict.keys())\n# Output: dict_keys(['primo', 'secondo', 'terzo', 'quarto'])\nprint(list(myDict))\n# Output: ['primo', 'secondo', 'terzo', 'quarto']\nfor chiave, valore in myDict.items():\n    print(f\"{chiave}: {valore}\")\n# Output:\n# primo: 10\n# secondo: 20",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "d = {}\nd[\"uno\"] = 1\nd[\"due\"] = 2\nd.update({\"tre\": 3})\ndel d[\"due\"]\nd[\"due\"] = 22\nprint(list(d.keys()))  # ['uno', 'tre', 'due']\n#, Union operators per i dizionari in Python 3.9\n## Pre 3.9\nmy_dict1 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d[\"uno\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "d[\"uno\"] = 1\nd[\"due\"] = 2\nd.update({\"tre\": 3})\ndel d[\"due\"]\nd[\"due\"] = 22\nprint(list(d.keys()))  # ['uno', 'tre', 'due']\n#, Union operators per i dizionari in Python 3.9\n## Pre 3.9\nmy_dict1 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict2 = {\"d\": \"quarto\", \"e\": \"quinto\"}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d[\"due\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "d[\"due\"] = 2\nd.update({\"tre\": 3})\ndel d[\"due\"]\nd[\"due\"] = 22\nprint(list(d.keys()))  # ['uno', 'tre', 'due']\n#, Union operators per i dizionari in Python 3.9\n## Pre 3.9\nmy_dict1 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict2 = {\"d\": \"quarto\", \"e\": \"quinto\"}\nmy_dict12 = my_dict1.copy()",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "d[\"due\"]",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "d[\"due\"] = 22\nprint(list(d.keys()))  # ['uno', 'tre', 'due']\n#, Union operators per i dizionari in Python 3.9\n## Pre 3.9\nmy_dict1 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict2 = {\"d\": \"quarto\", \"e\": \"quinto\"}\nmy_dict12 = my_dict1.copy()\nfor chiave, valore in my_dict2.items():\n    my_dict12[chiave] = valore\nprint(my_dict12)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict1",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict1 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict2 = {\"d\": \"quarto\", \"e\": \"quinto\"}\nmy_dict12 = my_dict1.copy()\nfor chiave, valore in my_dict2.items():\n    my_dict12[chiave] = valore\nprint(my_dict12)\n# Output: {'a': 'primo', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto', 'e': 'quinto'}\n## Union operator |\nmy_dict3 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict4 = {\"d\": \"quarto\", \"a\": \"quinto\"}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict2",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict2 = {\"d\": \"quarto\", \"e\": \"quinto\"}\nmy_dict12 = my_dict1.copy()\nfor chiave, valore in my_dict2.items():\n    my_dict12[chiave] = valore\nprint(my_dict12)\n# Output: {'a': 'primo', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto', 'e': 'quinto'}\n## Union operator |\nmy_dict3 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict4 = {\"d\": \"quarto\", \"a\": \"quinto\"}\nmy_dict34 = my_dict3 | my_dict4",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict12",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict12 = my_dict1.copy()\nfor chiave, valore in my_dict2.items():\n    my_dict12[chiave] = valore\nprint(my_dict12)\n# Output: {'a': 'primo', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto', 'e': 'quinto'}\n## Union operator |\nmy_dict3 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict4 = {\"d\": \"quarto\", \"a\": \"quinto\"}\nmy_dict34 = my_dict3 | my_dict4\nprint(my_dict34)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict3",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict3 = {\"a\": \"primo\", \"b\": \"secondo\", \"c\": \"terzo\"}\nmy_dict4 = {\"d\": \"quarto\", \"a\": \"quinto\"}\nmy_dict34 = my_dict3 | my_dict4\nprint(my_dict34)\n# Output: {'a': 'quinto', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto'}\nprint(\"3: \", my_dict3)\nprint(my_dict4)\n## Union assignment operator |=\nmy_dict3 |= my_dict4\nprint(my_dict34)",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict4",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict4 = {\"d\": \"quarto\", \"a\": \"quinto\"}\nmy_dict34 = my_dict3 | my_dict4\nprint(my_dict34)\n# Output: {'a': 'quinto', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto'}\nprint(\"3: \", my_dict3)\nprint(my_dict4)\n## Union assignment operator |=\nmy_dict3 |= my_dict4\nprint(my_dict34)\n# Output: {'a': 'quinto', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto'}",
+        "detail": "2-data-types.Compounds.dict",
+        "documentation": {}
+    },
+    {
+        "label": "my_dict34",
+        "kind": 5,
+        "importPath": "2-data-types.Compounds.dict",
+        "description": "2-data-types.Compounds.dict",
+        "peekOfCode": "my_dict34 = my_dict3 | my_dict4\nprint(my_dict34)\n# Output: {'a': 'quinto', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto'}\nprint(\"3: \", my_dict3)\nprint(my_dict4)\n## Union assignment operator |=\nmy_dict3 |= my_dict4\nprint(my_dict34)\n# Output: {'a': 'quinto', 'b': 'secondo', 'c': 'terzo', 'd': 'quarto'}\nprint(\"3: \", my_dict3)",
+        "detail": "2-data-types.Compounds.dict",
         "documentation": {}
     },
     {
@@ -4815,60 +5336,6 @@
         "documentation": {}
     },
     {
-        "label": "get_doppio_gen",
-        "kind": 2,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while e < 300:\n        yield e\n        e *= 2\ngen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
-        "label": "get_doppio_gen",
-        "kind": 2,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2\n        if e >= 300:\n            return\ngen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
-        "label": "gen",
-        "kind": 5,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "gen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())\ndef get_doppio_gen():\n    e = 2\n    while True:\n        yield e\n        e *= 2",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
-        "label": "gen",
-        "kind": 5,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "gen = get_doppio_gen()\nfor i in range(10):\n    print(next(gen))\nnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
-        "label": "numbers",
-        "kind": 5,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nnewGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
-        "label": "newGen",
-        "kind": 5,
-        "importPath": "4-functions.generators",
-        "description": "4-functions.generators",
-        "peekOfCode": "newGen = (n * n for n in numbers if n % 2 == 1)\ntype(newGen) # <class 'generator'>\nprint(newGen)\nfor e in newGen:\n  print(e) # 1, 9, 25, 49, 81\nfor e in newGen:\n  print(e) # Vuota",
-        "detail": "4-functions.generators",
-        "documentation": {}
-    },
-    {
         "label": "ContoCorrente",
         "kind": 6,
         "importPath": "5-oop.Exercises.conti_correnti",
@@ -5334,6 +5801,51 @@
         "description": "5-oop.Lesson.classi.constructors",
         "peekOfCode": "a = A(\"B\")\nprint(type(a))  # <class '__main__.B'>",
         "detail": "5-oop.Lesson.classi.constructors",
+        "documentation": {}
+    },
+    {
+        "label": "Persona",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.data",
+        "description": "5-oop.Lesson.classi.data",
+        "peekOfCode": "class Persona:\n    nome: str\n    cognome: str\n    eta: int = 18 # Valori di default\np1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili",
+        "detail": "5-oop.Lesson.classi.data",
+        "documentation": {}
+    },
+    {
+        "label": "Record",
+        "kind": 6,
+        "importPath": "5-oop.Lesson.classi.data",
+        "description": "5-oop.Lesson.classi.data",
+        "peekOfCode": "class Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
+        "detail": "5-oop.Lesson.classi.data",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.data",
+        "description": "5-oop.Lesson.classi.data",
+        "peekOfCode": "p1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str",
+        "detail": "5-oop.Lesson.classi.data",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.data",
+        "description": "5-oop.Lesson.classi.data",
+        "peekOfCode": "p2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")",
+        "detail": "5-oop.Lesson.classi.data",
+        "documentation": {}
+    },
+    {
+        "label": "r1",
+        "kind": 5,
+        "importPath": "5-oop.Lesson.classi.data",
+        "description": "5-oop.Lesson.classi.data",
+        "peekOfCode": "r1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
+        "detail": "5-oop.Lesson.classi.data",
         "documentation": {}
     },
     {
@@ -6165,51 +6677,6 @@
         "documentation": {}
     },
     {
-        "label": "Persona",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.speciali.data",
-        "description": "5-oop.Lesson.speciali.data",
-        "peekOfCode": "class Persona:\n    nome: str\n    cognome: str\n    eta: int = 18 # Valori di default\np1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili",
-        "detail": "5-oop.Lesson.speciali.data",
-        "documentation": {}
-    },
-    {
-        "label": "Record",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.speciali.data",
-        "description": "5-oop.Lesson.speciali.data",
-        "peekOfCode": "class Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
-        "detail": "5-oop.Lesson.speciali.data",
-        "documentation": {}
-    },
-    {
-        "label": "p1",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.data",
-        "description": "5-oop.Lesson.speciali.data",
-        "peekOfCode": "p1 = Persona(nome=\"Giulio\", cognome=\"Verne\")\np2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str",
-        "detail": "5-oop.Lesson.speciali.data",
-        "documentation": {}
-    },
-    {
-        "label": "p2",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.data",
-        "description": "5-oop.Lesson.speciali.data",
-        "peekOfCode": "p2 = Persona(nome=\"Mario\", cognome=\"Rossi\")\nprint(p1)        # Persona(nome='Giulio', cognome='Verne')\nprint(p2)        # Persona(nome='Mario', cognome='Rossi')\nprint(p1 == p2)  # False\n#, Classi immutabili\n@dataclass(init=True, frozen=True)\nclass Record:\n    id_number: int\n    author: str\nr1 = Record(1, \"John\")",
-        "detail": "5-oop.Lesson.speciali.data",
-        "documentation": {}
-    },
-    {
-        "label": "r1",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.data",
-        "description": "5-oop.Lesson.speciali.data",
-        "peekOfCode": "r1 = Record(1, \"John\")\n# r1.id_number = 2 # Errore: Genera dataclasses.FrozenInstanceError",
-        "detail": "5-oop.Lesson.speciali.data",
-        "documentation": {}
-    },
-    {
         "label": "Libro",
         "kind": 6,
         "importPath": "5-oop.Lesson.speciali.docstrings",
@@ -6234,105 +6701,6 @@
         "description": "5-oop.Lesson.speciali.docstrings",
         "peekOfCode": "def funzione(par1, par2):\n\t\"\"\"\n\tDescrizione breve.\n\tArgs:\n\t\tpar1 (int): Descrizione di par1.\n\t\tpar2 (str): Descrizione di par2.\n\tReturns:\n\t\tbool: Descrizione del valore di ritorno.\n\t\"\"\"",
         "detail": "5-oop.Lesson.speciali.docstrings",
-        "documentation": {}
-    },
-    {
-        "label": "MyIterator",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "class MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.myattr < 300:\n            n = self.myattr\n            self.myattr *= 2\n            return n",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "Infinite",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "class Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):\n        n = self.n\n        self.n += 1\n        return n\nmyInfinite = Infinite()",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "Sequence",
-        "kind": 6,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "class Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit\n  def __iter__(self):\n      return self\n  def __next__(self):\n      if self.current <= self.limit:\n          n = self.current\n          self.current += 3",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myList",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myList = [\"primo\", \"secondo\", \"terzo\"]\nmyIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myIterator",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))\n\"\"\"",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myList",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myList = [1, 2, 3, 4, 5]\nfor item in myList: # crea automaticamente iter(iterable)\n    print(item) # chiama automaticamente next(iterator)\n    # Gestisce automaticamente StopIteration\n#, Verificare se un oggetto è iterabile o iteratore\nhasattr(myList, \"__iter__\") # True (iterabile)\nhasattr(myList, \"__next__\") # False (non iteratore)\nit = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "it",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "it = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)\n#, Oggetti che sono sia iterabili che iteratori\n## Iteratore che restituisca un numero che raddoppia fino a 300\nclass MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myClass",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myClass = MyIterator()\nmyIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myIter",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myInfinite",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myInfinite = Infinite()\nmyInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start",
-        "detail": "5-oop.Lesson.speciali.iterators",
-        "documentation": {}
-    },
-    {
-        "label": "myInfiniteIter",
-        "kind": 5,
-        "importPath": "5-oop.Lesson.speciali.iterators",
-        "description": "5-oop.Lesson.speciali.iterators",
-        "peekOfCode": "myInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit",
-        "detail": "5-oop.Lesson.speciali.iterators",
         "documentation": {}
     },
     {
@@ -6507,6 +6875,348 @@
         "documentation": {}
     },
     {
+        "label": "MyContext",
+        "kind": 6,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "class MyContext:\n    def __enter__(self):\n        print(\"Entrato nel contesto\")\n        return self\n    def __exit__(self, exc_type, exc_value, traceback):\n        print(\"Uscito dal contesto\")\nwith MyContext():\n    print(\"Dentro il blocco\")\n#, Gestione delle eccezioni in __exit__()\nclass SuppressException:",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "SuppressException",
+        "kind": 6,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "class SuppressException:\n    def __enter__(self): return self\n    def __exit__(self, exc_type, exc_val, exc_tb):\n        print(\"Eccezione gestita:\", exc_val)\n        return True  # sopprime l’eccezione\nwith SuppressException() as se:\n    raise ValueError(f\"Errore di tipo {se.__class__.__name__}\")\nprint(\"Continuo\")\n#, @contextmanager\n## Esempio basilare",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "apri_file",
+        "kind": 2,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "def apri_file(path):\n    f = open(path, \"r\", encoding=\"utf-8\")\n    try:\n        yield f\n    finally:\n        f.close()\nwith apri_file(file_path) as f:\n    print(f.read())\n## Esempio: Gestione delle eccezioni\nfrom contextlib import contextmanager",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "gestisci_file",
+        "kind": 2,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "def gestisci_file(path):\n    f = open(path, \"r\")\n    try:\n        yield f\n    except UnicodeDecodeError:\n        print(\"Errore di codifica nel file.\")\n    finally:\n        f.close()\n## Esempio: Context manager per il cambio temporaneo di directory\nimport os",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "cambia_directory",
+        "kind": 2,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "def cambia_directory(path):\n    vecchia = os.getcwd()\n    os.chdir(path)\n    try:\n        yield\n    finally:\n        os.chdir(vecchia)\nwith cambia_directory(\"/tmp\"):\n    # Qui siamo temporaneamente in /tmp\n    print(os.getcwd())",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "lock_acquisito",
+        "kind": 2,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "def lock_acquisito(lock):\n    lock.acquire()\n    try:\n        yield\n    finally:\n        lock.release()\nlock = threading.Lock()\nwith lock_acquisito(lock):\n    # Operazioni thread-safe\n    pass",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "file_path = Path.cwd() / \"scripts\" / \"sample.txt\"\n#, Utilizzi context manager\nwith open(file_path, \"r\", encoding=\"utf-8\") as file_obj:\n    print(file_obj.encoding)\n    print(file_obj.read())\nwith open(file_path, \"rt\") as f:\n    text = f.read(5)\n    print(text) # Hello\nwith open(file_path, \"rt\") as f:\n    line = f.readline()",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "lock",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.context_manager",
+        "description": "8-streams.Lessons.filesystem.context_manager",
+        "peekOfCode": "lock = threading.Lock()\nwith lock_acquisito(lock):\n    # Operazioni thread-safe\n    pass",
+        "detail": "8-streams.Lessons.filesystem.context_manager",
+        "documentation": {}
+    },
+    {
+        "label": "file_obj",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.intro",
+        "description": "8-streams.Lessons.filesystem.intro",
+        "peekOfCode": "file_obj = open(\"sample.txt\", \"r\")\nprint(file_obj.read())\nfile_obj.close()\n## Chiusura\nf = open(\"sample.txt\", \"r\")\n# operazioni di lettura/scrittura\nf.close()\n#, Percorsi\nfrom pathlib import Path\ncwd = Path.cwd()",
+        "detail": "8-streams.Lessons.filesystem.intro",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.intro",
+        "description": "8-streams.Lessons.filesystem.intro",
+        "peekOfCode": "f = open(\"sample.txt\", \"r\")\n# operazioni di lettura/scrittura\nf.close()\n#, Percorsi\nfrom pathlib import Path\ncwd = Path.cwd()\nprint(cwd) # Current working directory\nimport os\nprint(os.path.abspath(\"script.py\"))  # Restituisce il percorso assoluto\n#, Error handling",
+        "detail": "8-streams.Lessons.filesystem.intro",
+        "documentation": {}
+    },
+    {
+        "label": "cwd",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.intro",
+        "description": "8-streams.Lessons.filesystem.intro",
+        "peekOfCode": "cwd = Path.cwd()\nprint(cwd) # Current working directory\nimport os\nprint(os.path.abspath(\"script.py\"))  # Restituisce il percorso assoluto\n#, Error handling\ntry:\n    f = open(\"non_esiste.txt\", \"r\")\nexcept FileNotFoundError as e:\n    print(\"Errore:\", e)\n#, Uso del context manager",
+        "detail": "8-streams.Lessons.filesystem.intro",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.os_path",
+        "description": "8-streams.Lessons.filesystem.os_path",
+        "peekOfCode": "path = os.path.join(\"data\", \"file.txt\")\nprint(path)\n# Percorso assoluto\nabs_path = os.path.abspath(\"file.txt\")\nprint(abs_path)\n# Directory corrente\ncwd = os.getcwd()\nprint(cwd)\n# Estrazione del nome del file\nfilename = os.path.basename(\"/home/user/file.txt\")  # \"file.txt\"",
+        "detail": "8-streams.Lessons.filesystem.os_path",
+        "documentation": {}
+    },
+    {
+        "label": "abs_path",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.os_path",
+        "description": "8-streams.Lessons.filesystem.os_path",
+        "peekOfCode": "abs_path = os.path.abspath(\"file.txt\")\nprint(abs_path)\n# Directory corrente\ncwd = os.getcwd()\nprint(cwd)\n# Estrazione del nome del file\nfilename = os.path.basename(\"/home/user/file.txt\")  # \"file.txt\"\nprint(filename)\n# Estrazione della directory\ndirname = os.path.dirname(\"/home/user/file.txt\")    # \"/home/user\"",
+        "detail": "8-streams.Lessons.filesystem.os_path",
+        "documentation": {}
+    },
+    {
+        "label": "cwd",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.os_path",
+        "description": "8-streams.Lessons.filesystem.os_path",
+        "peekOfCode": "cwd = os.getcwd()\nprint(cwd)\n# Estrazione del nome del file\nfilename = os.path.basename(\"/home/user/file.txt\")  # \"file.txt\"\nprint(filename)\n# Estrazione della directory\ndirname = os.path.dirname(\"/home/user/file.txt\")    # \"/home/user\"\nprint(dirname)\n# Separazione estensione\nname, ext = os.path.splitext(\"report.pdf\")          # (\"report\", \".pdf\")",
+        "detail": "8-streams.Lessons.filesystem.os_path",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.os_path",
+        "description": "8-streams.Lessons.filesystem.os_path",
+        "peekOfCode": "filename = os.path.basename(\"/home/user/file.txt\")  # \"file.txt\"\nprint(filename)\n# Estrazione della directory\ndirname = os.path.dirname(\"/home/user/file.txt\")    # \"/home/user\"\nprint(dirname)\n# Separazione estensione\nname, ext = os.path.splitext(\"report.pdf\")          # (\"report\", \".pdf\")\nprint(name, ext)\n# Verifica esistenza file\nprint(os.path.exists(\"paths.py\"))",
+        "detail": "8-streams.Lessons.filesystem.os_path",
+        "documentation": {}
+    },
+    {
+        "label": "dirname",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.os_path",
+        "description": "8-streams.Lessons.filesystem.os_path",
+        "peekOfCode": "dirname = os.path.dirname(\"/home/user/file.txt\")    # \"/home/user\"\nprint(dirname)\n# Separazione estensione\nname, ext = os.path.splitext(\"report.pdf\")          # (\"report\", \".pdf\")\nprint(name, ext)\n# Verifica esistenza file\nprint(os.path.exists(\"paths.py\"))\n# Verifica se è file o directory\nprint(os.path.isfile(\"paths.py\"))\nprint(os.path.isdir(\"paths.py\"))",
+        "detail": "8-streams.Lessons.filesystem.os_path",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p = Path(\"data\") / \"file.txt\"  # Concatenazione dentro o fuori Path()\nprint(p)  # data/file.txt (Unix) o data\\file.txt (Windows)\nprint(p.resolve())  # percorso assoluto\ncwd = p.cwd()  # Current working directory\nprint(cwd)\np = Path(\"/home/user/file.txt\")\n## Oggetti\nprint(p.name)  # 'file.txt'\nprint(p.stem)  # 'file'\nprint(p.suffix)  # '.txt'",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "cwd",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "cwd = p.cwd()  # Current working directory\nprint(cwd)\np = Path(\"/home/user/file.txt\")\n## Oggetti\nprint(p.name)  # 'file.txt'\nprint(p.stem)  # 'file'\nprint(p.suffix)  # '.txt'\nprint(p.parent)  # '/home/user' Path\nprint(p.parents) # A sequence of this path's logical parents. <PosixPath.parents>\nprint(p.parts)  # ('/', 'home', 'user', 'file.txt')",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p = Path(\"/home/user/file.txt\")\n## Oggetti\nprint(p.name)  # 'file.txt'\nprint(p.stem)  # 'file'\nprint(p.suffix)  # '.txt'\nprint(p.parent)  # '/home/user' Path\nprint(p.parents) # A sequence of this path's logical parents. <PosixPath.parents>\nprint(p.parts)  # ('/', 'home', 'user', 'file.txt')\nfile_path = Path(cwd, \"scripts\", \"sample.txt\")\nprint(file_path)",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "file_path = Path(cwd, \"scripts\", \"sample.txt\")\nprint(file_path)\n## Home directory dell’utente\nhome = Path.home()\nprint(home)\n## Navigazione\np = cwd / \"data\" / \"file.csv\"\nprint(p)\n## Confronto tra percorsi\np1 = Path(\"/home/user/file.txt\")",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "home = Path.home()\nprint(home)\n## Navigazione\np = cwd / \"data\" / \"file.csv\"\nprint(p)\n## Confronto tra percorsi\np1 = Path(\"/home/user/file.txt\")\np2 = Path(\"/home/user/./file.txt\")\np3 = Path(\"/home/user/file.txt\").resolve()\nprint(\"confronto p1 e p2\", p1 == p2) # True",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p = cwd / \"data\" / \"file.csv\"\nprint(p)\n## Confronto tra percorsi\np1 = Path(\"/home/user/file.txt\")\np2 = Path(\"/home/user/./file.txt\")\np3 = Path(\"/home/user/file.txt\").resolve()\nprint(\"confronto p1 e p2\", p1 == p2) # True\n## Verifica oggetti\nprint(file_path.exists())  # True se esiste\nprint(file_path.is_file())  # True se è file",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p1",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p1 = Path(\"/home/user/file.txt\")\np2 = Path(\"/home/user/./file.txt\")\np3 = Path(\"/home/user/file.txt\").resolve()\nprint(\"confronto p1 e p2\", p1 == p2) # True\n## Verifica oggetti\nprint(file_path.exists())  # True se esiste\nprint(file_path.is_file())  # True se è file\nprint(file_path.is_dir())  # True se è directory\n## Creazione directory (ricorsiva)\np = Path(\"logs/2024/giugno\")",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p2 = Path(\"/home/user/./file.txt\")\np3 = Path(\"/home/user/file.txt\").resolve()\nprint(\"confronto p1 e p2\", p1 == p2) # True\n## Verifica oggetti\nprint(file_path.exists())  # True se esiste\nprint(file_path.is_file())  # True se è file\nprint(file_path.is_dir())  # True se è directory\n## Creazione directory (ricorsiva)\np = Path(\"logs/2024/giugno\")\np.mkdir(parents=True, exist_ok=True)",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p3",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p3 = Path(\"/home/user/file.txt\").resolve()\nprint(\"confronto p1 e p2\", p1 == p2) # True\n## Verifica oggetti\nprint(file_path.exists())  # True se esiste\nprint(file_path.is_file())  # True se è file\nprint(file_path.is_dir())  # True se è directory\n## Creazione directory (ricorsiva)\np = Path(\"logs/2024/giugno\")\np.mkdir(parents=True, exist_ok=True)\n## Operazioni sui file con Path",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p = Path(\"logs/2024/giugno\")\np.mkdir(parents=True, exist_ok=True)\n## Operazioni sui file con Path\nfile_path = Path(p, \"output.txt\")\n# Scrittura\nfile_path.write_text(\"Contenuto\", encoding=\"utf-8\")\n# Lettura\ncontenuto = file_path.read_text(encoding=\"utf-8\")\n# Apertura come file object\nwith file_path.open(\"r\", encoding=\"utf-8\") as f:",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "file_path = Path(p, \"output.txt\")\n# Scrittura\nfile_path.write_text(\"Contenuto\", encoding=\"utf-8\")\n# Lettura\ncontenuto = file_path.read_text(encoding=\"utf-8\")\n# Apertura come file object\nwith file_path.open(\"r\", encoding=\"utf-8\") as f:\n    dati = f.read()\n## Iterazione su directory\nfor file in file_path.parent.iterdir():",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "contenuto",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "contenuto = file_path.read_text(encoding=\"utf-8\")\n# Apertura come file object\nwith file_path.open(\"r\", encoding=\"utf-8\") as f:\n    dati = f.read()\n## Iterazione su directory\nfor file in file_path.parent.iterdir():\n    print(file.name)\nfor file in file_path.glob(\"*.txt\"):\n    print(file.name)\nfor file in file_path.rglob(\"*.py\"):  # ricerca ricorsiva",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "stringa",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "stringa = str(file_path)\nprint(type(stringa))\n# da stringa a Path\np2 = Path(stringa)\nprint(type(p2))\n## Accesso avanzato ai metadati\nfile_path.stat().st_size       # dimensione in byte\nfile_path.stat().st_mtime      # ultima modifica (timestamp UNIX)\nfile_path.stat().st_ctime      # creazione (Windows) o metadata change (Unix)\nfor f in file_path.parents:",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "p2",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "p2 = Path(stringa)\nprint(type(p2))\n## Accesso avanzato ai metadati\nfile_path.stat().st_size       # dimensione in byte\nfile_path.stat().st_mtime      # ultima modifica (timestamp UNIX)\nfile_path.stat().st_ctime      # creazione (Windows) o metadata change (Unix)\nfor f in file_path.parents:\n    print(f.name, f.stat().st_size, \"bytes\")\n## Rimozione e operazioni distruttive\nfile_path.unlink()  # elimina file",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.pathlib_mod",
+        "description": "8-streams.Lessons.filesystem.pathlib_mod",
+        "peekOfCode": "d = Path(file_path.parent)\nd.rmdir()   # elimina directory vuota",
+        "detail": "8-streams.Lessons.filesystem.pathlib_mod",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.read_mod",
+        "description": "8-streams.Lessons.filesystem.read_mod",
+        "peekOfCode": "file = Path.cwd() / \"scripts\" / \"sample.txt\"\nlorem = Path(\"scripts\", \"lorem.txt\").resolve()\nimage = Path(\"assets\", \"diamond.png\").resolve()\nprint(\"ABS text path:\\t\", str(file))\nprint(\"ABS image path:\\t\", str(file))\n# , Metodo read\n# with open(file, \"rt\", encoding=\"utf-8\") as f:\n#     contenuto = f.read()\n#     print(contenuto, \"\\n\")\n## Lettura quantizzata",
+        "detail": "8-streams.Lessons.filesystem.read_mod",
+        "documentation": {}
+    },
+    {
+        "label": "lorem",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.read_mod",
+        "description": "8-streams.Lessons.filesystem.read_mod",
+        "peekOfCode": "lorem = Path(\"scripts\", \"lorem.txt\").resolve()\nimage = Path(\"assets\", \"diamond.png\").resolve()\nprint(\"ABS text path:\\t\", str(file))\nprint(\"ABS image path:\\t\", str(file))\n# , Metodo read\n# with open(file, \"rt\", encoding=\"utf-8\") as f:\n#     contenuto = f.read()\n#     print(contenuto, \"\\n\")\n## Lettura quantizzata\n# with open(file, \"rt\", encoding=\"utf-8\") as f:",
+        "detail": "8-streams.Lessons.filesystem.read_mod",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.filesystem.read_mod",
+        "description": "8-streams.Lessons.filesystem.read_mod",
+        "peekOfCode": "image = Path(\"assets\", \"diamond.png\").resolve()\nprint(\"ABS text path:\\t\", str(file))\nprint(\"ABS image path:\\t\", str(file))\n# , Metodo read\n# with open(file, \"rt\", encoding=\"utf-8\") as f:\n#     contenuto = f.read()\n#     print(contenuto, \"\\n\")\n## Lettura quantizzata\n# with open(file, \"rt\", encoding=\"utf-8\") as f:\n#     read_first_5_characters = f.read(5)",
+        "detail": "8-streams.Lessons.filesystem.read_mod",
+        "documentation": {}
+    },
+    {
+        "label": "UpperCaseStringIO",
+        "kind": 6,
+        "importPath": "8-streams.Lessons.streams.streams",
+        "description": "8-streams.Lessons.streams.streams",
+        "peekOfCode": "class UpperCaseStringIO(StringIO):\n    def write(self, s):\n        super().write(s.upper())\nbuffer = UpperCaseStringIO()\nbuffer.write(\"testo minuscolo\")\nbuffer.seek(0)\nprint(buffer.read())  # Output: TESTO MINUSCOLO\n#, Streams e gestione degli errori\ntry:\n    with open(\"file_inesistente.txt\") as f:",
+        "detail": "8-streams.Lessons.streams.streams",
+        "documentation": {}
+    },
+    {
+        "label": "bio",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.streams.streams",
+        "description": "8-streams.Lessons.streams.streams",
+        "peekOfCode": "bio = BytesIO()\nbio.write(b\"Dati binari\")\nbio.seek(0)\nprint(bio.read())\nsio = StringIO()\nsio.write(\"Testo in memoria\")\nsio.seek(0)\nprint(sio.read())\n#, Streams custom\nclass UpperCaseStringIO(StringIO):",
+        "detail": "8-streams.Lessons.streams.streams",
+        "documentation": {}
+    },
+    {
+        "label": "sio",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.streams.streams",
+        "description": "8-streams.Lessons.streams.streams",
+        "peekOfCode": "sio = StringIO()\nsio.write(\"Testo in memoria\")\nsio.seek(0)\nprint(sio.read())\n#, Streams custom\nclass UpperCaseStringIO(StringIO):\n    def write(self, s):\n        super().write(s.upper())\nbuffer = UpperCaseStringIO()\nbuffer.write(\"testo minuscolo\")",
+        "detail": "8-streams.Lessons.streams.streams",
+        "documentation": {}
+    },
+    {
+        "label": "buffer",
+        "kind": 5,
+        "importPath": "8-streams.Lessons.streams.streams",
+        "description": "8-streams.Lessons.streams.streams",
+        "peekOfCode": "buffer = UpperCaseStringIO()\nbuffer.write(\"testo minuscolo\")\nbuffer.seek(0)\nprint(buffer.read())  # Output: TESTO MINUSCOLO\n#, Streams e gestione degli errori\ntry:\n    with open(\"file_inesistente.txt\") as f:\n        dati = f.read()\nexcept FileNotFoundError as e:\n    print(\"File non trovato:\", e)",
+        "detail": "8-streams.Lessons.streams.streams",
+        "documentation": {}
+    },
+    {
         "label": "root",
         "kind": 5,
         "importPath": "8-streams.Lessons.basic-operations",
@@ -6588,66 +7298,183 @@
         "documentation": {}
     },
     {
-        "label": "absolute_path",
-        "kind": 5,
-        "importPath": "8-streams.Lessons.context_manager",
-        "description": "8-streams.Lessons.context_manager",
-        "peekOfCode": "absolute_path = Path.cwd()\nfile_path = Path(absolute_path, \"scripts\", \"sample.txt\")\nwith open(file_path, \"r\") as file_obj:\n    print(file_obj.encoding)\nwith open(file_path, \"rt\") as f:\n    text = f.read(5)\n    print(text) # Hello\nwith open(file_path, \"rt\") as f:\n    line = f.readline()\n    print(line)",
-        "detail": "8-streams.Lessons.context_manager",
-        "documentation": {}
-    },
-    {
-        "label": "file_path",
-        "kind": 5,
-        "importPath": "8-streams.Lessons.context_manager",
-        "description": "8-streams.Lessons.context_manager",
-        "peekOfCode": "file_path = Path(absolute_path, \"scripts\", \"sample.txt\")\nwith open(file_path, \"r\") as file_obj:\n    print(file_obj.encoding)\nwith open(file_path, \"rt\") as f:\n    text = f.read(5)\n    print(text) # Hello\nwith open(file_path, \"rt\") as f:\n    line = f.readline()\n    print(line)\n# Iterare",
-        "detail": "8-streams.Lessons.context_manager",
-        "documentation": {}
-    },
-    {
-        "label": "get_connection",
+        "label": "normale",
         "kind": 2,
-        "importPath": "9-databases.mysql.connector",
-        "description": "9-databases.mysql.connector",
-        "peekOfCode": "def get_connection():\n    \"\"\"\n    Restituisce una nuova connessione a MySQL.\n    Lancia un'eccezione in caso di errore.\n    \"\"\"\n    database = \"python_db\"\n    return mysql.connector.connect(\n        host=\"127.0.0.1\",\n        user=\"root\",\n        password=\"root\",",
-        "detail": "9-databases.mysql.connector",
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "def normale():\n    return [1, 2, 3]\ndef generatore():\n    for i in range(1, 4):\n        yield i\nprint(normale())            # [1, 2, 3]\ngen = generatore()\nprint(next(gen))            # 1\nprint(next(gen))            # 2\n## Stato interno",
+        "detail": "9-iterators.generators",
         "documentation": {}
     },
     {
-        "label": "conn",
-        "kind": 5,
-        "importPath": "9-databases.mysql.connector",
-        "description": "9-databases.mysql.connector",
-        "peekOfCode": "conn = None\ntry:\n    database = \"python_db\"\n    conn = mysql.connector.connect(\n        host=\"127.0.0.1\", user=\"root\", password=\"root\", database=database, port=3306\n    )\n    if conn.is_connected():\n        print(f\"Connesso al database: {database}\")\nexcept mysql.connector.Error as err:\n    print(f\"Errore durante la connessione a MySQL: {err}\")",
-        "detail": "9-databases.mysql.connector",
+        "label": "generatore",
+        "kind": 2,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "def generatore():\n    for i in range(1, 4):\n        yield i\nprint(normale())            # [1, 2, 3]\ngen = generatore()\nprint(next(gen))            # 1\nprint(next(gen))            # 2\n## Stato interno\nprint(gen.gi_frame)      # <frame object ...>\nprint(gen.gi_running)    # False",
+        "detail": "9-iterators.generators",
         "documentation": {}
     },
     {
-        "label": "query_create_table",
-        "kind": 5,
-        "importPath": "9-databases.mysql.insert",
-        "description": "9-databases.mysql.insert",
-        "peekOfCode": "query_create_table = \"\"\"\n  CREATE TABLE IF NOT EXISTS persone (\n    id INT AUTO_INCREMENT PRIMARY KEY,\n    nome VARCHAR(255) NOT NULL,\n    cognome VARCHAR(255) NOT NULL,\n    data_nascita DATE NULL\n  )\n\"\"\"\nquery_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)",
-        "detail": "9-databases.mysql.insert",
+        "label": "get_doppio_gen",
+        "kind": 2,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "def get_doppio_gen():\n    e = 2\n    while e < 300:\n        yield e\n        e *= 2\ngen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())",
+        "detail": "9-iterators.generators",
         "documentation": {}
     },
     {
-        "label": "query_insert_people",
-        "kind": 5,
-        "importPath": "9-databases.mysql.insert",
-        "description": "9-databases.mysql.insert",
-        "peekOfCode": "query_insert_people = \"\"\"\n  INSERT INTO persone (nome, cognome, data_nascita)\n  VALUES (%s, %s, %s)\n\"\"\"\npeople = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:",
-        "detail": "9-databases.mysql.insert",
+        "label": "g",
+        "kind": 2,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "def g():\n    yield 1\n    return 42\ngen = g()\nprint(next(gen))          # 1\ntry:\n    next(gen)\nexcept StopIteration as e:\n    print(e.value)        # 42\n## Metodo send",
+        "detail": "9-iterators.generators",
         "documentation": {}
     },
     {
-        "label": "people",
+        "label": "echo",
+        "kind": 2,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "def echo():\n    valore = yield \"start\"\n    while True:\n        valore = yield f\"ricevuto {valore}\"\ngen = echo()\nprint(next(gen))        # \"start\"\nprint(gen.send(100))    # \"ricevuto 100\"\nprint(gen.send(200))    # \"ricevuto 200\"\n# def get_doppio_gen():\n#     e = 2",
+        "detail": "9-iterators.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
         "kind": 5,
-        "importPath": "9-databases.mysql.insert",
-        "description": "9-databases.mysql.insert",
-        "peekOfCode": "people = [\n    (\"Luca\", \"Rossi\", \"1995-07-23\"),\n    (\"Mario\", \"Bianchi\", \"1990-10-01\"),\n    (\"Simona\", \"Gialli\", \"2005-12-15\")\n]\ntry:\n    with get_connection() as conn:\n        with conn.cursor() as cursor:\n            cursor.execute(query_create_table)\n            cursor.executemany(query_insert_people, people)",
-        "detail": "9-databases.mysql.insert",
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "gen = generatore()\nprint(next(gen))            # 1\nprint(next(gen))            # 2\n## Stato interno\nprint(gen.gi_frame)      # <frame object ...>\nprint(gen.gi_running)    # False\nprint(gen.gi_code)       # <code object g ...>\ndef get_doppio_gen():\n    e = 2\n    while e < 300:",
+        "detail": "9-iterators.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "gen = get_doppio_gen()\nprint(gen)\nprint(gen.__next__())\nprint(gen.__next__())\nprint(gen.__next__())\ndef g():\n    yield 1\n    return 42\ngen = g()\nprint(next(gen))          # 1",
+        "detail": "9-iterators.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "gen = g()\nprint(next(gen))          # 1\ntry:\n    next(gen)\nexcept StopIteration as e:\n    print(e.value)        # 42\n## Metodo send\ndef echo():\n    valore = yield \"start\"\n    while True:",
+        "detail": "9-iterators.generators",
+        "documentation": {}
+    },
+    {
+        "label": "gen",
+        "kind": 5,
+        "importPath": "9-iterators.generators",
+        "description": "9-iterators.generators",
+        "peekOfCode": "gen = echo()\nprint(next(gen))        # \"start\"\nprint(gen.send(100))    # \"ricevuto 100\"\nprint(gen.send(200))    # \"ricevuto 200\"\n# def get_doppio_gen():\n#     e = 2\n#     while True:\n#         yield e\n#         e *= 2\n#         if e >= 300:",
+        "detail": "9-iterators.generators",
+        "documentation": {}
+    },
+    {
+        "label": "MyIterator",
+        "kind": 6,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "class MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self\n    def __next__(self):\n        if self.myattr < 300:\n            n = self.myattr\n            self.myattr *= 2\n            return n",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "Infinite",
+        "kind": 6,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "class Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):\n        n = self.n\n        self.n += 1\n        return n\nmyInfinite = Infinite()",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "Sequence",
+        "kind": 6,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "class Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit\n  def __iter__(self):\n      return self\n  def __next__(self):\n      if self.current <= self.limit:\n          n = self.current\n          self.current += 3",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myList = [\"primo\", \"secondo\", \"terzo\"]\nmyIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myIterator",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myIterator = iter(myList)\nprint(type(myList))      # <class 'list'>\nprint(type(myIterator))  # <class 'list_iterator'>\n## Avanzamento manuale\nprint(next(myIterator))  # primo\nprint(next(myIterator))  # secondo\nprint(next(myIterator))  # terzo\n#! Un altro print solleverebbe l'eccezione StopIteration\n# print(next(myIterator))\n\"\"\"",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myList",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myList = [1, 2, 3, 4, 5]\nfor item in myList: # crea automaticamente iter(iterable)\n    print(item) # chiama automaticamente next(iterator)\n    # Gestisce automaticamente StopIteration\n#, Verificare se un oggetto è iterabile o iteratore\nhasattr(myList, \"__iter__\") # True (iterabile)\nhasattr(myList, \"__next__\") # False (non iteratore)\nit = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "it",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "it = iter(myList)\nhasattr(it, \"__iter__\") # False (non iterabile)\nhasattr(it, \"__next__\") # True (iteratore)\n#, Oggetti che sono sia iterabili che iteratori\n## Iteratore che restituisca un numero che raddoppia fino a 300\nclass MyIterator:\n    def __init__(self):\n        self.myattr = 2\n    def __iter__(self):\n        return self",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myClass",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myClass = MyIterator()\nmyIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myIter",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myIter = iter(myClass)\nfor i in myIter:\n    print(i)\n## Iteratori infiniti (omettere StopIteration)\nclass Infinite:\n    def __init__(self):\n        self.n = 1\n    def __iter__(self):\n        return self\n    def __next__(self):",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myInfinite",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myInfinite = Infinite()\nmyInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start",
+        "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "myInfiniteIter",
+        "kind": 5,
+        "importPath": "9-iterators.iterators",
+        "description": "9-iterators.iterators",
+        "peekOfCode": "myInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit",
+        "detail": "9-iterators.iterators",
         "documentation": {}
     }
 ]
