@@ -332,6 +332,14 @@
         "documentation": {}
     },
     {
+        "label": "zip_longest",
+        "importPath": "itertools",
+        "description": "itertools",
+        "isExtraImport": true,
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
         "label": "s",
         "kind": 5,
         "importPath": "1-start.start",
@@ -2804,6 +2812,69 @@
         "description": "2-data-types.Sequences.list_methods",
         "peekOfCode": "lista = [1, 2, 3]\nlista.reverse()\nprint(lista)  # Output: [3, 2, 1]",
         "detail": "2-data-types.Sequences.list_methods",
+        "documentation": {}
+    },
+    {
+        "label": "esempio",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "esempio = set([1, 2, 2, 3, 4, 4])\nprint(esempio)\n# esempio sarà {1, 2, 3, 4}\n# esempio[0] errore\n#, Creazione Set\ns1 = {10, 20, 30}\ns2 = set() # Vuoto\ns3 = set([1, 2, 3]) # Set da lista\ns4 = set((1, 2, 3)) # Set da tupla\ns5 = set(\"Banana\") # Set da stringa",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s1 = {10, 20, 30}\ns2 = set() # Vuoto\ns3 = set([1, 2, 3]) # Set da lista\ns4 = set((1, 2, 3)) # Set da tupla\ns5 = set(\"Banana\") # Set da stringa\nprint(s1, s2, s3, s4, s5, sep=\"\\n\")\n#, Immutabilità\n# Esempio valido:\ns = {(1, 2), \"pippo\", 42}\n# Esempio non valido:",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s2 = set() # Vuoto\ns3 = set([1, 2, 3]) # Set da lista\ns4 = set((1, 2, 3)) # Set da tupla\ns5 = set(\"Banana\") # Set da stringa\nprint(s1, s2, s3, s4, s5, sep=\"\\n\")\n#, Immutabilità\n# Esempio valido:\ns = {(1, 2), \"pippo\", 42}\n# Esempio non valido:\n# s = { [1, 2], {3, 4} }  # genera TypeError",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s3",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s3 = set([1, 2, 3]) # Set da lista\ns4 = set((1, 2, 3)) # Set da tupla\ns5 = set(\"Banana\") # Set da stringa\nprint(s1, s2, s3, s4, s5, sep=\"\\n\")\n#, Immutabilità\n# Esempio valido:\ns = {(1, 2), \"pippo\", 42}\n# Esempio non valido:\n# s = { [1, 2], {3, 4} }  # genera TypeError\n#, Operazioni",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s4",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s4 = set((1, 2, 3)) # Set da tupla\ns5 = set(\"Banana\") # Set da stringa\nprint(s1, s2, s3, s4, s5, sep=\"\\n\")\n#, Immutabilità\n# Esempio valido:\ns = {(1, 2), \"pippo\", 42}\n# Esempio non valido:\n# s = { [1, 2], {3, 4} }  # genera TypeError\n#, Operazioni\n## Unione",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s5",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s5 = set(\"Banana\") # Set da stringa\nprint(s1, s2, s3, s4, s5, sep=\"\\n\")\n#, Immutabilità\n# Esempio valido:\ns = {(1, 2), \"pippo\", 42}\n# Esempio non valido:\n# s = { [1, 2], {3, 4} }  # genera TypeError\n#, Operazioni\n## Unione\n## Intersezione",
+        "detail": "2-data-types.Sequences.set",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "2-data-types.Sequences.set",
+        "description": "2-data-types.Sequences.set",
+        "peekOfCode": "s = {(1, 2), \"pippo\", 42}\n# Esempio non valido:\n# s = { [1, 2], {3, 4} }  # genera TypeError\n#, Operazioni\n## Unione\n## Intersezione\n## Differenza\n## Differenza simmetrica\n#% Frozenset",
+        "detail": "2-data-types.Sequences.set",
         "documentation": {}
     },
     {
@@ -7298,6 +7369,114 @@
         "documentation": {}
     },
     {
+        "label": "gen",
+        "kind": 2,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "def gen():\n    for i in range(3, 6):\n        yield i\nprint(list(enumerate(gen())))\n# [(0, 3), (1, 4), (2, 5)]\nd = {'a': 10, 'b': 20, 'c': 30}\nprint(list(enumerate(d)))\n# [(0, 'a'), (1, 'b'), (2, 'c')]\nprint(list(enumerate(d.values())))\n# [(0, 10), (1, 20), (2, 30)]",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "frutti",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "frutti = ['mela', 'banana', 'ciliegia']\nfor idx, valore in enumerate(frutti):\n    print(idx, valore)\n# 0 mela\n# 1 banana\n# 2 ciliegia\nfor idx, valore in enumerate(frutti, start=1):\n    print(idx, valore)\n# 1 mela\n# 2 banana",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "s = \"abc\"\nprint(list(enumerate(s)))\n# [(0, 'a'), (1, 'b'), (2, 'c')]\ndef gen():\n    for i in range(3, 6):\n        yield i\nprint(list(enumerate(gen())))\n# [(0, 3), (1, 4), (2, 5)]\nd = {'a': 10, 'b': 20, 'c': 30}\nprint(list(enumerate(d)))",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "d = {'a': 10, 'b': 20, 'c': 30}\nprint(list(enumerate(d)))\n# [(0, 'a'), (1, 'b'), (2, 'c')]\nprint(list(enumerate(d.values())))\n# [(0, 10), (1, 20), (2, 30)]\n#, Conversione in strutture dati\nconv1 = list(enumerate(['a', 'b', 'c']))\nprint(conv1)\n# [(0, 'a'), (1, 'b'), (2, 'c')]\nconv2 = tuple(enumerate('ab'))",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "conv1",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "conv1 = list(enumerate(['a', 'b', 'c']))\nprint(conv1)\n# [(0, 'a'), (1, 'b'), (2, 'c')]\nconv2 = tuple(enumerate('ab'))\nprint(conv2)\n# ((0, 'a'), (1, 'b'))\nconv3 = set(enumerate((1, 2, 3)))\nprint(conv3)\n# {(0, 1), (1, 2), (2, 3)}\n#, Operazione inversa: recuperare la sequenza originale",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "conv2",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "conv2 = tuple(enumerate('ab'))\nprint(conv2)\n# ((0, 'a'), (1, 'b'))\nconv3 = set(enumerate((1, 2, 3)))\nprint(conv3)\n# {(0, 1), (1, 2), (2, 3)}\n#, Operazione inversa: recuperare la sequenza originale\nenum_list = [(0, 'a'), (1, 'b'), (2, 'c')]\n# Usando comprensione di lista\nvalori = [v for i, v in enum_list]",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "conv3",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "conv3 = set(enumerate((1, 2, 3)))\nprint(conv3)\n# {(0, 1), (1, 2), (2, 3)}\n#, Operazione inversa: recuperare la sequenza originale\nenum_list = [(0, 'a'), (1, 'b'), (2, 'c')]\n# Usando comprensione di lista\nvalori = [v for i, v in enum_list]\nprint(valori)\n# ['a', 'b', 'c']\n# Usando zip e unpacking",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "enum_list",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "enum_list = [(0, 'a'), (1, 'b'), (2, 'c')]\n# Usando comprensione di lista\nvalori = [v for i, v in enum_list]\nprint(valori)\n# ['a', 'b', 'c']\n# Usando zip e unpacking\n_, valori = zip(*enum_list)\nvalori = list(valori)\nprint(valori)\n# ['a', 'b', 'c']",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "valori = [v for i, v in enum_list]\nprint(valori)\n# ['a', 'b', 'c']\n# Usando zip e unpacking\n_, valori = zip(*enum_list)\nvalori = list(valori)\nprint(valori)\n# ['a', 'b', 'c']\nenum_list = [(3, 'x'), (1, 'y'), (2, 'z')]\noutput = [None] * (max(i for i, v in enum_list) + 1)",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "valori",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "valori = list(valori)\nprint(valori)\n# ['a', 'b', 'c']\nenum_list = [(3, 'x'), (1, 'y'), (2, 'z')]\noutput = [None] * (max(i for i, v in enum_list) + 1)\nfor i, v in enum_list:\n    output[i] = v\n# output: [None, 'y', 'z', 'x']\nprint(output)",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "enum_list",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "enum_list = [(3, 'x'), (1, 'y'), (2, 'z')]\noutput = [None] * (max(i for i, v in enum_list) + 1)\nfor i, v in enum_list:\n    output[i] = v\n# output: [None, 'y', 'z', 'x']\nprint(output)",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "9-iterators.enumerate",
+        "description": "9-iterators.enumerate",
+        "peekOfCode": "output = [None] * (max(i for i, v in enum_list) + 1)\nfor i, v in enum_list:\n    output[i] = v\n# output: [None, 'y', 'z', 'x']\nprint(output)",
+        "detail": "9-iterators.enumerate",
+        "documentation": {}
+    },
+    {
         "label": "normale",
         "kind": 2,
         "importPath": "9-iterators.generators",
@@ -7475,6 +7654,267 @@
         "description": "9-iterators.iterators",
         "peekOfCode": "myInfiniteIter = iter(myInfinite)\nfor i in myInfiniteIter:\n    print(i)\n    if i > 100: # Condizione di stop\n        break\n## Iteratore con classe personalizzata\nclass Sequence:\n  def __init__(self, start = 1, limit = 10):\n      self.current = start\n      self.limit = limit",
         "detail": "9-iterators.iterators",
+        "documentation": {}
+    },
+    {
+        "label": "g1",
+        "kind": 2,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "def g1():\n    yield from range(3)\ndef g2():\n    yield from 'xyz'\nrisultato5 = list(zip(g1(), g2()))\nprint(risultato5)\n# [(0, 'x'), (1, 'y'), (2, 'z')]\na = [1, 2, 3]\nb = [4, 5, 6]\nc = ['a', 'b', 'c']",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "g2",
+        "kind": 2,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "def g2():\n    yield from 'xyz'\nrisultato5 = list(zip(g1(), g2()))\nprint(risultato5)\n# [(0, 'x'), (1, 'y'), (2, 'z')]\na = [1, 2, 3]\nb = [4, 5, 6]\nc = ['a', 'b', 'c']\nrisultato6 = list(zip(a, b, c))\nprint(risultato6)",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "nomi",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "nomi = ['Anna', 'Luca', 'Giulia']\neta = (22, 33, 44)\nrisultato = list(zip(nomi, eta))\nprint(risultato)\n# [('Anna', 22), ('Luca', 33), ('Giulia', 44)]\ns1 = \"ABC\"\ns2 = \"123\"\nrisultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "eta",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "eta = (22, 33, 44)\nrisultato = list(zip(nomi, eta))\nprint(risultato)\n# [('Anna', 22), ('Luca', 33), ('Giulia', 44)]\ns1 = \"ABC\"\ns2 = \"123\"\nrisultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]\n## Lunghezza diversa",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato = list(zip(nomi, eta))\nprint(risultato)\n# [('Anna', 22), ('Luca', 33), ('Giulia', 44)]\ns1 = \"ABC\"\ns2 = \"123\"\nrisultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]\n## Lunghezza diversa\na = [1, 2, 3, 4]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "s1 = \"ABC\"\ns2 = \"123\"\nrisultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]\n## Lunghezza diversa\na = [1, 2, 3, 4]\nb = ['x', 'y']\nrisultato3 = list(zip(a, b))\nprint(risultato3)",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "s2 = \"123\"\nrisultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]\n## Lunghezza diversa\na = [1, 2, 3, 4]\nb = ['x', 'y']\nrisultato3 = list(zip(a, b))\nprint(risultato3)\n# [(1, 'x'), (2, 'y')]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato2",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato2 = list(zip(s1, s2))\nprint(risultato2)\n# [('A', '1'), ('B', '2'), ('C', '3')]\n## Lunghezza diversa\na = [1, 2, 3, 4]\nb = ['x', 'y']\nrisultato3 = list(zip(a, b))\nprint(risultato3)\n# [(1, 'x'), (2, 'y')]\nset1 = {'a', 'b', 'c'}",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "a = [1, 2, 3, 4]\nb = ['x', 'y']\nrisultato3 = list(zip(a, b))\nprint(risultato3)\n# [(1, 'x'), (2, 'y')]\nset1 = {'a', 'b', 'c'}\nset2 = {1, 2, 3}\nrisultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "b = ['x', 'y']\nrisultato3 = list(zip(a, b))\nprint(risultato3)\n# [(1, 'x'), (2, 'y')]\nset1 = {'a', 'b', 'c'}\nset2 = {1, 2, 3}\nrisultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]\ndef g1():",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato3",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato3 = list(zip(a, b))\nprint(risultato3)\n# [(1, 'x'), (2, 'y')]\nset1 = {'a', 'b', 'c'}\nset2 = {1, 2, 3}\nrisultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]\ndef g1():\n    yield from range(3)",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "set1",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "set1 = {'a', 'b', 'c'}\nset2 = {1, 2, 3}\nrisultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]\ndef g1():\n    yield from range(3)\ndef g2():\n    yield from 'xyz'\nrisultato5 = list(zip(g1(), g2()))",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "set2",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "set2 = {1, 2, 3}\nrisultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]\ndef g1():\n    yield from range(3)\ndef g2():\n    yield from 'xyz'\nrisultato5 = list(zip(g1(), g2()))\nprint(risultato5)",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato4",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato4 = list(zip(set1, set2))\nprint(risultato4)\n# Esempio possibile: [('a', 1), ('b', 2), ('c', 3)]\ndef g1():\n    yield from range(3)\ndef g2():\n    yield from 'xyz'\nrisultato5 = list(zip(g1(), g2()))\nprint(risultato5)\n# [(0, 'x'), (1, 'y'), (2, 'z')]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato5",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato5 = list(zip(g1(), g2()))\nprint(risultato5)\n# [(0, 'x'), (1, 'y'), (2, 'z')]\na = [1, 2, 3]\nb = [4, 5, 6]\nc = ['a', 'b', 'c']\nrisultato6 = list(zip(a, b, c))\nprint(risultato6)\n# [(1, 4, 'a'), (2, 5, 'b'), (3, 6, 'c')]\nz = zip([1, 2], [3, 4])",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "a = [1, 2, 3]\nb = [4, 5, 6]\nc = ['a', 'b', 'c']\nrisultato6 = list(zip(a, b, c))\nprint(risultato6)\n# [(1, 4, 'a'), (2, 5, 'b'), (3, 6, 'c')]\nz = zip([1, 2], [3, 4])\nprint(z)  # <zip object at ...>\nprint(list(z))  # [(1, 3), (2, 4)]\n#. Stringhe non utilizzabili",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "b = [4, 5, 6]\nc = ['a', 'b', 'c']\nrisultato6 = list(zip(a, b, c))\nprint(risultato6)\n# [(1, 4, 'a'), (2, 5, 'b'), (3, 6, 'c')]\nz = zip([1, 2], [3, 4])\nprint(z)  # <zip object at ...>\nprint(list(z))  # [(1, 3), (2, 4)]\n#. Stringhe non utilizzabili\nstringa1 = \"ABCDEFG\"",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "c = ['a', 'b', 'c']\nrisultato6 = list(zip(a, b, c))\nprint(risultato6)\n# [(1, 4, 'a'), (2, 5, 'b'), (3, 6, 'c')]\nz = zip([1, 2], [3, 4])\nprint(z)  # <zip object at ...>\nprint(list(z))  # [(1, 3), (2, 4)]\n#. Stringhe non utilizzabili\nstringa1 = \"ABCDEFG\"\nstringa2 = \"1234567\"",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "risultato6",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "risultato6 = list(zip(a, b, c))\nprint(risultato6)\n# [(1, 4, 'a'), (2, 5, 'b'), (3, 6, 'c')]\nz = zip([1, 2], [3, 4])\nprint(z)  # <zip object at ...>\nprint(list(z))  # [(1, 3), (2, 4)]\n#. Stringhe non utilizzabili\nstringa1 = \"ABCDEFG\"\nstringa2 = \"1234567\"\n# zip() restituisce un ITERATORE (oggetto lazy)",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "z = zip([1, 2], [3, 4])\nprint(z)  # <zip object at ...>\nprint(list(z))  # [(1, 3), (2, 4)]\n#. Stringhe non utilizzabili\nstringa1 = \"ABCDEFG\"\nstringa2 = \"1234567\"\n# zip() restituisce un ITERATORE (oggetto lazy)\nz = zip(stringa1, stringa2)\n# str() NON itera l'oggetto - lo converte solo in rappresentazione testuale\nstr(z)  # → \"<zip object at 0x...>\"",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "stringa1",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "stringa1 = \"ABCDEFG\"\nstringa2 = \"1234567\"\n# zip() restituisce un ITERATORE (oggetto lazy)\nz = zip(stringa1, stringa2)\n# str() NON itera l'oggetto - lo converte solo in rappresentazione testuale\nstr(z)  # → \"<zip object at 0x...>\"\n# Invece list(), tuple(), set() sono COSTRUTTORI che materializzano l'iteratore\nlist(z)    # → [('A', '1'), ('B', '2'), ...]  ✓ Funziona!\ntuple(z)   # → (('A', '1'), ('B', '2'), ...)  ✓ Funziona!\nset(z)     # → {('A', '1'), ('B', '2'), ...}  ✓ Funziona!",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "stringa2",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "stringa2 = \"1234567\"\n# zip() restituisce un ITERATORE (oggetto lazy)\nz = zip(stringa1, stringa2)\n# str() NON itera l'oggetto - lo converte solo in rappresentazione testuale\nstr(z)  # → \"<zip object at 0x...>\"\n# Invece list(), tuple(), set() sono COSTRUTTORI che materializzano l'iteratore\nlist(z)    # → [('A', '1'), ('B', '2'), ...]  ✓ Funziona!\ntuple(z)   # → (('A', '1'), ('B', '2'), ...)  ✓ Funziona!\nset(z)     # → {('A', '1'), ('B', '2'), ...}  ✓ Funziona!\nstr(z)     # → \"<zip object at 0x...>\"       ✗ Non funziona!",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "z = zip(stringa1, stringa2)\n# str() NON itera l'oggetto - lo converte solo in rappresentazione testuale\nstr(z)  # → \"<zip object at 0x...>\"\n# Invece list(), tuple(), set() sono COSTRUTTORI che materializzano l'iteratore\nlist(z)    # → [('A', '1'), ('B', '2'), ...]  ✓ Funziona!\ntuple(z)   # → (('A', '1'), ('B', '2'), ...)  ✓ Funziona!\nset(z)     # → {('A', '1'), ('B', '2'), ...}  ✓ Funziona!\nstr(z)     # → \"<zip object at 0x...>\"       ✗ Non funziona!\nstringona = str(list(zip(stringa1, stringa2)))\n# \"[('A', '1'), ('B', '2'), ('C', '3'), ...]\"",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "stringona",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "stringona = str(list(zip(stringa1, stringa2)))\n# \"[('A', '1'), ('B', '2'), ('C', '3'), ...]\"\n# Formattazione migliore\nstringona = ', '.join([f\"({a}, {b})\" for a, b in zip(stringa1, stringa2)])\n# \"A, 1), (B, 2), (C, 3), ...\"\n## Trasposizione\ntuples = [('a', 1, True), ('b', 2, False), ('c', 3, True)]\ncol1, col2, col3 = zip(*tuples)\nprint(col1, col2, col3)\n# col1: ('a', 'b', 'c')",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "stringona",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "stringona = ', '.join([f\"({a}, {b})\" for a, b in zip(stringa1, stringa2)])\n# \"A, 1), (B, 2), (C, 3), ...\"\n## Trasposizione\ntuples = [('a', 1, True), ('b', 2, False), ('c', 3, True)]\ncol1, col2, col3 = zip(*tuples)\nprint(col1, col2, col3)\n# col1: ('a', 'b', 'c')\n# col2: (1, 2, 3)\n# col3: (True, False, True)\nprint([list(col) for col in zip(*tuples)])",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "tuples",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "tuples = [('a', 1, True), ('b', 2, False), ('c', 3, True)]\ncol1, col2, col3 = zip(*tuples)\nprint(col1, col2, col3)\n# col1: ('a', 'b', 'c')\n# col2: (1, 2, 3)\n# col3: (True, False, True)\nprint([list(col) for col in zip(*tuples)])\n# [['a', 'b', 'c'], [1, 2, 3], [True, False, True]]\n#, Valori di default\nfrom itertools import zip_longest",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "a = [1, 2, 3, 4]\nb = ['x', 'y']\ndefaults = list(zip_longest(a, b, fillvalue='_'))\nprint(defaults)\n# [(1, 'x'), (2, 'y'), (3, '_')]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "b = ['x', 'y']\ndefaults = list(zip_longest(a, b, fillvalue='_'))\nprint(defaults)\n# [(1, 'x'), (2, 'y'), (3, '_')]",
+        "detail": "9-iterators.zip",
+        "documentation": {}
+    },
+    {
+        "label": "defaults",
+        "kind": 5,
+        "importPath": "9-iterators.zip",
+        "description": "9-iterators.zip",
+        "peekOfCode": "defaults = list(zip_longest(a, b, fillvalue='_'))\nprint(defaults)\n# [(1, 'x'), (2, 'y'), (3, '_')]",
+        "detail": "9-iterators.zip",
         "documentation": {}
     }
 ]
